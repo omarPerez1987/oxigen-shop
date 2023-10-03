@@ -8,6 +8,7 @@
   margin: 0 auto;
   margin-top: 105px;
   width: 90%;
+  max-width: 1124px;
   height: auto;
   flex-shrink: 0;
   border-radius: 5px;

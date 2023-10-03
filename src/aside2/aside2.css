@@ -1,8 +1,5 @@
 .aside2 {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background: #fff;
 }
 .aside2 h3 {
@@ -15,32 +12,34 @@
   font-weight: 400;
   line-height: 42px; /* 116.667% */
 }
-.aside2 section {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+
+.aside2__article1, .aside2__article3, .aside2__article2 {
+  margin: 0 auto;
   width: 80%;
-  height: 485px;
-  gap: 60px;
-  border: 2px solid black;
+  height: 275px;
+  max-height: 485px;
+  transition: transform 0.3s ease;
 }
-.aside2 section div {
-  margin-bottom: 24px;
-  margin-top: 34px;
+.aside2__article1 .aside2__article1__section, .aside2__article3 .aside2__article1__section, .aside2__article3 .aside2__article3__section, .aside2__article2 .aside2__article1__section, .aside2__article2 .aside2__article2__section {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
   align-items: center;
-  width: 30%;
+  margin-bottom: -24px;
+  margin-top: 34px;
+  width: 100%;
   max-width: 405px;
-  height: 461px;
+  height: 251px;
   flex-shrink: 0;
   border-radius: 18px;
+  border: 1px solid #fb3b64;
   background: #fff;
 }
-.aside2 section div h4 {
-  margin-top: 34px;
+.aside2__article1 .aside2__article1__section .aside2__article1__section__div1, .aside2__article3 .aside2__article1__section .aside2__article1__section__div1, .aside2__article3 .aside2__article3__section .aside2__article1__section__div1, .aside2__article3 .aside2__article3__section .aside2__article3__section__div1, .aside2__article2 .aside2__article1__section .aside2__article1__section__div1, .aside2__article2 .aside2__article2__section .aside2__article1__section__div1, .aside2__article2 .aside2__article2__section .aside2__article2__section__div1 {
+  margin-top: 0px;
+  width: 50%;
+}
+.aside2__article1 .aside2__article1__section .aside2__article1__section__div1 h4, .aside2__article3 .aside2__article1__section .aside2__article1__section__div1 h4, .aside2__article3 .aside2__article3__section .aside2__article1__section__div1 h4, .aside2__article3 .aside2__article3__section .aside2__article3__section__div1 h4, .aside2__article2 .aside2__article1__section .aside2__article1__section__div1 h4, .aside2__article2 .aside2__article2__section .aside2__article1__section__div1 h4, .aside2__article2 .aside2__article2__section .aside2__article2__section__div1 h4 {
+  width: 100%;
+  text-align: center;
   color: #13253b;
   font-family: Raleway;
   font-size: 20px;
@@ -48,24 +47,26 @@
   font-weight: 700;
   line-height: 24px; /* 120% */
 }
-.aside2 section div h5 {
-  margin-top: 4px;
+.aside2__article1 .aside2__article1__section .aside2__article1__section__div1 h5, .aside2__article3 .aside2__article1__section .aside2__article1__section__div1 h5, .aside2__article3 .aside2__article3__section .aside2__article1__section__div1 h5, .aside2__article3 .aside2__article3__section .aside2__article3__section__div1 h5, .aside2__article2 .aside2__article1__section .aside2__article1__section__div1 h5, .aside2__article2 .aside2__article2__section .aside2__article1__section__div1 h5, .aside2__article2 .aside2__article2__section .aside2__article2__section__div1 h5 {
+  width: 100%;
+  text-align: center;
   font-family: Open Sans;
   font-size: 46px;
   font-style: normal;
   font-weight: 300;
   line-height: 64px; /* 139.13% */
+  color: #fb3b64;
 }
-.aside2 section div ul {
-  margin-top: 70px;
+.aside2__article1 .aside2__article1__section ul, .aside2__article3 .aside2__article1__section ul, .aside2__article3 .aside2__article3__section ul, .aside2__article2 .aside2__article1__section ul, .aside2__article2 .aside2__article2__section ul {
+  display: inline-block;
+  list-style: none;
 }
-.aside2 section div ul li {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.aside2__article1 .aside2__article1__section ul li, .aside2__article3 .aside2__article1__section ul li, .aside2__article3 .aside2__article3__section ul li, .aside2__article2 .aside2__article1__section ul li, .aside2__article2 .aside2__article2__section ul li {
+  margin: 0 auto;
   margin-bottom: 20px;
 }
-.aside2 section div ul li p {
+.aside2__article1 .aside2__article1__section ul li p, .aside2__article3 .aside2__article1__section ul li p, .aside2__article3 .aside2__article3__section ul li p, .aside2__article2 .aside2__article1__section ul li p, .aside2__article2 .aside2__article2__section ul li p {
+  display: inline-block;
   color: #000;
   text-align: center;
   font-family: Open Sans;
@@ -74,26 +75,30 @@
   font-weight: 400;
   line-height: normal;
 }
-.aside2 section div ul li img {
+.aside2__article1 .aside2__article1__section ul li img, .aside2__article3 .aside2__article1__section ul li img, .aside2__article3 .aside2__article3__section ul li img, .aside2__article2 .aside2__article1__section ul li img, .aside2__article2 .aside2__article2__section ul li img {
   margin-right: 5px;
   width: 11px;
   height: 11px;
 }
-.aside2 section div ul li span {
+.aside2__article1 .aside2__article1__section ul li span, .aside2__article3 .aside2__article1__section ul li span, .aside2__article3 .aside2__article3__section ul li span, .aside2__article2 .aside2__article1__section ul li span, .aside2__article2 .aside2__article2__section ul li span {
   margin-right: 5px;
-  width: 11px;
-  height: 11px;
   flex-shrink: 0;
+  padding: 0px 2px;
   border: 0.5px solid #eb476e;
   color: #eb476e;
   text-align: center;
   font-family: Raleway;
   font-size: 9px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 10px; /* 111.111% */
 }
-.aside2 section div button {
+.aside2__article1 .aside2__article1__div2, .aside2__article3 .aside2__article1__div2, .aside2__article3 .aside2__article3__div2, .aside2__article2 .aside2__article1__div2, .aside2__article2 .aside2__article2__div2 {
+  width: 100%;
+  text-align: center;
+}
+.aside2__article1 .aside2__article1__div2 button, .aside2__article3 .aside2__article1__div2 button, .aside2__article3 .aside2__article3__div2 button, .aside2__article2 .aside2__article1__div2 button, .aside2__article2 .aside2__article2__div2 button {
+  text-align: center;
   width: 150px;
   height: 50px;
   flex-shrink: 0;
@@ -104,42 +109,43 @@
   font-weight: 700;
   line-height: normal;
   border: none;
-}
-.aside2 section .aside__div1 {
-  border: 1px solid #fb3b64;
-}
-.aside2 section .aside__div1 h5 {
-  color: #fb3b64;
-}
-.aside2 section .aside__div1 button {
   border-radius: 23px;
   background: #eb476e;
 }
-.aside2 section .aside__div2 {
+
+.aside2__article1:hover, .aside2__article3:hover, .aside2__article2:hover {
+  transform: scale(1.2);
+}
+
+.aside2__article2 .aside2__article2__section {
   border: 1px solid #07ace6;
 }
-.aside2 section .aside__div2 h5 {
+.aside2__article2 .aside2__article2__section .aside2__article2__section__div1 h5 {
   color: #07ace6;
 }
-.aside2 section .aside__div2 button {
-  border-radius: 23px;
+.aside2__article2 .aside2__article2__section .aside2__article2__section__div1 h6 {
+  width: 100%;
+  text-align: center;
+  color: #13253b;
+  font-family: Raleway;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.aside2__article2 .aside2__article2__div2 button {
   background: #07ace6;
 }
-.aside2 section .aside__div2 h6 {
-  color: #13253b;
-  font-family: Raleway;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-.aside2 section .aside__div3 {
+
+.aside2__article3 .aside2__article3__section {
   border: 1px solid #55dfb4;
 }
-.aside2 section .aside__div3 h5 {
+.aside2__article3 .aside2__article3__section .aside2__article3__section__div1 h5 {
   color: #55dfb4;
 }
-.aside2 section .aside__div3 h6 {
+.aside2__article3 .aside2__article3__section .aside2__article3__section__div1 h6 {
+  width: 100%;
+  text-align: center;
   color: #13253b;
   font-family: Raleway;
   font-size: 12px;
@@ -147,7 +153,6 @@
   font-weight: 700;
   line-height: normal;
 }
-.aside2 section .aside__div3 button {
-  border-radius: 23px;
+.aside2__article3 .aside2__article3__div2 button {
   background: #55dfb4;
 }/*# sourceMappingURL=aside2.css.map */

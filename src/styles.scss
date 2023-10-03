@@ -9,7 +9,7 @@ body {
   align-items: center;
   min-width: 320px;
   background-color: #fff;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway','Open Sans', system-ui, sans-serif;
 }
 
 // HEADER*****************************
@@ -22,4 +22,10 @@ body {
 @import "./aside1/aside1.scss";
 
 // ASIDE 2 ***************************
-// @import "./aside2/aside2.scss";
+@import "./aside2/aside2.scss";
+
+// ASIDE 3 ***************************
+@import "./aside3/aside3.scss";
+
+// FOOTER ****************************
+@import "./footer/footer.scss"

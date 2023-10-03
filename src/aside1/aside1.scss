@@ -8,6 +8,7 @@
     margin: 0 auto;
     margin-top: 105px;
     width: 90%;
+    max-width: 1124px;
     height: auto;
     flex-shrink: 0;
     border-radius: 5px;
@@ -57,7 +58,6 @@
         font-style: normal;
         font-weight: 400;
         line-height: 21px; /* 150% */
-
       }
     }
   }
@@ -137,7 +137,7 @@
       width: 90%;
       max-width: 265.73px;
       height: 207.72px;
-      flex-shrink: 0;;
+      flex-shrink: 0;
       height: auto;
       flex-shrink: 0;
     }

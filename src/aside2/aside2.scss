@@ -1,8 +1,5 @@
 .aside2 {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background: #fff;
 
   h3 {
@@ -15,32 +12,35 @@
     font-weight: 400;
     line-height: 42px; /* 116.667% */
   }
-  section {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    height: 485px;
-    gap: 60px;
-    border: 2px solid black;
+}
 
-    div {
-      margin-bottom: 24px;
-      margin-top: 34px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-      width: 30%;
-      max-width: 405px;
-      height: 461px;
-      flex-shrink: 0;
-      border-radius: 18px;
-      background: #fff;
+.aside2__article1 {
+  margin: 0 auto;
+  width: 80%;
+  height: 275px;
+  max-height: 485px;
+  transition: transform 0.3s ease;
+
+  .aside2__article1__section {
+    display: flex;
+    align-items: center;
+    margin-bottom: -24px;
+    margin-top: 34px;
+    width: 100%;
+    max-width: 405px;
+    height: 251px;
+    flex-shrink: 0;
+    border-radius: 18px;
+    border: 1px solid #fb3b64;
+    background: #fff;
+
+    .aside2__article1__section__div1 {
+      margin-top: 0px;
+      width: 50%;
 
       h4 {
-        margin-top: 34px;
+        width: 100%;
+        text-align: center;
         color: #13253b;
         font-family: Raleway;
         font-size: 20px;
@@ -49,83 +49,94 @@
         line-height: 24px; /* 120% */
       }
       h5 {
-        margin-top: 4px;
+        width: 100%;
+        text-align: center;
         font-family: Open Sans;
         font-size: 46px;
         font-style: normal;
         font-weight: 300;
         line-height: 64px; /* 139.13% */
-      }
-      ul {
-        margin-top: 70px;
-        li {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          margin-bottom: 20px;
-          p {
-            color: #000;
-            text-align: center;
-            font-family: Open Sans;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-          }
-          img {
-            margin-right: 5px;
-            width: 11px;
-            height: 11px;
-          }
-          span {
-            margin-right: 5px;
-            width: 11px;
-            height: 11px;
-            flex-shrink: 0;
-            border: 0.5px solid #eb476e;
-            color: #eb476e;
-            text-align: center;
-            font-family: Raleway;
-            font-size: 9px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 10px; /* 111.111% */
-          }
-        }
-      }
-      button {
-        width: 150px;
-        height: 50px;
-        flex-shrink: 0;
-        color: #fff;
-        font-family: Open Sans;
-        font-size: 13px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        border: none;
-      }
-    }
-    .aside__div1 {
-      border: 1px solid #fb3b64;
-      h5 {
         color: #fb3b64;
       }
-      button {
-        border-radius: 23px;
-        background: #eb476e;
+    }
+    ul {
+      display: inline-block;
+      list-style: none;
+
+      li {
+        margin: 0 auto;
+        margin-bottom: 20px;
+        p {
+          display: inline-block;
+          color: #000;
+          text-align: center;
+          font-family: Open Sans;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+        img {
+          margin-right: 5px;
+          width: 11px;
+          height: 11px;
+        }
+        span {
+          margin-right: 5px;
+          flex-shrink: 0;
+          padding: 0px 2px;
+          border: 0.5px solid #eb476e;
+          color: #eb476e;
+          text-align: center;
+          font-family: Raleway;
+          font-size: 9px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 10px; /* 111.111% */
+        }
       }
     }
-    .aside__div2 {
-      border: 1px solid #07ace6;
+  }
+  .aside2__article1__div2 {
+    width: 100%;
+    text-align: center;
+    button {
+      text-align: center;
+      width: 150px;
+      height: 50px;
+      flex-shrink: 0;
+      color: #fff;
+      font-family: Open Sans;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      border: none;
+      border-radius: 23px;
+      background: #eb476e;
+    }
+  }
+}
+
+.aside2__article1:hover {
+  transform: scale(1.2)
+}
+
+// **********************************************
+
+.aside2__article2 {
+  @extend .aside2__article1;
+  .aside2__article2__section {
+    @extend .aside2__article1__section;
+    border: 1px solid #07ace6;
+    .aside2__article2__section__div1 {
+      @extend .aside2__article1__section__div1;
       h5 {
         color: #07ace6;
       }
-      button {
-        border-radius: 23px;
-        background: #07ace6;
-      }
       h6 {
+        width: 100%;
+        text-align: center;
         color: #13253b;
         font-family: Raleway;
         font-size: 12px;
@@ -134,12 +145,30 @@
         line-height: normal;
       }
     }
-    .aside__div3 {
-      border: 1px solid #55dfb4;
+  }
+  .aside2__article2__div2 {
+    @extend .aside2__article1__div2;
+    button {
+      background: #07ace6;
+    }
+  }
+}
+
+//**********************************************
+
+.aside2__article3 {
+  @extend .aside2__article1;
+  .aside2__article3__section {
+    @extend .aside2__article1__section;
+    border: 1px solid #55dfb4;
+    .aside2__article3__section__div1 {
+      @extend .aside2__article1__section__div1;
       h5 {
         color: #55dfb4;
       }
       h6 {
+        width: 100%;
+        text-align: center;
         color: #13253b;
         font-family: Raleway;
         font-size: 12px;
@@ -147,10 +176,12 @@
         font-weight: 700;
         line-height: normal;
       }
-      button {
-        border-radius: 23px;
-        background: #55dfb4;
-      }
+    }
+  }
+  .aside2__article3__div2 {
+    @extend .aside2__article1__div2;
+    button {
+      background: #55dfb4;
     }
   }
 }
