@@ -102,4 +102,37 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+
+@media screen and (min-width: 1024px) {
+  .aside3 .aside3__article1 {
+    display: flex;
+    width: 70%;
+    max-width: 896px;
+  }
+  .aside3 .aside3__article1 .aside3__article1__section1 {
+    width: 50%;
+  }
+  .aside3 .aside3__article1 .aside3__article1__section1 h4 {
+    font-size: 49px;
+  }
+  .aside3 .aside3__article1 .aside3__article1__section1 h5 {
+    margin-top: 22px;
+    margin-bottom: 42px;
+  }
+  .aside3 .aside3__article1 .aside3__article1__section1 div {
+    display: flex;
+    gap: 20px;
+  }
+  .aside3 .aside3__article1 .aside3__article1__section1 div .aside3__article1__section1__div1, .aside3 .aside3__article1 .aside3__article1__section1 div .aside3__article1__section1__div2 {
+    display: flex;
+    margin: 0px;
+    gap: 10px;
+  }
+  .aside3 .aside3__article1 .aside3__article1__section1 div .aside3__article1__section1__div2 {
+    display: flex;
+  }
+  .aside3 .aside3__article1 .aside3__article1__section2 {
+    width: 50%;
+  }
 }/*# sourceMappingURL=aside3.css.map */
