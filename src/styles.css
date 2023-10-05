@@ -36,6 +36,8 @@ header .header__div1 h1, header .header__div2 h1 {
   line-height: 37px; /* 115.625% */
 }
 header .header__div1 ul, header .header__div2 ul {
+  display: flex;
+  flex-direction: column;
   padding-top: 40px;
   width: 100%;
   height: 175.65px;
@@ -43,7 +45,7 @@ header .header__div1 ul, header .header__div2 ul {
   background: #fff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.29);
 }
-header .header__div1 ul li, header .header__div2 ul li {
+header .header__div1 ul a, header .header__div2 ul a {
   margin-left: 25px;
   margin-bottom: 14px;
   text-align: start;
@@ -55,7 +57,7 @@ header .header__div1 ul li, header .header__div2 ul li {
   line-height: 15px; /* 136.364% */
   letter-spacing: 3.28px;
   text-transform: uppercase;
-  list-style-type: none;
+  text-decoration: none;
   z-index: 2;
 }
 header .header__div1 button, header .header__div2 button {
@@ -78,35 +80,46 @@ header .header__div2 button img {
   flex-shrink: 0;
 }
 
+.header__div1 ul a:hover, header .header__div2 ul a:hover {
+  color: #000;
+}
+
 @media screen and (min-width: 670px) {
   header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
   }
   header .header__div1, header .header__div2 {
     display: flex;
+    align-items: center;
     width: 100%;
+    height: 100%;
   }
   header .header__div1 h1, header .header__div2 h1 {
     margin: 0px 0px 0px 10%;
   }
   header .header__div1 ul, header .header__div2 ul {
+    display: flex;
+    flex-direction: row;
     margin: 0px;
     margin-right: 5%;
     padding-top: 0px;
+    height: auto;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     width: 50%;
     gap: 5%;
     z-index: 0;
-    height: auto;
     box-shadow: none;
+    background-color: transparent;
   }
-  header .header__div1 ul li, header .header__div2 ul li {
+  header .header__div1 ul a, header .header__div2 ul a {
     margin: 0px;
-    z-index: 0;
+    display: flex;
+    align-items: center;
+    height: 74px;
+    border-bottom: 4px solid transparent;
   }
   header .header__div1 button, header .header__div2 button {
     display: none;
@@ -114,11 +127,14 @@ header .header__div2 button img {
   header .header__div2 {
     display: none;
   }
+  .header__div1 ul a:hover, header .header__div2 ul a:hover {
+    border-bottom: 4px solid #08a6e4;
+  }
 }
 .banner {
   align-items: center;
   margin-top: 130px;
-  margin-bottom: 122px;
+  margin-bottom: 50px;
   width: 100%;
 }
 .banner h2 {
@@ -188,7 +204,7 @@ header .header__div2 button img {
 }
 
 .banner__footer {
-  margin-top: 100px;
+  margin-top: 13px;
   width: 100%;
   gap: 183px;
 }
@@ -248,12 +264,17 @@ header .header__div2 button img {
     display: flex;
     flex-direction: column;
   }
+  .banner .banner__footer h3 {
+    font-weight: 400;
+  }
   .banner .banner__footer div {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 184px;
   }
-  .banner .banner__footer h3 {
-    font-weight: 400;
+  .banner .banner__footer div section {
+    margin: 0;
   }
 }
 .aside1 {
@@ -264,7 +285,7 @@ header .header__div2 button img {
 }
 .aside1 .aside1__article1, .aside1 .aside1__article3, .aside1 .aside1__article2 {
   margin: 0 auto;
-  margin-top: 105px;
+  margin-top: 42px;
   width: 90%;
   height: 370px;
   max-width: 1124px;
@@ -341,6 +362,9 @@ header .header__div2 button img {
 }
 
 @media screen and (min-width: 425px) {
+  .aside1 {
+    padding: 105px 0px;
+  }
   .aside1 .aside1__article1, .aside1 .aside1__article3, .aside1 .aside1__article2 {
     display: flex;
     flex-direction: row-reverse;
@@ -355,6 +379,7 @@ header .header__div2 button img {
   }
   .aside1 .aside1__article1 .aside1__article1__div1 .aside1__article1__mac, .aside1 .aside1__article3 .aside1__article1__div1 .aside1__article1__mac, .aside1 .aside1__article2 .aside1__article1__div1 .aside1__article1__mac {
     width: 30%;
+    max-width: 386px;
     height: auto;
     flex-shrink: 0;
   }
@@ -665,6 +690,9 @@ header .header__div2 button img {
 .aside2__article1:hover, .aside2__article3:hover, .aside2__article2:hover {
   transform: scale(1.2);
 }
+.aside2__article1:hover .aside2__article1__section, .aside2__article1:hover .aside2__article3 .aside2__article3__section, .aside2__article3 .aside2__article1:hover .aside2__article3__section, .aside2__article3:hover .aside2__article1__section, .aside2__article3:hover .aside2__article3__section, .aside2__article1:hover .aside2__article2 .aside2__article2__section, .aside2__article3:hover .aside2__article2 .aside2__article2__section, .aside2__article2 .aside2__article1:hover .aside2__article2__section, .aside2__article2 .aside2__article3:hover .aside2__article2__section, .aside2__article2:hover .aside2__article1__section, .aside2__article2:hover .aside2__article3 .aside2__article3__section, .aside2__article3 .aside2__article2:hover .aside2__article3__section, .aside2__article2:hover .aside2__article2__section {
+  box-shadow: 5px 10px 27px 0px rgba(235, 71, 109, 0.2745098039);
+}
 
 .aside2__article2 .aside2__article2__section {
   border: 1px solid #07ace6;
@@ -684,6 +712,10 @@ header .header__div2 button img {
 }
 .aside2__article2 .aside2__article2__div2 button {
   background: #07ace6;
+}
+
+.aside2__article2:hover .aside2__article2__section {
+  box-shadow: 5px 10px 27px 0px rgba(7, 171, 230, 0.3019607843);
 }
 
 .aside2__article3 .aside2__article3__section {
@@ -706,51 +738,66 @@ header .header__div2 button img {
   background: #55dfb4;
 }
 
+.aside2__article3:hover .aside2__article3__section {
+  box-shadow: 5px 10px 27px 0px rgba(85, 223, 179, 0.3019607843);
+}
+
 @media screen and (min-width: 520px) {
   .aside2 {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
   }
-  .aside2 div {
+  .aside2 .aside2__container {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    width: 100%;
+    margin-bottom: 130px;
   }
-  .aside2 div .aside2__article1, .aside2 div .aside2__article2, .aside2 div .aside2__article3 {
+  .aside2 .aside2__container .aside2__article1, .aside2 .aside2__container .aside2__article2, .aside2 .aside2__container .aside2__article3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 616px;
-    width: 25%;
-    margin-bottom: 61px;
+    align-items: center;
+    height: auto;
+    width: 372px;
+    margin: 0px;
+    padding: 0px;
   }
-  .aside2 div .aside2__article1 .aside2__article1__section, .aside2 div .aside2__article2 .aside2__article1__section, .aside2 div .aside2__article3 .aside2__article1__section, .aside2__article2 .aside2 div .aside2__article1 .aside2__article2__section, .aside2 div .aside2__article2 .aside2__article2__section, .aside2__article2 .aside2 div .aside2__article3 .aside2__article2__section, .aside2__article3 .aside2 div .aside2__article1 .aside2__article3__section, .aside2__article3 .aside2 div .aside2__article2 .aside2__article3__section, .aside2 div .aside2__article3 .aside2__article3__section {
+  .aside2 .aside2__container .aside2__article1 .aside2__article1__section, .aside2 .aside2__container .aside2__article2 .aside2__article1__section, .aside2 .aside2__container .aside2__article3 .aside2__article1__section, .aside2__article2 .aside2 .aside2__container .aside2__article1 .aside2__article2__section, .aside2 .aside2__container .aside2__article2 .aside2__article2__section, .aside2__article2 .aside2 .aside2__container .aside2__article3 .aside2__article2__section, .aside2__article3 .aside2 .aside2__container .aside2__article1 .aside2__article3__section, .aside2__article3 .aside2 .aside2__container .aside2__article2 .aside2__article3__section, .aside2 .aside2__container .aside2__article3 .aside2__article3__section {
     display: flex;
     flex-direction: column;
     height: 461px;
     margin-top: 50px;
+    padding-bottom: 55px;
   }
-  .aside2 div .aside2__article1 .aside2__article1__section .aside2__article1__section__div1, .aside2 div .aside2__article2 .aside2__article1__section .aside2__article1__section__div1, .aside2 div .aside2__article3 .aside2__article1__section .aside2__article1__section__div1, .aside2__article2 .aside2 div .aside2__article1 .aside2__article2__section .aside2__article1__section__div1, .aside2 div .aside2__article2 .aside2__article2__section .aside2__article1__section__div1, .aside2__article2 .aside2 div .aside2__article3 .aside2__article2__section .aside2__article1__section__div1, .aside2__article3 .aside2 div .aside2__article1 .aside2__article3__section .aside2__article1__section__div1, .aside2__article3 .aside2 div .aside2__article2 .aside2__article3__section .aside2__article1__section__div1, .aside2 div .aside2__article3 .aside2__article3__section .aside2__article1__section__div1, .aside2__article2 .aside2__article2__section .aside2 div .aside2__article1 .aside2__article1__section .aside2__article2__section__div1, .aside2__article2 .aside2__article2__section .aside2 div .aside2__article3 .aside2__article1__section .aside2__article2__section__div1, .aside2__article2 .aside2 div .aside2__article1 .aside2__article2__section .aside2__article2__section__div1, .aside2 div .aside2__article2 .aside2__article2__section .aside2__article2__section__div1, .aside2__article2 .aside2 div .aside2__article3 .aside2__article2__section .aside2__article2__section__div1, .aside2__article2 .aside2__article2__section .aside2__article3 .aside2 div .aside2__article1 .aside2__article3__section .aside2__article2__section__div1, .aside2__article2 .aside2__article2__section .aside2 div .aside2__article3 .aside2__article3__section .aside2__article2__section__div1, .aside2__article3 .aside2__article3__section .aside2 div .aside2__article1 .aside2__article1__section .aside2__article3__section__div1, .aside2__article3 .aside2__article3__section .aside2 div .aside2__article2 .aside2__article1__section .aside2__article3__section__div1, .aside2__article3 .aside2__article3__section .aside2__article2 .aside2 div .aside2__article1 .aside2__article2__section .aside2__article3__section__div1, .aside2__article3 .aside2__article3__section .aside2 div .aside2__article2 .aside2__article2__section .aside2__article3__section__div1, .aside2__article3 .aside2 div .aside2__article1 .aside2__article3__section .aside2__article3__section__div1, .aside2__article3 .aside2 div .aside2__article2 .aside2__article3__section .aside2__article3__section__div1, .aside2 div .aside2__article3 .aside2__article3__section .aside2__article3__section__div1 {
+  .aside2 .aside2__container .aside2__article1 .aside2__article1__section .aside2__article1__section__div1, .aside2 .aside2__container .aside2__article2 .aside2__article1__section .aside2__article1__section__div1, .aside2 .aside2__container .aside2__article3 .aside2__article1__section .aside2__article1__section__div1, .aside2__article2 .aside2 .aside2__container .aside2__article1 .aside2__article2__section .aside2__article1__section__div1, .aside2 .aside2__container .aside2__article2 .aside2__article2__section .aside2__article1__section__div1, .aside2__article2 .aside2 .aside2__container .aside2__article3 .aside2__article2__section .aside2__article1__section__div1, .aside2__article3 .aside2 .aside2__container .aside2__article1 .aside2__article3__section .aside2__article1__section__div1, .aside2__article3 .aside2 .aside2__container .aside2__article2 .aside2__article3__section .aside2__article1__section__div1, .aside2 .aside2__container .aside2__article3 .aside2__article3__section .aside2__article1__section__div1, .aside2__article2 .aside2__article2__section .aside2 .aside2__container .aside2__article1 .aside2__article1__section .aside2__article2__section__div1, .aside2__article2 .aside2__article2__section .aside2 .aside2__container .aside2__article3 .aside2__article1__section .aside2__article2__section__div1, .aside2__article2 .aside2 .aside2__container .aside2__article1 .aside2__article2__section .aside2__article2__section__div1, .aside2 .aside2__container .aside2__article2 .aside2__article2__section .aside2__article2__section__div1, .aside2__article2 .aside2 .aside2__container .aside2__article3 .aside2__article2__section .aside2__article2__section__div1, .aside2__article2 .aside2__article2__section .aside2__article3 .aside2 .aside2__container .aside2__article1 .aside2__article3__section .aside2__article2__section__div1, .aside2__article2 .aside2__article2__section .aside2 .aside2__container .aside2__article3 .aside2__article3__section .aside2__article2__section__div1, .aside2__article3 .aside2__article3__section .aside2 .aside2__container .aside2__article1 .aside2__article1__section .aside2__article3__section__div1, .aside2__article3 .aside2__article3__section .aside2 .aside2__container .aside2__article2 .aside2__article1__section .aside2__article3__section__div1, .aside2__article3 .aside2__article3__section .aside2__article2 .aside2 .aside2__container .aside2__article1 .aside2__article2__section .aside2__article3__section__div1, .aside2__article3 .aside2__article3__section .aside2 .aside2__container .aside2__article2 .aside2__article2__section .aside2__article3__section__div1, .aside2__article3 .aside2 .aside2__container .aside2__article1 .aside2__article3__section .aside2__article3__section__div1, .aside2__article3 .aside2 .aside2__container .aside2__article2 .aside2__article3__section .aside2__article3__section__div1, .aside2 .aside2__container .aside2__article3 .aside2__article3__section .aside2__article3__section__div1 {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
   }
-  .aside2 div .aside2__article1 .aside2__article1__section .aside2__article1__section__div1 h4, .aside2 div .aside2__article2 .aside2__article1__section .aside2__article1__section__div1 h4, .aside2 div .aside2__article3 .aside2__article1__section .aside2__article1__section__div1 h4, .aside2__article2 .aside2 div .aside2__article1 .aside2__article2__section .aside2__article1__section__div1 h4, .aside2 div .aside2__article2 .aside2__article2__section .aside2__article1__section__div1 h4, .aside2__article2 .aside2 div .aside2__article3 .aside2__article2__section .aside2__article1__section__div1 h4, .aside2__article3 .aside2 div .aside2__article1 .aside2__article3__section .aside2__article1__section__div1 h4, .aside2__article3 .aside2 div .aside2__article2 .aside2__article3__section .aside2__article1__section__div1 h4, .aside2 div .aside2__article3 .aside2__article3__section .aside2__article1__section__div1 h4, .aside2__article2 .aside2__article2__section .aside2 div .aside2__article1 .aside2__article1__section .aside2__article2__section__div1 h4, .aside2__article2 .aside2__article2__section .aside2 div .aside2__article3 .aside2__article1__section .aside2__article2__section__div1 h4, .aside2__article2 .aside2 div .aside2__article1 .aside2__article2__section .aside2__article2__section__div1 h4, .aside2 div .aside2__article2 .aside2__article2__section .aside2__article2__section__div1 h4, .aside2__article2 .aside2 div .aside2__article3 .aside2__article2__section .aside2__article2__section__div1 h4, .aside2__article2 .aside2__article2__section .aside2__article3 .aside2 div .aside2__article1 .aside2__article3__section .aside2__article2__section__div1 h4, .aside2__article2 .aside2__article2__section .aside2 div .aside2__article3 .aside2__article3__section .aside2__article2__section__div1 h4, .aside2__article3 .aside2__article3__section .aside2 div .aside2__article1 .aside2__article1__section .aside2__article3__section__div1 h4, .aside2__article3 .aside2__article3__section .aside2 div .aside2__article2 .aside2__article1__section .aside2__article3__section__div1 h4, .aside2__article3 .aside2__article3__section .aside2__article2 .aside2 div .aside2__article1 .aside2__article2__section .aside2__article3__section__div1 h4, .aside2__article3 .aside2__article3__section .aside2 div .aside2__article2 .aside2__article2__section .aside2__article3__section__div1 h4, .aside2__article3 .aside2 div .aside2__article1 .aside2__article3__section .aside2__article3__section__div1 h4, .aside2__article3 .aside2 div .aside2__article2 .aside2__article3__section .aside2__article3__section__div1 h4, .aside2 div .aside2__article3 .aside2__article3__section .aside2__article3__section__div1 h4 {
+  .aside2 .aside2__container .aside2__article1 .aside2__article1__section .aside2__article1__section__div1 h4, .aside2 .aside2__container .aside2__article2 .aside2__article1__section .aside2__article1__section__div1 h4, .aside2 .aside2__container .aside2__article3 .aside2__article1__section .aside2__article1__section__div1 h4, .aside2__article2 .aside2 .aside2__container .aside2__article1 .aside2__article2__section .aside2__article1__section__div1 h4, .aside2 .aside2__container .aside2__article2 .aside2__article2__section .aside2__article1__section__div1 h4, .aside2__article2 .aside2 .aside2__container .aside2__article3 .aside2__article2__section .aside2__article1__section__div1 h4, .aside2__article3 .aside2 .aside2__container .aside2__article1 .aside2__article3__section .aside2__article1__section__div1 h4, .aside2__article3 .aside2 .aside2__container .aside2__article2 .aside2__article3__section .aside2__article1__section__div1 h4, .aside2 .aside2__container .aside2__article3 .aside2__article3__section .aside2__article1__section__div1 h4, .aside2__article2 .aside2__article2__section .aside2 .aside2__container .aside2__article1 .aside2__article1__section .aside2__article2__section__div1 h4, .aside2__article2 .aside2__article2__section .aside2 .aside2__container .aside2__article3 .aside2__article1__section .aside2__article2__section__div1 h4, .aside2__article2 .aside2 .aside2__container .aside2__article1 .aside2__article2__section .aside2__article2__section__div1 h4, .aside2 .aside2__container .aside2__article2 .aside2__article2__section .aside2__article2__section__div1 h4, .aside2__article2 .aside2 .aside2__container .aside2__article3 .aside2__article2__section .aside2__article2__section__div1 h4, .aside2__article2 .aside2__article2__section .aside2__article3 .aside2 .aside2__container .aside2__article1 .aside2__article3__section .aside2__article2__section__div1 h4, .aside2__article2 .aside2__article2__section .aside2 .aside2__container .aside2__article3 .aside2__article3__section .aside2__article2__section__div1 h4, .aside2__article3 .aside2__article3__section .aside2 .aside2__container .aside2__article1 .aside2__article1__section .aside2__article3__section__div1 h4, .aside2__article3 .aside2__article3__section .aside2 .aside2__container .aside2__article2 .aside2__article1__section .aside2__article3__section__div1 h4, .aside2__article3 .aside2__article3__section .aside2__article2 .aside2 .aside2__container .aside2__article1 .aside2__article2__section .aside2__article3__section__div1 h4, .aside2__article3 .aside2__article3__section .aside2 .aside2__container .aside2__article2 .aside2__article2__section .aside2__article3__section__div1 h4, .aside2__article3 .aside2 .aside2__container .aside2__article1 .aside2__article3__section .aside2__article3__section__div1 h4, .aside2__article3 .aside2 .aside2__container .aside2__article2 .aside2__article3__section .aside2__article3__section__div1 h4, .aside2 .aside2__container .aside2__article3 .aside2__article3__section .aside2__article3__section__div1 h4 {
     margin-top: 34px;
   }
-  .aside2 div .aside2__article1 .aside2__article1__section .aside2__article1__section__div1 h5, .aside2 div .aside2__article2 .aside2__article1__section .aside2__article1__section__div1 h5, .aside2 div .aside2__article3 .aside2__article1__section .aside2__article1__section__div1 h5, .aside2__article2 .aside2 div .aside2__article1 .aside2__article2__section .aside2__article1__section__div1 h5, .aside2 div .aside2__article2 .aside2__article2__section .aside2__article1__section__div1 h5, .aside2__article2 .aside2 div .aside2__article3 .aside2__article2__section .aside2__article1__section__div1 h5, .aside2__article3 .aside2 div .aside2__article1 .aside2__article3__section .aside2__article1__section__div1 h5, .aside2__article3 .aside2 div .aside2__article2 .aside2__article3__section .aside2__article1__section__div1 h5, .aside2 div .aside2__article3 .aside2__article3__section .aside2__article1__section__div1 h5, .aside2__article2 .aside2__article2__section .aside2 div .aside2__article1 .aside2__article1__section .aside2__article2__section__div1 h5, .aside2__article2 .aside2__article2__section .aside2 div .aside2__article3 .aside2__article1__section .aside2__article2__section__div1 h5, .aside2__article2 .aside2 div .aside2__article1 .aside2__article2__section .aside2__article2__section__div1 h5, .aside2 div .aside2__article2 .aside2__article2__section .aside2__article2__section__div1 h5, .aside2__article2 .aside2 div .aside2__article3 .aside2__article2__section .aside2__article2__section__div1 h5, .aside2__article2 .aside2__article2__section .aside2__article3 .aside2 div .aside2__article1 .aside2__article3__section .aside2__article2__section__div1 h5, .aside2__article2 .aside2__article2__section .aside2 div .aside2__article3 .aside2__article3__section .aside2__article2__section__div1 h5, .aside2__article3 .aside2__article3__section .aside2 div .aside2__article1 .aside2__article1__section .aside2__article3__section__div1 h5, .aside2__article3 .aside2__article3__section .aside2 div .aside2__article2 .aside2__article1__section .aside2__article3__section__div1 h5, .aside2__article3 .aside2__article3__section .aside2__article2 .aside2 div .aside2__article1 .aside2__article2__section .aside2__article3__section__div1 h5, .aside2__article3 .aside2__article3__section .aside2 div .aside2__article2 .aside2__article2__section .aside2__article3__section__div1 h5, .aside2__article3 .aside2 div .aside2__article1 .aside2__article3__section .aside2__article3__section__div1 h5, .aside2__article3 .aside2 div .aside2__article2 .aside2__article3__section .aside2__article3__section__div1 h5, .aside2 div .aside2__article3 .aside2__article3__section .aside2__article3__section__div1 h5 {
+  .aside2 .aside2__container .aside2__article1 .aside2__article1__section .aside2__article1__section__div1 h5, .aside2 .aside2__container .aside2__article2 .aside2__article1__section .aside2__article1__section__div1 h5, .aside2 .aside2__container .aside2__article3 .aside2__article1__section .aside2__article1__section__div1 h5, .aside2__article2 .aside2 .aside2__container .aside2__article1 .aside2__article2__section .aside2__article1__section__div1 h5, .aside2 .aside2__container .aside2__article2 .aside2__article2__section .aside2__article1__section__div1 h5, .aside2__article2 .aside2 .aside2__container .aside2__article3 .aside2__article2__section .aside2__article1__section__div1 h5, .aside2__article3 .aside2 .aside2__container .aside2__article1 .aside2__article3__section .aside2__article1__section__div1 h5, .aside2__article3 .aside2 .aside2__container .aside2__article2 .aside2__article3__section .aside2__article1__section__div1 h5, .aside2 .aside2__container .aside2__article3 .aside2__article3__section .aside2__article1__section__div1 h5, .aside2__article2 .aside2__article2__section .aside2 .aside2__container .aside2__article1 .aside2__article1__section .aside2__article2__section__div1 h5, .aside2__article2 .aside2__article2__section .aside2 .aside2__container .aside2__article3 .aside2__article1__section .aside2__article2__section__div1 h5, .aside2__article2 .aside2 .aside2__container .aside2__article1 .aside2__article2__section .aside2__article2__section__div1 h5, .aside2 .aside2__container .aside2__article2 .aside2__article2__section .aside2__article2__section__div1 h5, .aside2__article2 .aside2 .aside2__container .aside2__article3 .aside2__article2__section .aside2__article2__section__div1 h5, .aside2__article2 .aside2__article2__section .aside2__article3 .aside2 .aside2__container .aside2__article1 .aside2__article3__section .aside2__article2__section__div1 h5, .aside2__article2 .aside2__article2__section .aside2 .aside2__container .aside2__article3 .aside2__article3__section .aside2__article2__section__div1 h5, .aside2__article3 .aside2__article3__section .aside2 .aside2__container .aside2__article1 .aside2__article1__section .aside2__article3__section__div1 h5, .aside2__article3 .aside2__article3__section .aside2 .aside2__container .aside2__article2 .aside2__article1__section .aside2__article3__section__div1 h5, .aside2__article3 .aside2__article3__section .aside2__article2 .aside2 .aside2__container .aside2__article1 .aside2__article2__section .aside2__article3__section__div1 h5, .aside2__article3 .aside2__article3__section .aside2 .aside2__container .aside2__article2 .aside2__article2__section .aside2__article3__section__div1 h5, .aside2__article3 .aside2 .aside2__container .aside2__article1 .aside2__article3__section .aside2__article3__section__div1 h5, .aside2__article3 .aside2 .aside2__container .aside2__article2 .aside2__article3__section .aside2__article3__section__div1 h5, .aside2 .aside2__container .aside2__article3 .aside2__article3__section .aside2__article3__section__div1 h5 {
     margin-top: 14px;
   }
-  .aside2 div .aside2__article1 .aside2__article1__section ul, .aside2 div .aside2__article2 .aside2__article1__section ul, .aside2 div .aside2__article3 .aside2__article1__section ul, .aside2__article2 .aside2 div .aside2__article1 .aside2__article2__section ul, .aside2 div .aside2__article2 .aside2__article2__section ul, .aside2__article2 .aside2 div .aside2__article3 .aside2__article2__section ul, .aside2__article3 .aside2 div .aside2__article1 .aside2__article3__section ul, .aside2__article3 .aside2 div .aside2__article2 .aside2__article3__section ul, .aside2 div .aside2__article3 .aside2__article3__section ul {
+  .aside2 .aside2__container .aside2__article1 .aside2__article1__section ul, .aside2 .aside2__container .aside2__article2 .aside2__article1__section ul, .aside2 .aside2__container .aside2__article3 .aside2__article1__section ul, .aside2__article2 .aside2 .aside2__container .aside2__article1 .aside2__article2__section ul, .aside2 .aside2__container .aside2__article2 .aside2__article2__section ul, .aside2__article2 .aside2 .aside2__container .aside2__article3 .aside2__article2__section ul, .aside2__article3 .aside2 .aside2__container .aside2__article1 .aside2__article3__section ul, .aside2__article3 .aside2 .aside2__container .aside2__article2 .aside2__article3__section ul, .aside2 .aside2__container .aside2__article3 .aside2__article3__section ul {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
   }
-  .aside2 div .aside2__article1 .aside2__article1__div2, .aside2 div .aside2__article2 .aside2__article1__div2, .aside2 div .aside2__article3 .aside2__article1__div2, .aside2__article2 .aside2 div .aside2__article1 .aside2__article2__div2, .aside2 div .aside2__article2 .aside2__article2__div2, .aside2__article2 .aside2 div .aside2__article3 .aside2__article2__div2, .aside2__article3 .aside2 div .aside2__article1 .aside2__article3__div2, .aside2__article3 .aside2 div .aside2__article2 .aside2__article3__div2, .aside2 div .aside2__article3 .aside2__article3__div2 {
+  .aside2 .aside2__container .aside2__article1 .aside2__article1__div2, .aside2 .aside2__container .aside2__article2 .aside2__article1__div2, .aside2 .aside2__container .aside2__article3 .aside2__article1__div2, .aside2__article2 .aside2 .aside2__container .aside2__article1 .aside2__article2__div2, .aside2 .aside2__container .aside2__article2 .aside2__article2__div2, .aside2__article2 .aside2 .aside2__container .aside2__article3 .aside2__article2__div2, .aside2__article3 .aside2 .aside2__container .aside2__article1 .aside2__article3__div2, .aside2__article3 .aside2 .aside2__container .aside2__article2 .aside2__article3__div2, .aside2 .aside2__container .aside2__article3 .aside2__article3__div2 {
     display: flex;
     justify-content: center;
     width: 100%;
   }
-  .aside2 div .aside2__article1 .aside2__article1__div2 button, .aside2 div .aside2__article2 .aside2__article1__div2 button, .aside2 div .aside2__article3 .aside2__article1__div2 button, .aside2__article2 .aside2 div .aside2__article1 .aside2__article2__div2 button, .aside2 div .aside2__article2 .aside2__article2__div2 button, .aside2__article2 .aside2 div .aside2__article3 .aside2__article2__div2 button, .aside2__article3 .aside2 div .aside2__article1 .aside2__article3__div2 button, .aside2__article3 .aside2 div .aside2__article2 .aside2__article3__div2 button, .aside2 div .aside2__article3 .aside2__article3__div2 button {
+  .aside2 .aside2__container .aside2__article1 .aside2__article1__div2 button, .aside2 .aside2__container .aside2__article2 .aside2__article1__div2 button, .aside2 .aside2__container .aside2__article3 .aside2__article1__div2 button, .aside2__article2 .aside2 .aside2__container .aside2__article1 .aside2__article2__div2 button, .aside2 .aside2__container .aside2__article2 .aside2__article2__div2 button, .aside2__article2 .aside2 .aside2__container .aside2__article3 .aside2__article2__div2 button, .aside2__article3 .aside2 .aside2__container .aside2__article1 .aside2__article3__div2 button, .aside2__article3 .aside2 .aside2__container .aside2__article2 .aside2__article3__div2 button, .aside2 .aside2__container .aside2__article3 .aside2__article3__div2 button {
     width: 165px;
     height: 50px;
   }
@@ -921,6 +968,7 @@ footer .footer__div1 p {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-bottom: 17px;
 }
 footer .footer__div2 {
   text-align: center;

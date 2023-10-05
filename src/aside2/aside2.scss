@@ -120,9 +120,10 @@
 
 .aside2__article1:hover {
   transform: scale(1.2);
+  .aside2__article1__section {
+    box-shadow: 5px 10px 27px 0px #eb476d46;
+  }
 }
-
-
 
 // **********************************************
 
@@ -153,6 +154,12 @@
     button {
       background: #07ace6;
     }
+  }
+}
+
+.aside2__article2:hover {
+  .aside2__article2__section {
+    box-shadow: 5px 10px 27px 0px #07abe64d;
   }
 }
 
@@ -188,6 +195,11 @@
   }
 }
 
+.aside2__article3:hover {
+  .aside2__article3__section {
+    box-shadow: 5px 10px 27px 0px #55dfb34d;
+  }
+}
 
 //MEDIA *****************************************************************
 
@@ -195,20 +207,31 @@
   .aside2 {
     display: flex;
     flex-direction: column;
-    div {
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    .aside2__container {
       display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 60px;
+      width: 100%;
+      margin-bottom: 130px;
       .aside2__article1 {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 616px;
-        width: 25%;
-        margin-bottom: 61px;
+        align-items: center;
+        height: auto;
+        width: 372px;
+        margin: 0px;
+        padding: 0px;
         .aside2__article1__section {
           display: flex;
           flex-direction: column;
           height: 461px;
           margin-top: 50px;
+          padding-bottom: 55px;
           .aside2__article1__section__div1 {
             display: flex;
             flex-direction: column;

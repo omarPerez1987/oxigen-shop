@@ -21,6 +21,8 @@ header .header__div1 h1, header .header__div2 h1 {
   line-height: 37px; /* 115.625% */
 }
 header .header__div1 ul, header .header__div2 ul {
+  display: flex;
+  flex-direction: column;
   padding-top: 40px;
   width: 100%;
   height: 175.65px;
@@ -28,7 +30,7 @@ header .header__div1 ul, header .header__div2 ul {
   background: #fff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.29);
 }
-header .header__div1 ul li, header .header__div2 ul li {
+header .header__div1 ul a, header .header__div2 ul a {
   margin-left: 25px;
   margin-bottom: 14px;
   text-align: start;
@@ -40,7 +42,7 @@ header .header__div1 ul li, header .header__div2 ul li {
   line-height: 15px; /* 136.364% */
   letter-spacing: 3.28px;
   text-transform: uppercase;
-  list-style-type: none;
+  text-decoration: none;
   z-index: 2;
 }
 header .header__div1 button, header .header__div2 button {
@@ -63,40 +65,54 @@ header .header__div2 button img {
   flex-shrink: 0;
 }
 
+.header__div1 ul a:hover, header .header__div2 ul a:hover {
+  color: #000;
+}
+
 @media screen and (min-width: 670px) {
   header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
   }
   header .header__div1, header .header__div2 {
     display: flex;
+    align-items: center;
     width: 100%;
+    height: 100%;
   }
   header .header__div1 h1, header .header__div2 h1 {
     margin: 0px 0px 0px 10%;
   }
   header .header__div1 ul, header .header__div2 ul {
+    display: flex;
+    flex-direction: row;
     margin: 0px;
     margin-right: 5%;
     padding-top: 0px;
+    height: auto;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     width: 50%;
     gap: 5%;
     z-index: 0;
-    height: auto;
     box-shadow: none;
+    background-color: transparent;
   }
-  header .header__div1 ul li, header .header__div2 ul li {
+  header .header__div1 ul a, header .header__div2 ul a {
     margin: 0px;
-    z-index: 0;
+    display: flex;
+    align-items: center;
+    height: 74px;
+    border-bottom: 4px solid transparent;
   }
   header .header__div1 button, header .header__div2 button {
     display: none;
   }
   header .header__div2 {
     display: none;
+  }
+  .header__div1 ul a:hover, header .header__div2 ul a:hover {
+    border-bottom: 4px solid #08a6e4;
   }
 }/*# sourceMappingURL=header.css.map */
