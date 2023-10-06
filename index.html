@@ -6,18 +6,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="./src/styles.css" />
     <title>OXIGENShop</title>
   </head>
   <body>
-    <!-- header******************************************************** -->
     <header>
-      <div class="header__div1">
+      <!-- scroller******************************************************** -->
+      <div class="progress-container">
+        <div class="progress-bar"></div>
+      </div>
+
+      <!-- header******************************************************** -->
+      <div id="dropdownList" class="header__div1">
         <h1>OXYGENShop</h1>
-        <button>
+        <button id="hideBtn">
           <img src="./public/image/header/Frame 14.png" alt="" />
         </button>
         <ul>
@@ -27,9 +32,9 @@
           <a href="#">Contact</a>
         </ul>
       </div>
-      <div class="header__div2">
+      <div id="noList" class="header__div2">
         <h1>OXYGENShop</h1>
-        <button>
+        <button id="showBtn">
           <img src="./public/image/header/Menu.png" alt="menu" />
         </button>
       </div>
@@ -366,22 +371,32 @@
     </aside>
     <!-- FOOTER ***************************************************************** -->
     <footer>
-      <div class="footer__div1">
-        <h2>OXYGENShop</h2>
-        <p>© 2022 OXYGEN, All Rights Reserved</p>
-      </div>
-      <div class="footer__div2">
-        <img
-          class="footer__div2__img1"
-          src="./public/image/footer/Twitter (2) 2.png"
-          alt="icono Twitter"
-        />
-        <img
-          class="footer__div2__img2"
-          src="./public/image/footer/Facebook (3) 2.png"
-          alt="icono facebook"
-        />
-      </div>
+    <div class="footer__div">
+      <button id="clickTop" class="clickTop">
+        <img src="./public/image/footer/chevron-up-regular-60.png" alt="flecha arriba">
+      </button>
+    </div>
+      <section class="footer__section">
+        <div class="footer__div1">
+          <h2>OXYGENShop</h2>
+          <p>© 2022 OXYGEN, All Rights Reserved</p>
+        </div>
+        <div class="footer__div2">
+          <img
+            class="footer__div2__img1"
+            src="./public/image/footer/Twitter (2) 2.png"
+            alt="icono Twitter"
+          />
+          <img
+            class="footer__div2__img2"
+            src="./public/image/footer/Facebook (3) 2.png"
+            alt="icono facebook"
+          />
+        </div>
+      </section>
     </footer>
+
+    <!-- ARCHIVO JS*********************************** -->
+    <script type="module" src="./app.js"></script>
   </body>
 </html>

@@ -12,6 +12,9 @@ body {
   font-family: Raleway,'Open Sans', system-ui, sans-serif;
 }
 
+//SCROLLER****************************
+@import "./scroller/scroller.css";
+
 // HEADER*****************************
 @import "./header/header.scss";
 
@@ -28,4 +31,5 @@ body {
 @import "./aside3/aside3.scss";
 
 // FOOTER ****************************
+@import "./footer/buttonFooter/footerTop.scss";
 @import "./footer/footer.scss"
