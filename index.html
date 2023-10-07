@@ -20,7 +20,14 @@
       </div>
 
       <!-- header******************************************************** -->
-      <div id="dropdownList" class="header__div1">
+      <div id="noList" class="header__div1">
+        <h1>OXYGENShop</h1>
+        <button id="showBtn">
+          <img src="./public/image/header/Menu.png" alt="menu" />
+        </button>
+      </div>
+
+      <div id="dropdownList" class="header__div2" style="display: none">
         <h1>OXYGENShop</h1>
         <button id="hideBtn">
           <img src="./public/image/header/Frame 14.png" alt="" />
@@ -31,12 +38,6 @@
           <a href="#">Prices</a>
           <a href="#">Contact</a>
         </ul>
-      </div>
-      <div id="noList" class="header__div2">
-        <h1>OXYGENShop</h1>
-        <button id="showBtn">
-          <img src="./public/image/header/Menu.png" alt="menu" />
-        </button>
       </div>
     </header>
 
@@ -320,6 +321,58 @@
       </section>
     </aside>
 
+    <!-- SLIDER*********************************************************************** -->
+
+    <section id="slider" class="slider__section">
+      <h2>Support throughout the entire process, with Oxigen Shop</h2>
+      <div class="slider__div">
+        <ul class="slider__div__images">
+          <li id="slide1">
+            <img
+              src="./public/image/slider/shop1.jpg"
+              alt="personas mirando pantalla en oficina"
+            />
+          </li>
+          <li id="slide2">
+            <img
+              src="./public/image/slider/oficine1.jpg"
+              alt="persona tecleando portatil"
+            />
+          </li>
+          <li id="slide3">
+            <img
+              src="./public/image/slider/coworking.jpg"
+              alt="reunion personal"
+            />
+          </li>
+          <li id="slide4">
+            <img
+              src="./public/image/slider/despacho.jpg"
+              alt="zona con planta y portatil"
+            />
+          </li>
+        </ul>
+      </div>
+      <ul class="slider__section__menu">
+        <button id="prevBtn">
+          <img
+            src="./public/image/slider/arrow-left.png"
+            alt="flecha izquierda"
+          />
+        </button>
+        <li><a id="slide1"></a></li>
+        <li><a id="slide2"></a></li>
+        <li><a id="slide3"></a></li>
+        <li><a id="slide4"></a></li>
+        <button id="nextBtn">
+          <img
+            src="./public/image/slider/arrow-right.png"
+            alt="flecha derecha"
+          />
+        </button>
+      </ul>
+    </section>
+
     <!-- ASIDE3 ******************************************************************* -->
     <aside class="aside3">
       <article class="aside3__article1">
@@ -371,11 +424,14 @@
     </aside>
     <!-- FOOTER ***************************************************************** -->
     <footer>
-    <div class="footer__div">
-      <button id="clickTop" class="clickTop">
-        <img src="./public/image/footer/chevron-up-regular-60.png" alt="flecha arriba">
-      </button>
-    </div>
+      <div class="footer__div">
+        <button id="clickTop" class="clickTop">
+          <img
+            src="./public/image/footer/chevron-up-regular-60.png"
+            alt="flecha arriba"
+          />
+        </button>
+      </div>
       <section class="footer__section">
         <div class="footer__div1">
           <h2>OXYGENShop</h2>

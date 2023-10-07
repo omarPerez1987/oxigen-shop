@@ -15,11 +15,16 @@ body {
 }
 
 header {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   height: 70px;
   background: #fff;
   box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.29);
   z-index: 1;
+}
+header .header__div1, header .header__div2 {
+  width: 100%;
 }
 header .header__div1 h1, header .header__div2 h1 {
   margin: 17px 50px 0px 25px;
@@ -64,14 +69,14 @@ header .header__div1 button, header .header__div2 button {
   cursor: pointer;
 }
 header .header__div1 button img, header .header__div2 button img {
-  width: 15.56px;
-  height: 15.56px;
+  width: 20px;
+  height: 15px;
   flex-shrink: 0;
 }
 header .header__div2 button img {
   display: inline-block;
-  width: 20px;
-  height: 12px;
+  width: 15px;
+  height: 15px;
   flex-shrink: 0;
 }
 
@@ -797,6 +802,74 @@ header .header__div2 button img {
     height: 50px;
   }
 }
+.slider__section {
+  margin: 5rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+.slider__section h2 {
+  text-align: center;
+  font-family: Raleway;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.slider__section .slider__div {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+.slider__section .slider__div .slider__div__images {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.slider__section .slider__div .slider__div__images li {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.slider__section .slider__div .slider__div__images img {
+  border-radius: 1rem;
+  width: 100%;
+  height: auto;
+}
+.slider__section .slider__section__menu {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  height: auto;
+}
+.slider__section .slider__section__menu li {
+  list-style: none;
+}
+.slider__section .slider__section__menu li a {
+  text-decoration: none;
+  background-color: #08a6e4;
+  padding: 5px 10px;
+  width: auto;
+  height: auto;
+  border-radius: 100%;
+  color: white;
+  font-size: 10px;
+}
+.slider__section .slider__section__menu button {
+  border: none;
+  background-color: transparent;
+}
+.slider__section .slider__section__menu button img {
+  background-color: transparent;
+}
+
 .aside3 {
   padding-top: 53px;
   width: 100%;
@@ -843,6 +916,9 @@ header .header__div2 button img {
 }
 .aside3 .aside3__article1 .aside3__article1__section1 .aside3__article1__section1__div2 {
   margin: 17px 0 50px 0;
+}
+.aside3 .aside3__article1 .aside3__article1__section2 {
+  margin-bottom: 2rem;
 }
 .aside3 .aside3__article1 .aside3__article1__section2 .aside3__article1__section2__div1 label {
   color: #08a6e4;
