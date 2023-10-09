@@ -140,6 +140,7 @@ header .header__div2 button img {
   height: 0;
 }
 .modal__article .modal__article__section {
+  pointer-events: auto;
   padding: 0.5rem 1rem 3rem 1rem;
   height: 25rem;
   width: 80%;
@@ -159,6 +160,7 @@ header .header__div2 button img {
   width: 95%;
 }
 .modal__article .modal__article__section .modal__article__section__div1 img {
+  cursor: pointer;
   width: 1.5rem;
   margin: 0.5rem;
 }
@@ -1029,6 +1031,7 @@ header .header__div2 button img {
   flex-shrink: 0;
   color: #08a6e4;
   background-color: #fff;
+  cursor: pointer;
 }
 .aside3 .aside3__article1 .aside3__article1__section2 .aside3__article1__section2__div2 p {
   display: inline-block;
@@ -1058,6 +1061,7 @@ header .header__div2 button img {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1024px) {

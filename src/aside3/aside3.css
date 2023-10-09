@@ -76,6 +76,7 @@
   flex-shrink: 0;
   color: #08a6e4;
   background-color: #fff;
+  cursor: pointer;
 }
 .aside3 .aside3__article1 .aside3__article1__section2 .aside3__article1__section2__div2 p {
   display: inline-block;
@@ -105,6 +106,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1024px) {

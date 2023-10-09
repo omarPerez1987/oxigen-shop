@@ -44,10 +44,10 @@
     <!-- modal************************************************************** -->
     <article class="modal__article">
       <section id="modal-container" class="modal__article__section">
-        <div  class="modal__article__section__div1">
+        <div id="cross" class="modal__article__section__div1">
           <img src="./public/image/header/Frame 14.png" alt="" />
         </div>
-        <div id="cross" class="modal__article__section__div2">
+        <div class="modal__article__section__div2">
           <img src="./public/image/modal/bell.png" alt="">
           <h1>Subscribe to our newsletter</h1>
           <h3>and get a 10% discount in your store!</h3>
@@ -413,29 +413,29 @@
           </div>
         </section>
 
-        <section class="aside3__article1__section2">
+        <form id="myForm" class="aside3__article1__section2">
           <div class="aside3__article1__section2__div1">
-            <label for="Name">NAME</label>
-            <input type="text" id="Name" name="Name" />
-            <label for="email">EMAIL</label>
-            <input type="text" id="email" name="email" />
+              <label for="name">NAME</label>
+              <input type="text" id="name" required/>
+              <label for="email">EMAIL</label>
+              <input type="text" id="email" required/>
           </div>
           <div class="aside3__article1__section2__div2">
-            <input type="checkbox" name="check" id="check" />
-            <p>
-              I hereby give consent for my personal data included in my
-              application to be processed for the purposes of the recruitment
-              process under the European Parliament’s and Council of the
-              European Union Regulation on the Protection of Natural Persons as
-              of 27 April 2016, with regard to the processing of personal data
-              and on the free movement of such data, and repealing Directive
-              95/46/EC (Data Protection Directive)
-            </p>
+              <input type="checkbox" name="check" id="check" required/>
+              <p id="paragraph">
+                  I hereby give consent for my personal data included in my
+                  application to be processed for the purposes of the recruitment
+                  process under the European Parliament's and Council of the
+                  European Union Regulation on the Protection of Natural Persons as
+                  of 27 April 2016, with regard to the processing of personal data
+                  and on the free movement of such data, and repealing Directive
+                  95/46/EC (Data Protection Directive)
+              </p>
           </div>
           <div class="aside3__article1__section2__div3">
-            <button>Send</button>
+              <button id="submit" type="submit">Send</button>
           </div>
-        </section>
+      </form>
       </article>
     </aside>
     <!-- FOOTER ***************************************************************** -->

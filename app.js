@@ -2,7 +2,8 @@ import { initializeDropdown } from "./src/header/dropDown.js";
 import { updateProgressBar } from "./src/scroller/scroller.js";
 import { scrollToTop } from "./src/footer/buttonFooter/scrollToTop.js";
 import { Slider } from "./src/slider/slider.js"
-import { showModal } from "./src/modal/modal.js";
+import { openModalIfNeeded } from "./src/modal/modal.js";
+import { validateForm } from "./src/form/form.js";
 
 document.addEventListener("DOMContentLoaded", function () {
   
@@ -14,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const slider = new Slider('slider'); // instancia para la clase Slider
 
-  showModal()
+  openModalIfNeeded(); //funcion muestra/oculta modal en ./src/modal
 
+  validateForm()
 });
