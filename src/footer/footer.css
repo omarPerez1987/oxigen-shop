@@ -12,6 +12,8 @@ footer .footer__div1 {
   text-align: start;
 }
 footer .footer__div1 h2 {
+  margin-top: 1.28rem;
+  margin-bottom: 0.391rem;
   color: #08a6e4;
   font-family: Raleway;
   font-size: 1.2rem;
@@ -45,6 +47,7 @@ footer .footer__div2 .footer__div2__img1 {
   footer {
     margin-top: 3.688rem;
     display: flex;
+    align-items: center;
     justify-content: space-between;
   }
 }/*# sourceMappingURL=footer.css.map */

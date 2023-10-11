@@ -85,7 +85,7 @@
   margin-right: 0.3125rem;
   flex-shrink: 0;
   padding: 0px 0.125rem;
-  border: 0.03125rem solid #eb476e;
+  border: 1px solid #eb476e;
   color: #eb476e;
   text-align: center;
   font-family: Raleway;
@@ -99,7 +99,6 @@
   text-align: center;
 }
 .pricing-article .pricing-button button, .pricing-article3 .pricing-button button, .pricing-article3 .pricing-button3 button, .pricing-article2 .pricing-button button, .pricing-article2 .pricing-button2 button {
-  text-align: center;
   width: 9.375rem;
   height: 3.125rem;
   flex-shrink: 0;

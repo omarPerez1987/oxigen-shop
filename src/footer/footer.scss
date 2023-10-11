@@ -10,6 +10,8 @@ footer {
     margin-left: 5%;
     text-align: start;
     h2 {
+      margin-top: 1.28rem;
+      margin-bottom: 0.391rem;
       color: #08a6e4;
       font-family: Raleway;
       font-size: 1.2rem;
@@ -46,6 +48,7 @@ footer {
   footer {
     margin-top: 3.688rem;
     display: flex;
+    align-items: center;
     justify-content: space-between;
   }
 }

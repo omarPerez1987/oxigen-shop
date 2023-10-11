@@ -20,7 +20,7 @@
   height: 17.1875rem;
   max-height: 30.3125rem;
   transition: transform 0.3s ease;
-
+  
   .pricing-section {
     display: flex;
     align-items: center;
@@ -85,7 +85,7 @@
           margin-right: 0.3125rem;
           flex-shrink: 0;
           padding: 0px 0.125rem;
-          border: 0.03125rem solid #eb476e;
+          border: 1px solid #eb476e;
           color: #eb476e;
           text-align: center;
           font-family: Raleway;
@@ -101,7 +101,6 @@
     width: 100%;
     text-align: center;
     button {
-      text-align: center;
       width: 9.375rem;
       height: 3.125rem;
       flex-shrink: 0;
