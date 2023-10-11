@@ -87,7 +87,7 @@ header .header-logo button img {
   flex-shrink: 0;
 }
 
-.header.nav a:hover {
+.header-menu nav a:hover, header .header-logo nav a:hover {
   color: #000;
 }
 
@@ -126,7 +126,7 @@ header .header-logo button img {
     margin: 0px;
     display: flex;
     align-items: center;
-    height: 74px;
+    height: 4.625rem;
     border-bottom: 4px solid transparent;
   }
   header .header-menu button, header .header-logo button {
@@ -135,7 +135,7 @@ header .header-logo button img {
   header .header-logo {
     display: none;
   }
-  .header-nav a:hover {
+  .header-menu nav a:hover, header .header-logo nav a:hover {
     border-bottom: 4px solid #08a6e4;
   }
 }
@@ -276,7 +276,7 @@ header .header-logo button img {
 }
 
 /* MEDIA***************************************** */
-@media screen and (min-width: 426px) {
+@media screen and (min-width: 768px) {
   .banner .banner-title {
     width: auto;
   }
@@ -328,17 +328,18 @@ header .header-logo button img {
 }
 .section1 .card1 .div-images .div-images__mac, .section1 .card3 .div-images .div-images__mac, .section1 .card2 .div-images .div-images__mac {
   margin: 0 auto;
-  margin-bottom: 20px;
   position: absolute;
+  margin-bottom: 20px;
   margin-top: 2rem;
   display: inline-block;
   width: 50%;
+  max-width: 13.25rem;
   height: auto;
   z-index: 1;
 }
 .section1 .card1 .div-images .div-images__rombo, .section1 .card3 .div-images .div-images__rombo, .section1 .card2 .div-images .div-images__rombo {
-  display: none;
   position: relative;
+  display: none;
   margin-top: 0rem;
   margin-right: -40%;
   width: 40%;
@@ -346,8 +347,8 @@ header .header-logo button img {
   z-index: 0;
 }
 .section1 .card1 .div-images .div-images__elipse, .section1 .card3 .div-images .div-images__elipse, .section1 .card2 .div-images .div-images__elipse {
-  display: block;
   position: relative;
+  display: block;
   margin-top: 0rem;
   margin-right: -40%;
   width: 40%;
@@ -372,15 +373,8 @@ header .header-logo button img {
   font-weight: 400;
   line-height: 1.313rem;
 }
-.section1 .card1 .div-text span, .section1 .card3 .div-text span, .section1 .card2 .div-text span {
-  display: none;
-  max-width: 90%;
-  border-bottom: 2px solid #fb3b64;
-  width: 327.64px;
-  height: 2px;
-}
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 950px) {
   .section1 {
     padding: 6.563rem 0rem;
   }
@@ -440,8 +434,10 @@ header .header-logo button img {
   }
   .section1 .card1 .div-text span, .section1 .card3 .div-text span, .section1 .card2 .div-text span {
     display: block;
-    max-width: 20.438rem;
-    width: 70%;
+    max-width: 90%;
+    border-bottom: 2px solid #fb3b64;
+    width: 327.64px;
+    height: 2px;
   }
 }
 .card2 .div2-images {
@@ -488,17 +484,8 @@ header .header-logo button img {
   font-weight: 400;
   line-height: 21px;
 }
-.card2 .div2-text span {
-  display: none;
-  margin-left: 1.2rem;
-  border-bottom: 2px solid #08a6e4;
-  width: 327.64px;
-  max-width: 90%;
-  height: 2px;
-  flex-shrink: 0;
-}
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 950px) {
   .section1 .card2 {
     display: flex;
     flex-direction: row;
@@ -528,27 +515,29 @@ header .header-logo button img {
   .section1 .card2 .div2-text {
     margin: 0;
     height: 100%;
-    width: 35%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: start;
   }
   .section1 .card2 .div2-text h3 {
-    width: 70%;
-    margin: 15% 0 1.875rem 0;
+    width: 50%;
+    margin: 15% 0 1.875rem 3rem;
     font-size: 2.25rem;
   }
   .section1 .card2 .div2-text p {
-    margin: 0 1.25rem 3.125rem 0;
-    width: 95%;
+    margin: 0 1.25rem 3.125rem 3rem;
+    width: 80%;
     font-size: 1rem;
   }
   .section1 .card2 .div2-text span {
-    margin: 0;
-    max-width: 20.438rem;
-    width: 70%;
+    margin-left: 3rem;
     display: block;
+    border-bottom: 2px solid #08a6e4;
+    width: 327.64px;
+    max-width: 90%;
+    height: 2px;
   }
 }
 .card3 .div3-text {
@@ -596,7 +585,7 @@ header .header-logo button img {
   flex-shrink: 0;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 950px) {
   .section1 .card3 {
     display: flex;
     flex-direction: row;
@@ -992,10 +981,10 @@ header .header-logo button img {
   line-height: normal;
 }
 
-@media screen and (min-width: 64rem) {
+@media screen and (min-width: 1000px) {
   .contact .contact-article {
     display: flex;
-    width: 70%;
+    width: 90%;
     max-width: 56rem;
   }
   .contact .contact-article .contact-section {

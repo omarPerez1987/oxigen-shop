@@ -104,10 +104,10 @@
   line-height: normal;
 }
 
-@media screen and (min-width: 64rem) {
+@media screen and (min-width: 1000px) {
   .contact .contact-article {
     display: flex;
-    width: 70%;
+    width: 90%;
     max-width: 56rem;
   }
   .contact .contact-article .contact-section {

@@ -19,17 +19,18 @@
 }
 .section1 .card1 .div-images .div-images__mac, .section1 .card3 .div-images .div-images__mac, .section1 .card2 .div-images .div-images__mac {
   margin: 0 auto;
-  margin-bottom: 20px;
   position: absolute;
+  margin-bottom: 20px;
   margin-top: 2rem;
   display: inline-block;
   width: 50%;
+  max-width: 13.25rem;
   height: auto;
   z-index: 1;
 }
 .section1 .card1 .div-images .div-images__rombo, .section1 .card3 .div-images .div-images__rombo, .section1 .card2 .div-images .div-images__rombo {
-  display: none;
   position: relative;
+  display: none;
   margin-top: 0rem;
   margin-right: -40%;
   width: 40%;
@@ -37,8 +38,8 @@
   z-index: 0;
 }
 .section1 .card1 .div-images .div-images__elipse, .section1 .card3 .div-images .div-images__elipse, .section1 .card2 .div-images .div-images__elipse {
-  display: block;
   position: relative;
+  display: block;
   margin-top: 0rem;
   margin-right: -40%;
   width: 40%;
@@ -63,15 +64,8 @@
   font-weight: 400;
   line-height: 1.313rem;
 }
-.section1 .card1 .div-text span, .section1 .card3 .div-text span, .section1 .card2 .div-text span {
-  display: none;
-  max-width: 90%;
-  border-bottom: 2px solid #fb3b64;
-  width: 327.64px;
-  height: 2px;
-}
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 950px) {
   .section1 {
     padding: 6.563rem 0rem;
   }
@@ -131,8 +125,10 @@
   }
   .section1 .card1 .div-text span, .section1 .card3 .div-text span, .section1 .card2 .div-text span {
     display: block;
-    max-width: 20.438rem;
-    width: 70%;
+    max-width: 90%;
+    border-bottom: 2px solid #fb3b64;
+    width: 327.64px;
+    height: 2px;
   }
 }
 .card2 .div2-images {
@@ -179,17 +175,8 @@
   font-weight: 400;
   line-height: 21px;
 }
-.card2 .div2-text span {
-  display: none;
-  margin-left: 1.2rem;
-  border-bottom: 2px solid #08a6e4;
-  width: 327.64px;
-  max-width: 90%;
-  height: 2px;
-  flex-shrink: 0;
-}
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 950px) {
   .section1 .card2 {
     display: flex;
     flex-direction: row;
@@ -219,27 +206,29 @@
   .section1 .card2 .div2-text {
     margin: 0;
     height: 100%;
-    width: 35%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: start;
   }
   .section1 .card2 .div2-text h3 {
-    width: 70%;
-    margin: 15% 0 1.875rem 0;
+    width: 50%;
+    margin: 15% 0 1.875rem 3rem;
     font-size: 2.25rem;
   }
   .section1 .card2 .div2-text p {
-    margin: 0 1.25rem 3.125rem 0;
-    width: 95%;
+    margin: 0 1.25rem 3.125rem 3rem;
+    width: 80%;
     font-size: 1rem;
   }
   .section1 .card2 .div2-text span {
-    margin: 0;
-    max-width: 20.438rem;
-    width: 70%;
+    margin-left: 3rem;
     display: block;
+    border-bottom: 2px solid #08a6e4;
+    width: 327.64px;
+    max-width: 90%;
+    height: 2px;
   }
 }
 .card3 .div3-text {
@@ -287,7 +276,7 @@
   flex-shrink: 0;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 950px) {
   .section1 .card3 {
     display: flex;
     flex-direction: row;
