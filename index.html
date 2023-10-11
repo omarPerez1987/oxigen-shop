@@ -6,8 +6,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="./src/styles.css" />
     <title>OXIGENShop</title>
@@ -15,19 +15,20 @@
   <body>
     <!-- header******************************************************** -->
     <header>
-      <div class="header__div1">
+      <div class="header-menu">
         <h1>OXYGENShop</h1>
         <button>
           <img src="./public/image/header/Frame 14.png" alt="" />
         </button>
-        <ul>
+        <nav class="header-nav">
           <a href="#">Why Us</a>
           <a href="#">Benefits</a>
           <a href="#">Prices</a>
           <a href="#">Contact</a>
-        </ul>
+        </nav>
       </div>
-      <div class="header__div2">
+
+      <div class="header-logo">
         <h1>OXYGENShop</h1>
         <button>
           <img src="./public/image/header/Menu.png" alt="menu" />
@@ -38,84 +39,101 @@
     <!-- banner ********************************************************* -->
 
     <main class="banner">
-      <h2>Sell More!</h2>
-      <h3>Open shop on our platform and increase your sales</h3>
-      <button>Open your shop</button>
+      <section class="banner-title">
+        <h2>Sell More!</h2>
+        <h3>Open shop on our platform and increase your sales</h3>
+        <button>Open your shop</button>
+      </section>
 
       <section class="banner__image">
         <img src="./public/image/banner/Background.png" alt="setup mesa pc" />
       </section>
 
-      <article class="banner__footer">
+      <article class="banner-footer">
         <h3>The most popular sales platform in country</h3>
-        <div>
-          <section>
-            <img
-              class="banner__footer__ellipse"
-              src="./public/image/banner/banner-footer/Ellipse 1.png"
-              alt="esfera roja"
-            />
-            <img
-              src="./public/image/banner/banner-footer/Person 2.png"
-              alt="icono persona"
-            />
+        <section class="container-section">
+          <section class="banner-footer__container">
+            <div class="banner-footer__images">
+              <img
+                class="banner-footer__ellipse"
+                src="./public/image/banner/banner-footer/Ellipse 1.png"
+                alt="esfera roja"
+              />
+              <img
+                class="banner-footer__img"
+                width="44px"
+                height="52px"
+                src="./public/image/banner/banner-footer/Person 2.png"
+                alt="icono persona"
+              />
+            </div>
             <p>100000+</p>
             <span>daily entries</span>
           </section>
 
-          <section>
-            <img
-              class="banner__footer__ellipse"
-              src="./public/image/banner/banner-footer/Ellipse 2.png"
-              alt="esfera azul"
-            />
-            <img
-              src="./public/image/banner/banner-footer/Eye 2.png"
-              alt="icono ojo"
-            />
+          <section class="banner-footer__container">
+            <div class="banner-footer__images">
+              <img
+                class="banner-footer__ellipse"
+                src="./public/image/banner/banner-footer/Ellipse 2.png"
+                alt="esfera azul"
+              />
+              <img
+                class="banner-footer__img"
+                width="66px"
+                height="36.5px"
+                src="./public/image/banner/banner-footer/Eye 2.png"
+                alt="icono ojo"
+              />
+            </div>
             <p>2000000+</p>
             <span>seen products every day</span>
           </section>
 
-          <section>
-            <img
-              class="banner__footer__ellipse"
-              src="./public/image/banner/banner-footer/Ellipse 3.png"
-              alt="esfera verde"
-            />
-            <img
-              src="./public/image/banner/banner-footer/Catalog 2.png"
-              alt="icono catalogo"
-            />
+          <section class="banner-footer__container">
+            <div class="banner-footer__images">
+              <img
+                class="banner-footer__ellipse"
+                src="./public/image/banner/banner-footer/Ellipse 3.png"
+                alt="esfera verde"
+              />
+              <img
+                class="banner-footer__img"
+                width="52px"
+                height="48px"
+                src="./public/image/banner/banner-footer/Catalog 2.png"
+                alt="icono catalogo"
+              />
+            </div>
             <p>10000+</p>
             <span>added posts daily</span>
           </section>
-        </div>
+        </section>
       </article>
     </main>
 
-    <!-- aside1**************************************************** -->
+    <!-- section1**************************************************** -->
 
-    <aside class="aside1">
-      <article class="aside1__article1">
-        <div class="aside1__article1__div1">
+    <section class="section1">
+      <article class="card1">
+        <div class="div-images">
           <img
-            class="aside1__article1__mac"
+            class="div-images__mac"
             src="./public/image/aside1/Macbook2 1.png"
             alt="macbook 2"
           />
           <img
-            class="aside1__article1__rombo"
+            class="div-images__rombo"
             src="./public/image/aside1/Rectange 30.png"
             alt="rombo rojo"
           />
           <img
-            class="aside1__article1__elipse"
+            class="div-images__elipse"
             src="./public/image/aside1/Frame 11.png"
             alt="circulo rojo"
           />
         </div>
-        <div class="aside1__article1__div2">
+        <div class="div-text">
           <h3>Be always first</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -125,21 +143,21 @@
           <span></span>
         </div>
       </article>
-
-      <article class="aside1__article2">
-        <div class="aside1__article2__div1">
+      <!-- ------------- -->
+      <article class="card2">
+        <div class="div2-images">
           <img
-            class="aside1__article2__div1__iphone2"
+            class="div2-images__iphone2"
             src="./public/image/aside1/iPhone2 1.png"
             alt="iphone 2"
           />
           <img
-            class="aside1__article2__div1__elipse-azul"
+            class="div2-images__elipse-azul"
             src="./public/image/aside1/Ellipse 3 (1).png"
             alt="elipse azul"
           />
         </div>
-        <div class="aside1__article2__div2">
+        <div class="div2-text">
           <h3>Your shop is where you are!</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -149,9 +167,9 @@
           <span></span>
         </div>
       </article>
-
-      <article class="aside1__article3">
-        <div class="aside1__article3__div1">
+      <!-- -------------- -->
+      <article class="card3">
+        <div class="div3-text">
           <h3>Increase recognition your brand!</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -160,22 +178,22 @@
           </p>
           <span></span>
         </div>
-        <div class="aside1__article3__div2">
+        <div class="div3-images">
           <img
             src="./public/image/aside1/Trumpet 1.png"
             alt="trompeta de fiesta"
           />
         </div>
       </article>
-    </aside>
+    </section>
 
     <!-- ASIDE2 ****************************************************************** -->
-    <aside class="aside2">
+    <section class="pricing">
       <h3>Pricing</h3>
-      <section class="aside2__container">
-        <article class="aside2__article1">
-          <section class="aside2__article1__section">
-            <div class="aside2__article1__section__div1">
+      <section class="pricing-container">
+        <article class="pricing-article">
+          <section class="pricing-section">
+            <div class="pricing-text">
               <h4>Basic</h4>
               <h5>$0</h5>
             </div>
@@ -211,14 +229,14 @@
               </li>
             </ul>
           </section>
-          <div class="aside2__article1__div2">
+          <div class="pricing-button">
             <button>Begin</button>
           </div>
         </article>
 
-        <article class="aside2__article2">
-          <section class="aside2__article2__section">
-            <div class="aside2__article2__section__div1">
+        <article class="pricing-article2">
+          <section class="pricing-section2">
+            <div class="pricing-text2">
               <h4>Profesional</h4>
               <h5>$25</h5>
               <h6>Limited offer</h6>
@@ -258,14 +276,14 @@
               </li>
             </ul>
           </section>
-          <div class="aside2__article2__div2">
+          <div class="pricing-button2">
             <button>Begin</button>
           </div>
         </article>
 
-        <article class="aside2__article3">
-          <section class="aside2__article3__section">
-            <div class="aside2__article3__section__div1">
+        <article class="pricing-article3">
+          <section class="pricing-section3">
+            <div class="pricing-text3">
               <h4>Premium</h4>
               <h5>$60</h5>
               <h6>Limited offer</h6>
@@ -308,28 +326,28 @@
               </li>
             </ul>
           </section>
-          <div class="aside2__article3__div2">
+          <div class="pricing-button3">
             <button>Begin</button>
           </div>
         </article>
       </section>
-    </aside>
+    </section>
 
     <!-- ASIDE3 ******************************************************************* -->
-    <aside class="aside3">
-      <article class="aside3__article1">
-        <section class="aside3__article1__section1">
+    <aside class="contact">
+      <article class="contact-article">
+        <section class="contact-section">
           <h4>Any questions?</h4>
           <h5>Leave your email address or call us!</h5>
           <div>
-            <div class="aside3__article1__section1__div1">
+            <div class="contact-email">
               <img
                 src="./public/image/aside3/Mail Icon 2.png"
                 alt="icono mail"
               />
               <p>info@bestshop.xyz</p>
             </div>
-            <div class="aside3__article1__section1__div2">
+            <div class="contact-phone">
               <img
                 src="./public/image/aside3/Phone Icon 2.png"
                 alt="icono phone"
@@ -339,14 +357,14 @@
           </div>
         </section>
 
-        <section class="aside3__article1__section2">
-          <div class="aside3__article1__section2__div1">
+        <section class="form-section">
+          <div class="form">
             <label for="Name">NAME</label>
             <input type="text" id="Name" name="Name" />
             <label for="email">EMAIL</label>
             <input type="text" id="email" name="email" />
           </div>
-          <div class="aside3__article1__section2__div2">
+          <div class="form-check">
             <input type="checkbox" name="check" id="check" />
             <p>
               I hereby give consent for my personal data included in my
@@ -358,7 +376,7 @@
               95/46/EC (Data Protection Directive)
             </p>
           </div>
-          <div class="aside3__article1__section2__div3">
+          <div class="form-send">
             <button>Send</button>
           </div>
         </section>
