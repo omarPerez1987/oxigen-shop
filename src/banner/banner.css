@@ -146,6 +146,9 @@
   .banner .banner-title h3 ´ {
     width: 100%;
   }
+  .banner .banner-title button {
+    margin-top: 0;
+  }
   .banner .banner-footer {
     display: flex;
     flex-direction: column;
