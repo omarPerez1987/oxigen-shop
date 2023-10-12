@@ -16,70 +16,78 @@ body {
 
 header {
   width: 100%;
-  height: 70px;
+  text-align: center;
+  height: 4.4rem;
   background: #fff;
-  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.29);
   z-index: 1;
 }
-header .header__div1, header .header__div2 {
-  width: 100%;
+header .header-menu, header .header-logo {
+  display: none;
 }
-header .header__div1 h1, header .header__div2 h1 {
-  margin: 17px 50px 0px 25px;
+header .header-menu h1, header .header-logo h1 {
+  margin: 1rem 0rem 1rem 1.5rem;
   display: inline-block;
-  height: 37px;
-  width: 60%;
+  width: 70%;
+  height: auto;
   color: #08a6e4;
   font-family: Raleway;
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 300;
-  line-height: 37px; /* 115.625% */
+  line-height: 2.3rem;
+  text-align: start;
 }
-header .header__div1 ul, header .header__div2 ul {
+header .header-menu button, header .header-logo button {
+  width: 10%;
+  margin: 1.68rem 1.68rem 2rem 0rem;
+  margin-right: 1.7rem;
+  border: 0;
+  background-color: transparent;
+  text-align: end;
+  cursor: pointer;
+}
+header .header-menu button img, header .header-logo button img {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+}
+header .header-menu .header-nav, header .header-logo .header-nav {
+  margin-top: -1.5rem;
   display: flex;
   flex-direction: column;
-  padding-top: 40px;
+  padding-top: 2.5rem;
   width: 100%;
-  height: 175.65px;
+  height: 10.98rem;
   flex-shrink: 0;
   background: #fff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.29);
 }
-header .header__div1 ul a, header .header__div2 ul a {
-  margin-left: 25px;
-  margin-bottom: 14px;
+header .header-menu .header-nav a, header .header-logo .header-nav a {
+  margin-left: 1.56rem;
+  margin-bottom: 0.875rem;
   text-align: start;
   color: #a5a5a5;
   font-family: Open Sans;
-  font-size: 11px;
+  font-size: 0.68rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 15px; /* 136.364% */
-  letter-spacing: 3.28px;
+  line-height: 1rem;
+  letter-spacing: 0.205rem;
   text-transform: uppercase;
   text-decoration: none;
-  z-index: 2;
 }
-header .header__div1 button, header .header__div2 button {
-  display: inline-block;
-  border: 0;
-  background-color: transparent;
-  cursor: pointer;
+header .header-logo {
+  display: block;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.29);
 }
-header .header__div1 button img, header .header__div2 button img {
-  width: 20px;
-  height: 15px;
-  flex-shrink: 0;
-}
-header .header__div2 button img {
+header .header-logo button img {
   display: inline-block;
   width: 15px;
   height: 15px;
   flex-shrink: 0;
 }
 
-.header__div1 ul a:hover, header .header__div2 ul a:hover {
+.header-menu nav a:hover, header .header-logo nav a:hover {
   color: #000;
 }
 
@@ -87,17 +95,18 @@ header .header__div2 button img {
   header {
     display: flex;
     justify-content: space-between;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.29);
   }
-  header .header__div1, header .header__div2 {
+  header .header-menu, header .header-logo {
     display: flex;
     align-items: center;
     width: 100%;
     height: 100%;
   }
-  header .header__div1 h1, header .header__div2 h1 {
+  header .header-menu h1, header .header-logo h1 {
     margin: 0px 0px 0px 10%;
   }
-  header .header__div1 ul, header .header__div2 ul {
+  header .header-menu .header-nav, header .header-logo .header-nav {
     display: flex;
     flex-direction: row;
     margin: 0px;
@@ -113,20 +122,20 @@ header .header__div2 button img {
     box-shadow: none;
     background-color: transparent;
   }
-  header .header__div1 ul a, header .header__div2 ul a {
+  header .header-menu .header-nav a, header .header-logo .header-nav a {
     margin: 0px;
     display: flex;
     align-items: center;
-    height: 74px;
+    height: 4.625rem;
     border-bottom: 4px solid transparent;
   }
-  header .header__div1 button, header .header__div2 button {
+  header .header-menu button, header .header-logo button {
     display: none;
   }
-  header .header__div2 {
+  header .header-logo {
     display: none;
   }
-  .header__div1 ul a:hover, header .header__div2 ul a:hover {
+  .header-menu nav a:hover, header .header-logo nav a:hover {
     border-bottom: 4px solid #08a6e4;
   }
 }
@@ -216,43 +225,48 @@ header .header__div2 button img {
 }
 .banner {
   align-items: center;
-  margin-top: 130px;
+  margin-top: 6.25rem;
   margin-bottom: 50px;
   width: 100%;
 }
-.banner h2 {
+.banner .banner-title {
   margin: 0 auto;
+  width: 19.375rem;
+  height: 13.31rem;
+  text-align: center;
+}
+.banner .banner-title h2 {
   display: block;
   color: #000;
-  text-align: center;
   font-family: Raleway;
   font-size: 2rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 57px; /* 116.327% */
+  line-height: normal;
+  margin-bottom: 1.25rem;
 }
-.banner h3 {
-  display: block;
+.banner .banner-title h3 {
   margin: 0 auto;
-  margin-top: 20px;
+  width: 80%;
+  height: 3.56rem;
+  display: block;
   color: #000;
-  text-align: center;
   font-family: Open Sans;
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.1rem; /* 137.5% */
+  line-height: 1.1rem;
 }
-.banner button {
+.banner .banner-title button {
   display: block;
   margin: 0 auto;
-  margin-top: 38px;
-  width: 90%;
-  max-width: 440px;
-  height: 67px;
+  margin-top: 1.75rem;
+  width: 100%;
+  max-width: 27.5rem;
+  height: 4.188rem;
   flex-shrink: 0;
   cursor: pointer;
-  border-radius: 40px;
+  border-radius: 2.5rem;
   border: none;
   background: #08a6e4;
   box-shadow: 5px 10px 14px 0px rgba(7, 172, 230, 0.29);
@@ -262,7 +276,7 @@ header .header__div2 button img {
   font-size: 1rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 22px; /* 137.5% */
+  line-height: 1.37rem;
 }
 
 .banner__image {
@@ -276,338 +290,366 @@ header .header__div2 button img {
 .banner__image img {
   display: block;
   margin: 0 auto;
-  margin-top: 51px;
+  margin-top: 3.18rem;
   width: auto;
   max-width: 100%;
-  height: 267px;
-  flex-shrink: 0;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  height: 16.68rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.banner__footer {
-  margin-top: 13px;
+.banner-footer {
+  margin-top: 0.8125rem;
   width: 100%;
-  gap: 183px;
 }
-.banner__footer h3 {
+.banner-footer h3 {
+  margin: 0 auto;
   width: 90%;
-  max-width: 800px;
+  max-width: 50rem;
   color: #000;
   text-align: center;
   font-family: Raleway;
   font-size: 2rem;
   font-style: normal;
   font-weight: 300;
-  line-height: 2rem; /* 116.667% */
-  margin-bottom: 25px;
+  line-height: 2rem;
+  margin-bottom: 1.5625rem;
 }
-.banner__footer section {
+.banner-footer .banner-footer__container {
   margin: 0 auto;
-  width: 163px;
-  height: 168px;
+  width: 8rem;
+  height: 10.5rem;
   text-align: center;
+  margin-bottom: 1.56rem;
 }
-.banner__footer section .banner__footer__ellipse {
-  margin: 0 auto;
-  width: 62.71px;
-  height: 62.71px;
-  flex-shrink: 0;
-  margin-right: -25%;
-  margin-bottom: -5%;
+.banner-footer .banner-footer__container .banner-footer__images {
+  display: flex;
+  justify-content: center;
+  height: 4rem;
 }
-.banner__footer section p {
-  margin-top: 15px;
-  margin-bottom: 19px;
+.banner-footer .banner-footer__container .banner-footer__images .banner-footer__ellipse {
+  position: absolute;
+  width: 3.94rem;
+  height: 3.94rem;
+  min-height: 3.94rem;
+}
+.banner-footer .banner-footer__container .banner-footer__images .banner-footer__img {
+  position: relative;
+  top: 0.3rem;
+  left: 1.3rem;
+}
+.banner-footer .banner-footer__container p {
+  margin-top: 1rem;
+  width: auto;
+  margin-bottom: 1.1875rem;
   color: #000;
-  text-align: center;
   font-family: Raleway;
   font-size: 1.2rem;
   font-style: normal;
   font-weight: 900;
-  line-height: 1.4rem; /* 120% */
-  letter-spacing: 5.96px;
+  line-height: 1.4rem;
+  letter-spacing: 0.3725rem;
 }
-.banner__footer section span {
+.banner-footer .banner-footer__container span {
   color: #a5a5a5;
-  text-align: center;
   font-family: Raleway;
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.2rem; /* 117.647% */
+  line-height: 1.1765rem;
 }
 
-@media screen and (min-width: 426px) {
-  .banner h2 {
-    font-size: 49px;
+/* MEDIA***************************************** */
+@media screen and (min-width: 768px) {
+  .banner .banner-title {
+    width: auto;
   }
-  .banner .banner__footer {
+  .banner .banner-title h2 {
+    font-size: 3.06rem;
+  }
+  .banner .banner-title h3 {
+    width: 100%;
+  }
+  .banner .banner-title button {
+    margin-top: 0;
+  }
+  .banner .banner-footer {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  .banner .banner__footer h3 {
+  .banner .banner-footer h3 {
     font-weight: 400;
   }
-  .banner .banner__footer div {
+  .banner .banner-footer .container-section {
+    margin-top: 6.438rem;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 184px;
-  }
-  .banner .banner__footer div section {
-    margin: 0;
+    gap: 11.5rem;
+    max-width: 90%;
+    margin-bottom: 8.25rem;
   }
 }
-.aside1 {
+.section1 {
   width: 100%;
-  height: auto;
+  height: 87.229rem;
   background: #f7f7f7;
   padding-bottom: 2rem;
 }
-.aside1 .aside1__article1, .aside1 .aside1__article3, .aside1 .aside1__article2 {
+.section1 .card1, .section1 .card3, .section1 .card2 {
   margin: 0 auto;
-  margin-top: 42px;
-  width: 90%;
-  height: 370px;
-  max-width: 1124px;
-  height: auto;
-  flex-shrink: 0;
-  border-radius: 5px;
+  margin-top: 2.62rem;
+  width: 19.625rem;
+  height: 23.125rem;
+  border-radius: 0.313rem;
   border: 1px solid #e8e9ed;
   background: #fff;
 }
-.aside1 .aside1__article1 .aside1__article1__div1, .aside1 .aside1__article3 .aside1__article1__div1, .aside1 .aside1__article2 .aside1__article1__div1 {
+.section1 .card1 .div-images, .section1 .card3 .div-images, .section1 .card2 .div-images {
   display: flex;
   justify-content: center;
 }
-.aside1 .aside1__article1 .aside1__article1__div1 .aside1__article1__mac, .aside1 .aside1__article3 .aside1__article1__div1 .aside1__article1__mac, .aside1 .aside1__article2 .aside1__article1__div1 .aside1__article1__mac {
+.section1 .card1 .div-images .div-images__mac, .section1 .card3 .div-images .div-images__mac, .section1 .card2 .div-images .div-images__mac {
   margin: 0 auto;
-  margin-bottom: 20px;
   position: absolute;
+  margin-bottom: 20px;
   margin-top: 2rem;
   display: inline-block;
   width: 50%;
+  max-width: 13.25rem;
   height: auto;
-  flex-shrink: 0;
   z-index: 1;
 }
-.aside1 .aside1__article1 .aside1__article1__div1 .aside1__article1__elipse, .aside1 .aside1__article3 .aside1__article1__div1 .aside1__article1__elipse, .aside1 .aside1__article2 .aside1__article1__div1 .aside1__article1__elipse {
-  display: block;
+.section1 .card1 .div-images .div-images__rombo, .section1 .card3 .div-images .div-images__rombo, .section1 .card2 .div-images .div-images__rombo {
   position: relative;
-  margin-top: 0rem;
-  margin-right: -40%;
-  width: 40%;
-  height: auto;
-  flex-shrink: 0;
-  z-index: 0;
-}
-.aside1 .aside1__article1 .aside1__article1__div1 .aside1__article1__rombo, .aside1 .aside1__article3 .aside1__article1__div1 .aside1__article1__rombo, .aside1 .aside1__article2 .aside1__article1__div1 .aside1__article1__rombo {
   display: none;
-  position: relative;
   margin-top: 0rem;
   margin-right: -40%;
   width: 40%;
   height: auto;
-  flex-shrink: 0;
   z-index: 0;
 }
-.aside1 .aside1__article1 .aside1__article1__div2 h3, .aside1__article3 .aside1 .aside1__article1 .aside1__article3__div1 h3, .aside1 .aside1__article3 .aside1__article1__div2 h3, .aside1 .aside1__article3 .aside1__article3__div1 h3, .aside1 .aside1__article2 .aside1__article1__div2 h3, .aside1__article3 .aside1 .aside1__article2 .aside1__article3__div1 h3 {
-  margin: 1.8rem 0rem 20% 1.2rem;
-  width: 90%;
+.section1 .card1 .div-images .div-images__elipse, .section1 .card3 .div-images .div-images__elipse, .section1 .card2 .div-images .div-images__elipse {
+  position: relative;
+  display: block;
+  margin-top: 0rem;
+  margin-right: -40%;
+  width: 40%;
+  height: auto;
+  z-index: 0;
+}
+.section1 .card1 .div-text h3, .section1 .card3 .div-text h3, .section1 .card2 .div-text h3 {
+  margin: 2.3rem 0rem 0rem 1.2rem;
+  width: auto;
+  height: 4.5rem;
   color: #000;
   font-family: Raleway;
-  font-size: 30px;
-  font-style: normal;
+  font-size: 1.87rem;
   font-weight: 400;
-  line-height: normal;
 }
-.aside1 .aside1__article1 .aside1__article1__div2 p, .aside1__article3 .aside1 .aside1__article1 .aside1__article3__div1 p, .aside1 .aside1__article3 .aside1__article1__div2 p, .aside1 .aside1__article3 .aside1__article3__div1 p, .aside1 .aside1__article2 .aside1__article1__div2 p, .aside1__article3 .aside1 .aside1__article2 .aside1__article3__div1 p {
-  margin-left: 1.2rem;
-  margin-bottom: 1rem;
-  width: 90%;
+.section1 .card1 .div-text p, .section1 .card3 .div-text p, .section1 .card2 .div-text p {
+  margin: 0.625rem 0rem 0rem 1.2rem;
+  width: 78%;
   color: #000;
   font-family: Open Sans;
-  font-size: 14px;
-  font-style: normal;
+  font-size: 0.875rem;
   font-weight: 400;
-  line-height: 21px; /* 150% */
-}
-.aside1 .aside1__article1 .aside1__article1__div2 span, .aside1__article3 .aside1 .aside1__article1 .aside1__article3__div1 span, .aside1 .aside1__article3 .aside1__article1__div2 span, .aside1 .aside1__article3 .aside1__article3__div1 span, .aside1 .aside1__article2 .aside1__article1__div2 span, .aside1__article3 .aside1 .aside1__article2 .aside1__article3__div1 span {
-  display: none;
-  margin-left: 1.2rem;
-  max-width: 90%;
-  border-bottom: 2px solid #fb3b64;
-  width: 327.64px;
-  height: 2px;
-  flex-shrink: 0;
+  line-height: 1.313rem;
 }
 
-@media screen and (min-width: 425px) {
-  .aside1 {
-    padding: 105px 0px;
+@media screen and (min-width: 950px) {
+  .section1 {
+    padding: 6.563rem 0rem;
   }
-  .aside1 .aside1__article1, .aside1 .aside1__article3, .aside1 .aside1__article2 {
+  .section1 .card1, .section1 .card3, .section1 .card2 {
     display: flex;
     flex-direction: row-reverse;
-    align-items: center;
-    height: 370px;
+    align-items: start;
+    justify-content: center;
+    width: 90%;
+    height: 23.125rem;
+    max-width: 70.25rem;
+    margin-bottom: 2.563rem;
   }
-  .aside1 .aside1__article1 .aside1__article1__div1, .aside1 .aside1__article3 .aside1__article1__div1, .aside1 .aside1__article2 .aside1__article1__div1 {
+  .section1 .card1 .div-images, .section1 .card3 .div-images, .section1 .card2 .div-images {
     width: 50%;
     height: 100%;
     display: flex;
     align-items: center;
   }
-  .aside1 .aside1__article1 .aside1__article1__div1 .aside1__article1__mac, .aside1 .aside1__article3 .aside1__article1__div1 .aside1__article1__mac, .aside1 .aside1__article2 .aside1__article1__div1 .aside1__article1__mac {
+  .section1 .card1 .div-images .div-images__mac, .section1 .card3 .div-images .div-images__mac, .section1 .card2 .div-images .div-images__mac {
+    margin-top: 7.063rem;
     width: 30%;
     max-width: 386px;
     height: auto;
     flex-shrink: 0;
   }
-  .aside1 .aside1__article1 .aside1__article1__div1 .aside1__article1__rombo, .aside1 .aside1__article3 .aside1__article1__div1 .aside1__article1__rombo, .aside1 .aside1__article2 .aside1__article1__div1 .aside1__article1__rombo {
+  .section1 .card1 .div-images .div-images__rombo, .section1 .card3 .div-images .div-images__rombo, .section1 .card2 .div-images .div-images__rombo {
+    margin-top: 2.375rem;
     display: block;
     width: 40%;
     height: auto;
     flex-shrink: 0;
     margin-top: -10%;
   }
-  .aside1 .aside1__article1 .aside1__article1__div1 .aside1__article1__elipse, .aside1 .aside1__article3 .aside1__article1__div1 .aside1__article1__elipse, .aside1 .aside1__article2 .aside1__article1__div1 .aside1__article1__elipse {
+  .section1 .card1 .div-images .div-images__elipse, .section1 .card3 .div-images .div-images__elipse, .section1 .card2 .div-images .div-images__elipse {
     display: none;
   }
-  .aside1 .aside1__article1 .aside1__article1__div2, .aside1__article3 .aside1 .aside1__article1 .aside1__article3__div1, .aside1 .aside1__article3 .aside1__article1__div2, .aside1 .aside1__article3 .aside1__article3__div1, .aside1 .aside1__article2 .aside1__article1__div2, .aside1__article3 .aside1 .aside1__article2 .aside1__article3__div1 {
-    height: 100%;
+  .section1 .card1 .div-text, .section1 .card3 .div-text, .section1 .card2 .div-text {
+    margin-top: 5.68rem;
+    margin-left: 2.188rem;
+    height: 11.75rem;
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
   }
-  .aside1 .aside1__article1 .aside1__article1__div2 h3, .aside1__article3 .aside1 .aside1__article1 .aside1__article3__div1 h3, .aside1 .aside1__article3 .aside1__article1__div2 h3, .aside1 .aside1__article3 .aside1__article3__div1 h3, .aside1 .aside1__article2 .aside1__article1__div2 h3, .aside1__article3 .aside1 .aside1__article2 .aside1__article3__div1 h3 {
-    margin: 0px 0px 30px 1.2rem;
+  .section1 .card1 .div-text h3, .section1 .card3 .div-text h3, .section1 .card2 .div-text h3 {
+    margin: 0 0 1.875rem 0;
     font-size: 36px;
   }
-  .aside1 .aside1__article1 .aside1__article1__div2 p, .aside1__article3 .aside1 .aside1__article1 .aside1__article3__div1 p, .aside1 .aside1__article3 .aside1__article1__div2 p, .aside1 .aside1__article3 .aside1__article3__div1 p, .aside1 .aside1__article2 .aside1__article1__div2 p, .aside1__article3 .aside1 .aside1__article2 .aside1__article3__div1 p {
+  .section1 .card1 .div-text p, .section1 .card3 .div-text p, .section1 .card2 .div-text p {
+    width: 70%;
+    margin: 0 0 3.125rem 0;
     font-size: 16px;
     margin-bottom: 50px;
   }
-  .aside1 .aside1__article1 .aside1__article1__div2 span, .aside1__article3 .aside1 .aside1__article1 .aside1__article3__div1 span, .aside1 .aside1__article3 .aside1__article1__div2 span, .aside1 .aside1__article3 .aside1__article3__div1 span, .aside1 .aside1__article2 .aside1__article1__div2 span, .aside1__article3 .aside1 .aside1__article2 .aside1__article3__div1 span {
+  .section1 .card1 .div-text span, .section1 .card3 .div-text span, .section1 .card2 .div-text span {
     display: block;
+    max-width: 90%;
+    border-bottom: 2px solid #fb3b64;
+    width: 327.64px;
+    height: 2px;
   }
 }
-.aside1__article2 .aside1__article2__div1 {
+.card2 .div2-images {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.aside1__article2 .aside1__article2__div1 .aside1__article2__div1__iphone2 {
+.card2 .div2-images .div2-images__iphone2 {
   position: relative;
-  margin-top: 1.2rem;
-  margin-left: 15%;
-  width: 50%;
+  margin-top: 1.188rem;
+  margin-left: 8%;
+  width: 55%;
   height: auto;
   flex-shrink: 0;
   z-index: 1;
 }
-.aside1__article2 .aside1__article2__div1 .aside1__article2__div1__elipse-azul {
+.card2 .div2-images .div2-images__elipse-azul {
   position: absolute;
-  margin-top: 0.8rem;
-  width: 40%;
+  width: 8.188rem;
   height: auto;
   flex-shrink: 0;
   background-color: #08a6e4;
   border-radius: 50%;
   z-index: 0;
 }
-.aside1__article2 .aside1__article2__div2 h3 {
-  margin: 1.8rem 0rem 5% 1.2rem;
-  width: 90%;
+.card2 .div2-text {
+  margin-top: 1.625rem;
+}
+.card2 .div2-text h3 {
+  height: auto;
+  margin: 0rem 0rem 1.12rem 1.37rem;
+  width: 70%;
   color: #000;
   font-family: Raleway;
   font-size: 30px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
-.aside1__article2 .aside1__article2__div2 p {
-  margin-left: 1.2rem;
-  width: 90%;
+.card2 .div2-text p {
+  margin: 0rem 0rem 1.56rem 1.37rem;
+  width: 78%;
   color: #000;
   font-family: Open Sans;
-  font-size: 14px;
-  font-style: normal;
+  font-size: 0.875rem;
   font-weight: 400;
-  line-height: 21px; /* 150% */
-  margin-bottom: 1rem;
-}
-.aside1__article2 .aside1__article2__div2 span {
-  display: none;
-  margin-left: 1.2rem;
-  border-bottom: 2px solid #08a6e4;
-  width: 327.64px;
-  max-width: 90%;
-  height: 2px;
-  flex-shrink: 0;
+  line-height: 21px;
 }
 
-@media screen and (min-width: 425px) {
-  .aside1 .aside1__article2 {
+@media screen and (min-width: 950px) {
+  .section1 .card2 {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    height: 370px;
+    justify-content: space-between;
+    height: 23.125rem;
   }
-  .aside1 .aside1__article2 .aside1__article2__div1 {
+  .section1 .card2 .div2-images {
     width: 50%;
     height: 100%;
     display: flex;
     align-items: center;
   }
-  .aside1 .aside1__article2 .aside1__article2__div1 .aside1__article2__div1__iphone2 {
-    width: 70%;
+  .section1 .card2 .div2-images .div2-images__iphone2 {
+    margin-right: 4rem;
+    width: 80%;
     height: auto;
     flex-shrink: 0;
   }
-  .aside1 .aside1__article2 .aside1__article2__div1 .aside1__article2__div1__elipse-azul {
+  .section1 .card2 .div2-images .div2-images__elipse-azul {
     display: block;
+    margin: 0 8rem 2rem 0;
     width: 28%;
-    max-width: 320px;
+    max-width: 20rem;
     height: auto;
     flex-shrink: 0;
-    margin-top: -10px;
   }
-  .aside1 .aside1__article2 .aside1__article2__div2 {
+  .section1 .card2 .div2-text {
+    margin: 0;
     height: 100%;
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: start;
-    justify-content: center;
+    justify-content: start;
   }
-  .aside1 .aside1__article2 .aside1__article2__div2 h3 {
-    margin: 0px 0px 30px 1.2rem;
-    font-size: 36px;
+  .section1 .card2 .div2-text h3 {
+    width: 50%;
+    margin: 15% 0 1.875rem 3rem;
+    font-size: 2.25rem;
   }
-  .aside1 .aside1__article2 .aside1__article2__div2 p {
-    font-size: 16px;
-    margin-bottom: 50px;
+  .section1 .card2 .div2-text p {
+    margin: 0 1.25rem 3.125rem 3rem;
+    width: 80%;
+    font-size: 1rem;
   }
-  .aside1 .aside1__article2 .aside1__article2__div2 span {
+  .section1 .card2 .div2-text span {
+    margin-left: 3rem;
     display: block;
+    border-bottom: 2px solid #08a6e4;
+    width: 327.64px;
+    max-width: 90%;
+    height: 2px;
   }
 }
-.aside1__article3 .aside1__article3__div1 span {
-  display: none;
-  margin-left: 1.2rem;
-  border-bottom: 2px solid #55dfb4;
-  width: 327.64px;
-  max-width: 90%;
-  height: 2px;
-  flex-shrink: 0;
+.card3 .div3-text {
+  height: auto;
 }
-.aside1__article3 .aside1__article3__div2 {
+.card3 .div3-text h3 {
+  margin: 1.9rem 0rem 0rem 1.2rem;
+  width: 80%;
+  height: auto;
+  color: #000;
+  font-family: Raleway;
+  font-size: 1.87rem;
+  font-weight: 400;
+}
+.card3 .div3-text p {
+  margin: 1.271rem 0rem 0rem 1.2rem;
+  width: 70%;
+  color: #000;
+  font-family: Open Sans;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.313rem;
+}
+
+.div3-images {
+  height: 18rem;
   margin-top: 1rem;
+  margin-bottom: 10rem;
   border-radius: 5px;
   border: 1px solid #e8e9ed;
   width: 100%;
@@ -615,7 +657,7 @@ header .header__div2 button img {
   flex-shrink: 0;
   background: #55dfb4;
 }
-.aside1__article3 .aside1__article3__div2 img {
+.div3-images img {
   text-align: center;
   margin-top: 24px;
   margin-right: 30px;
@@ -627,8 +669,8 @@ header .header__div2 button img {
   flex-shrink: 0;
 }
 
-@media screen and (min-width: 425px) {
-  .aside1 .aside1__article3 {
+@media screen and (min-width: 950px) {
+  .section1 .card3 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -636,17 +678,33 @@ header .header__div2 button img {
     background-color: transparent;
     border: none;
   }
-  .aside1 .aside1__article3 .aside1__article3__div1 {
+  .section1 .card3 .div3-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
     width: 58%;
     border-radius: 5px;
     border: 1px solid #e8e9ed;
     background: #fff;
   }
-  .aside1 .aside1__article3 .aside1__article3__div1 span {
+  .section1 .card3 .div3-text h3 {
+    width: 60%;
+    margin: 0 0 1.875rem 2.25rem;
+    font-size: 36px;
+  }
+  .section1 .card3 .div3-text p {
+    width: 55%;
+    margin: 0 0 3.125rem 2.25rem;
+    font-size: 16px;
+    margin-bottom: 50px;
+  }
+  .section1 .card3 .div3-text span {
+    margin-left: 2.25rem;
     display: block;
     border-bottom: 2px solid #55dfb4;
   }
-  .aside1 .aside1__article3 .aside1__article3__div2 {
+  .section1 .card3 .div3-images {
     margin: 0;
     display: flex;
     justify-content: center;
@@ -654,235 +712,250 @@ header .header__div2 button img {
     height: 100%;
     width: 38%;
   }
+  .section1 .card3 span {
+    display: none;
+    margin-left: 1.2rem;
+    border-bottom: 2px solid #55dfb4;
+    width: 327.64px;
+    max-width: 90%;
+    height: 2px;
+    flex-shrink: 0;
+  }
 }
-.aside2 {
+.pricing {
   width: 100%;
   background: #fff;
+  background-color: transparent;
 }
-.aside2 h3 {
-  margin: 130px 0 70px 0;
+.pricing h3 {
+  margin: 3.313rem 0 0 0;
   color: #000;
   text-align: center;
   font-family: Raleway;
-  font-size: 36px;
+  font-size: 2.25rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 42px; /* 116.667% */
+  line-height: 2.625rem;
 }
 
-.aside2__article1, .aside2__article3, .aside2__article2 {
+.pricing-article, .pricing-article3, .pricing-article2 {
   margin: 0 auto;
   width: 80%;
-  height: 275px;
-  max-height: 485px;
+  height: 17.1875rem;
+  max-height: 30.3125rem;
   transition: transform 0.3s ease;
 }
-.aside2__article1 .aside2__article1__section, .aside2__article3 .aside2__article1__section, .aside2__article3 .aside2__article3__section, .aside2__article2 .aside2__article1__section, .aside2__article2 .aside2__article2__section {
+.pricing-article .pricing-section, .pricing-article3 .pricing-section, .pricing-article3 .pricing-section3, .pricing-article2 .pricing-section, .pricing-article2 .pricing-section2 {
   display: flex;
   align-items: center;
-  margin-bottom: -24px;
-  margin-top: 34px;
+  margin-bottom: -1.5rem;
+  margin-top: 0.875rem;
   width: 100%;
-  max-width: 405px;
-  height: 251px;
+  max-width: 25.3125rem;
+  height: 15.6875rem;
   flex-shrink: 0;
-  border-radius: 18px;
+  border-radius: 1.125rem;
   border: 1px solid #fb3b64;
   background: #fff;
 }
-.aside2__article1 .aside2__article1__section .aside2__article1__section__div1, .aside2__article3 .aside2__article1__section .aside2__article1__section__div1, .aside2__article3 .aside2__article3__section .aside2__article1__section__div1, .aside2__article3 .aside2__article3__section .aside2__article3__section__div1, .aside2__article2 .aside2__article1__section .aside2__article1__section__div1, .aside2__article2 .aside2__article2__section .aside2__article1__section__div1, .aside2__article2 .aside2__article2__section .aside2__article2__section__div1 {
-  margin-top: 0px;
+.pricing-article .pricing-section .pricing-text, .pricing-article3 .pricing-section .pricing-text, .pricing-article3 .pricing-section3 .pricing-text, .pricing-article3 .pricing-section3 .pricing-text3, .pricing-article2 .pricing-section .pricing-text, .pricing-article2 .pricing-section2 .pricing-text, .pricing-article2 .pricing-section2 .pricing-text2 {
+  margin-top: 0;
   width: 50%;
 }
-.aside2__article1 .aside2__article1__section .aside2__article1__section__div1 h4, .aside2__article3 .aside2__article1__section .aside2__article1__section__div1 h4, .aside2__article3 .aside2__article3__section .aside2__article1__section__div1 h4, .aside2__article3 .aside2__article3__section .aside2__article3__section__div1 h4, .aside2__article2 .aside2__article1__section .aside2__article1__section__div1 h4, .aside2__article2 .aside2__article2__section .aside2__article1__section__div1 h4, .aside2__article2 .aside2__article2__section .aside2__article2__section__div1 h4 {
+.pricing-article .pricing-section .pricing-text h4, .pricing-article3 .pricing-section .pricing-text h4, .pricing-article3 .pricing-section3 .pricing-text h4, .pricing-article3 .pricing-section3 .pricing-text3 h4, .pricing-article2 .pricing-section .pricing-text h4, .pricing-article2 .pricing-section2 .pricing-text h4, .pricing-article2 .pricing-section2 .pricing-text2 h4 {
   width: 100%;
   text-align: center;
   color: #13253b;
   font-family: Raleway;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 24px; /* 120% */
+  line-height: 1.5rem;
 }
-.aside2__article1 .aside2__article1__section .aside2__article1__section__div1 h5, .aside2__article3 .aside2__article1__section .aside2__article1__section__div1 h5, .aside2__article3 .aside2__article3__section .aside2__article1__section__div1 h5, .aside2__article3 .aside2__article3__section .aside2__article3__section__div1 h5, .aside2__article2 .aside2__article1__section .aside2__article1__section__div1 h5, .aside2__article2 .aside2__article2__section .aside2__article1__section__div1 h5, .aside2__article2 .aside2__article2__section .aside2__article2__section__div1 h5 {
+.pricing-article .pricing-section .pricing-text h5, .pricing-article3 .pricing-section .pricing-text h5, .pricing-article3 .pricing-section3 .pricing-text h5, .pricing-article3 .pricing-section3 .pricing-text3 h5, .pricing-article2 .pricing-section .pricing-text h5, .pricing-article2 .pricing-section2 .pricing-text h5, .pricing-article2 .pricing-section2 .pricing-text2 h5 {
   width: 100%;
   text-align: center;
   font-family: Open Sans;
-  font-size: 46px;
+  font-size: 2.875rem;
   font-style: normal;
   font-weight: 300;
-  line-height: 64px; /* 139.13% */
+  line-height: 3.6875rem;
   color: #fb3b64;
 }
-.aside2__article1 .aside2__article1__section ul, .aside2__article3 .aside2__article1__section ul, .aside2__article3 .aside2__article3__section ul, .aside2__article2 .aside2__article1__section ul, .aside2__article2 .aside2__article2__section ul {
+.pricing-article .pricing-section ul, .pricing-article3 .pricing-section ul, .pricing-article3 .pricing-section3 ul, .pricing-article2 .pricing-section ul, .pricing-article2 .pricing-section2 ul {
   display: inline-block;
   list-style: none;
 }
-.aside2__article1 .aside2__article1__section ul li, .aside2__article3 .aside2__article1__section ul li, .aside2__article3 .aside2__article3__section ul li, .aside2__article2 .aside2__article1__section ul li, .aside2__article2 .aside2__article2__section ul li {
+.pricing-article .pricing-section ul li, .pricing-article3 .pricing-section ul li, .pricing-article3 .pricing-section3 ul li, .pricing-article2 .pricing-section ul li, .pricing-article2 .pricing-section2 ul li {
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
-.aside2__article1 .aside2__article1__section ul li p, .aside2__article3 .aside2__article1__section ul li p, .aside2__article3 .aside2__article3__section ul li p, .aside2__article2 .aside2__article1__section ul li p, .aside2__article2 .aside2__article2__section ul li p {
+.pricing-article .pricing-section ul li p, .pricing-article3 .pricing-section ul li p, .pricing-article3 .pricing-section3 ul li p, .pricing-article2 .pricing-section ul li p, .pricing-article2 .pricing-section2 ul li p {
   display: inline-block;
   color: #000;
   text-align: center;
   font-family: Open Sans;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
-.aside2__article1 .aside2__article1__section ul li img, .aside2__article3 .aside2__article1__section ul li img, .aside2__article3 .aside2__article3__section ul li img, .aside2__article2 .aside2__article1__section ul li img, .aside2__article2 .aside2__article2__section ul li img {
-  margin-right: 5px;
-  width: 11px;
-  height: 11px;
+.pricing-article .pricing-section ul li img, .pricing-article3 .pricing-section ul li img, .pricing-article3 .pricing-section3 ul li img, .pricing-article2 .pricing-section ul li img, .pricing-article2 .pricing-section2 ul li img {
+  margin-right: 0.3125rem;
+  width: 0.6875rem;
+  height: 0.6875rem;
 }
-.aside2__article1 .aside2__article1__section ul li span, .aside2__article3 .aside2__article1__section ul li span, .aside2__article3 .aside2__article3__section ul li span, .aside2__article2 .aside2__article1__section ul li span, .aside2__article2 .aside2__article2__section ul li span {
-  margin-right: 5px;
+.pricing-article .pricing-section ul li span, .pricing-article3 .pricing-section ul li span, .pricing-article3 .pricing-section3 ul li span, .pricing-article2 .pricing-section ul li span, .pricing-article2 .pricing-section2 ul li span {
+  margin-right: 0.3125rem;
   flex-shrink: 0;
-  padding: 0px 2px;
-  border: 0.5px solid #eb476e;
+  padding: 0px 0.125rem;
+  border: 1px solid #eb476e;
   color: #eb476e;
   text-align: center;
   font-family: Raleway;
-  font-size: 9px;
+  font-size: 0.5625rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 10px; /* 111.111% */
+  line-height: 0.625rem;
 }
-.aside2__article1 .aside2__article1__div2, .aside2__article3 .aside2__article1__div2, .aside2__article3 .aside2__article3__div2, .aside2__article2 .aside2__article1__div2, .aside2__article2 .aside2__article2__div2 {
+.pricing-article .pricing-button, .pricing-article3 .pricing-button, .pricing-article3 .pricing-button3, .pricing-article2 .pricing-button, .pricing-article2 .pricing-button2 {
   width: 100%;
   text-align: center;
 }
-.aside2__article1 .aside2__article1__div2 button, .aside2__article3 .aside2__article1__div2 button, .aside2__article3 .aside2__article3__div2 button, .aside2__article2 .aside2__article1__div2 button, .aside2__article2 .aside2__article2__div2 button {
-  text-align: center;
-  width: 150px;
-  height: 50px;
+.pricing-article .pricing-button button, .pricing-article3 .pricing-button button, .pricing-article3 .pricing-button3 button, .pricing-article2 .pricing-button button, .pricing-article2 .pricing-button2 button {
+  width: 9.375rem;
+  height: 3.125rem;
   flex-shrink: 0;
   color: #fff;
   font-family: Open Sans;
-  font-size: 13px;
+  font-size: 0.8125rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   border: none;
-  border-radius: 23px;
+  border-radius: 1.4375rem;
   background: #eb476e;
 }
 
-.aside2__article1:hover, .aside2__article3:hover, .aside2__article2:hover {
+.pricing-article:hover, .pricing-article3:hover, .pricing-article2:hover {
   transform: scale(1.2);
 }
-.aside2__article1:hover .aside2__article1__section, .aside2__article1:hover .aside2__article3 .aside2__article3__section, .aside2__article3 .aside2__article1:hover .aside2__article3__section, .aside2__article3:hover .aside2__article1__section, .aside2__article3:hover .aside2__article3__section, .aside2__article1:hover .aside2__article2 .aside2__article2__section, .aside2__article3:hover .aside2__article2 .aside2__article2__section, .aside2__article2 .aside2__article1:hover .aside2__article2__section, .aside2__article2 .aside2__article3:hover .aside2__article2__section, .aside2__article2:hover .aside2__article1__section, .aside2__article2:hover .aside2__article3 .aside2__article3__section, .aside2__article3 .aside2__article2:hover .aside2__article3__section, .aside2__article2:hover .aside2__article2__section {
+.pricing-article:hover .pricing-section, .pricing-article:hover .pricing-article3 .pricing-section3, .pricing-article3 .pricing-article:hover .pricing-section3, .pricing-article3:hover .pricing-section, .pricing-article3:hover .pricing-section3, .pricing-article:hover .pricing-article2 .pricing-section2, .pricing-article3:hover .pricing-article2 .pricing-section2, .pricing-article2 .pricing-article:hover .pricing-section2, .pricing-article2 .pricing-article3:hover .pricing-section2, .pricing-article2:hover .pricing-section, .pricing-article2:hover .pricing-article3 .pricing-section3, .pricing-article3 .pricing-article2:hover .pricing-section3, .pricing-article2:hover .pricing-section2 {
   box-shadow: 5px 10px 27px 0px rgba(235, 71, 109, 0.2745098039);
 }
 
-.aside2__article2 .aside2__article2__section {
+.pricing-article2 {
+  margin-top: 1.875rem;
+}
+.pricing-article2 .pricing-section2 {
   border: 1px solid #07ace6;
 }
-.aside2__article2 .aside2__article2__section .aside2__article2__section__div1 h5 {
+.pricing-article2 .pricing-section2 .pricing-text2 h5 {
   color: #07ace6;
 }
-.aside2__article2 .aside2__article2__section .aside2__article2__section__div1 h6 {
+.pricing-article2 .pricing-section2 .pricing-text2 h6 {
   width: 100%;
   text-align: center;
   color: #13253b;
   font-family: Raleway;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
-.aside2__article2 .aside2__article2__div2 button {
+.pricing-article2 .pricing-button2 button {
   background: #07ace6;
 }
 
-.aside2__article2:hover .aside2__article2__section {
+.pricing-article2:hover .pricing-section2 {
   box-shadow: 5px 10px 27px 0px rgba(7, 171, 230, 0.3019607843);
 }
 
-.aside2__article3 .aside2__article3__section {
+.pricing-article3 {
+  margin-top: 1.875rem;
+}
+.pricing-article3 .pricing-section3 {
   border: 1px solid #55dfb4;
 }
-.aside2__article3 .aside2__article3__section .aside2__article3__section__div1 h5 {
+.pricing-article3 .pricing-section3 .pricing-text3 h5 {
   color: #55dfb4;
 }
-.aside2__article3 .aside2__article3__section .aside2__article3__section__div1 h6 {
+.pricing-article3 .pricing-section3 .pricing-text3 h6 {
   width: 100%;
   text-align: center;
   color: #13253b;
   font-family: Raleway;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
-.aside2__article3 .aside2__article3__div2 button {
+.pricing-article3 .pricing-button3 button {
   background: #55dfb4;
 }
 
-.aside2__article3:hover .aside2__article3__section {
+.pricing-article3:hover .pricing-section3 {
   box-shadow: 5px 10px 27px 0px rgba(85, 223, 179, 0.3019607843);
 }
 
 @media screen and (min-width: 520px) {
-  .aside2 {
+  .pricing {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 90%;
   }
-  .aside2 .aside2__container {
+  .pricing .pricing-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 60px;
+    gap: 3.75rem;
     width: 100%;
-    margin-bottom: 130px;
+    margin-bottom: 8.125rem;
   }
-  .aside2 .aside2__container .aside2__article1, .aside2 .aside2__container .aside2__article2, .aside2 .aside2__container .aside2__article3 {
+  .pricing .pricing-container .pricing-article, .pricing .pricing-container .pricing-article2, .pricing .pricing-container .pricing-article3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: auto;
-    width: 372px;
+    width: 23.25rem;
     margin: 0px;
     padding: 0px;
   }
-  .aside2 .aside2__container .aside2__article1 .aside2__article1__section, .aside2 .aside2__container .aside2__article2 .aside2__article1__section, .aside2 .aside2__container .aside2__article3 .aside2__article1__section, .aside2__article2 .aside2 .aside2__container .aside2__article1 .aside2__article2__section, .aside2 .aside2__container .aside2__article2 .aside2__article2__section, .aside2__article2 .aside2 .aside2__container .aside2__article3 .aside2__article2__section, .aside2__article3 .aside2 .aside2__container .aside2__article1 .aside2__article3__section, .aside2__article3 .aside2 .aside2__container .aside2__article2 .aside2__article3__section, .aside2 .aside2__container .aside2__article3 .aside2__article3__section {
+  .pricing .pricing-container .pricing-article .pricing-section, .pricing .pricing-container .pricing-article2 .pricing-section, .pricing .pricing-container .pricing-article3 .pricing-section, .pricing-article2 .pricing .pricing-container .pricing-article .pricing-section2, .pricing .pricing-container .pricing-article2 .pricing-section2, .pricing-article2 .pricing .pricing-container .pricing-article3 .pricing-section2, .pricing-article3 .pricing .pricing-container .pricing-article .pricing-section3, .pricing-article3 .pricing .pricing-container .pricing-article2 .pricing-section3, .pricing .pricing-container .pricing-article3 .pricing-section3 {
     display: flex;
     flex-direction: column;
-    height: 461px;
-    margin-top: 50px;
-    padding-bottom: 55px;
+    height: 28.8125rem;
+    margin-top: 3.125rem;
+    padding-bottom: 3.4375rem;
   }
-  .aside2 .aside2__container .aside2__article1 .aside2__article1__section .aside2__article1__section__div1, .aside2 .aside2__container .aside2__article2 .aside2__article1__section .aside2__article1__section__div1, .aside2 .aside2__container .aside2__article3 .aside2__article1__section .aside2__article1__section__div1, .aside2__article2 .aside2 .aside2__container .aside2__article1 .aside2__article2__section .aside2__article1__section__div1, .aside2 .aside2__container .aside2__article2 .aside2__article2__section .aside2__article1__section__div1, .aside2__article2 .aside2 .aside2__container .aside2__article3 .aside2__article2__section .aside2__article1__section__div1, .aside2__article3 .aside2 .aside2__container .aside2__article1 .aside2__article3__section .aside2__article1__section__div1, .aside2__article3 .aside2 .aside2__container .aside2__article2 .aside2__article3__section .aside2__article1__section__div1, .aside2 .aside2__container .aside2__article3 .aside2__article3__section .aside2__article1__section__div1, .aside2__article2 .aside2__article2__section .aside2 .aside2__container .aside2__article1 .aside2__article1__section .aside2__article2__section__div1, .aside2__article2 .aside2__article2__section .aside2 .aside2__container .aside2__article3 .aside2__article1__section .aside2__article2__section__div1, .aside2__article2 .aside2 .aside2__container .aside2__article1 .aside2__article2__section .aside2__article2__section__div1, .aside2 .aside2__container .aside2__article2 .aside2__article2__section .aside2__article2__section__div1, .aside2__article2 .aside2 .aside2__container .aside2__article3 .aside2__article2__section .aside2__article2__section__div1, .aside2__article2 .aside2__article2__section .aside2__article3 .aside2 .aside2__container .aside2__article1 .aside2__article3__section .aside2__article2__section__div1, .aside2__article2 .aside2__article2__section .aside2 .aside2__container .aside2__article3 .aside2__article3__section .aside2__article2__section__div1, .aside2__article3 .aside2__article3__section .aside2 .aside2__container .aside2__article1 .aside2__article1__section .aside2__article3__section__div1, .aside2__article3 .aside2__article3__section .aside2 .aside2__container .aside2__article2 .aside2__article1__section .aside2__article3__section__div1, .aside2__article3 .aside2__article3__section .aside2__article2 .aside2 .aside2__container .aside2__article1 .aside2__article2__section .aside2__article3__section__div1, .aside2__article3 .aside2__article3__section .aside2 .aside2__container .aside2__article2 .aside2__article2__section .aside2__article3__section__div1, .aside2__article3 .aside2 .aside2__container .aside2__article1 .aside2__article3__section .aside2__article3__section__div1, .aside2__article3 .aside2 .aside2__container .aside2__article2 .aside2__article3__section .aside2__article3__section__div1, .aside2 .aside2__container .aside2__article3 .aside2__article3__section .aside2__article3__section__div1 {
+  .pricing .pricing-container .pricing-article .pricing-section .pricing-text, .pricing .pricing-container .pricing-article2 .pricing-section .pricing-text, .pricing .pricing-container .pricing-article3 .pricing-section .pricing-text, .pricing-article2 .pricing .pricing-container .pricing-article .pricing-section2 .pricing-text, .pricing .pricing-container .pricing-article2 .pricing-section2 .pricing-text, .pricing-article2 .pricing .pricing-container .pricing-article3 .pricing-section2 .pricing-text, .pricing-article3 .pricing .pricing-container .pricing-article .pricing-section3 .pricing-text, .pricing-article3 .pricing .pricing-container .pricing-article2 .pricing-section3 .pricing-text, .pricing .pricing-container .pricing-article3 .pricing-section3 .pricing-text, .pricing-article2 .pricing-section2 .pricing .pricing-container .pricing-article .pricing-section .pricing-text2, .pricing-article2 .pricing-section2 .pricing .pricing-container .pricing-article3 .pricing-section .pricing-text2, .pricing-article2 .pricing .pricing-container .pricing-article .pricing-section2 .pricing-text2, .pricing .pricing-container .pricing-article2 .pricing-section2 .pricing-text2, .pricing-article2 .pricing .pricing-container .pricing-article3 .pricing-section2 .pricing-text2, .pricing-article2 .pricing-section2 .pricing-article3 .pricing .pricing-container .pricing-article .pricing-section3 .pricing-text2, .pricing-article2 .pricing-section2 .pricing .pricing-container .pricing-article3 .pricing-section3 .pricing-text2, .pricing-article3 .pricing-section3 .pricing .pricing-container .pricing-article .pricing-section .pricing-text3, .pricing-article3 .pricing-section3 .pricing .pricing-container .pricing-article2 .pricing-section .pricing-text3, .pricing-article3 .pricing-section3 .pricing-article2 .pricing .pricing-container .pricing-article .pricing-section2 .pricing-text3, .pricing-article3 .pricing-section3 .pricing .pricing-container .pricing-article2 .pricing-section2 .pricing-text3, .pricing-article3 .pricing .pricing-container .pricing-article .pricing-section3 .pricing-text3, .pricing-article3 .pricing .pricing-container .pricing-article2 .pricing-section3 .pricing-text3, .pricing .pricing-container .pricing-article3 .pricing-section3 .pricing-text3 {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
   }
-  .aside2 .aside2__container .aside2__article1 .aside2__article1__section .aside2__article1__section__div1 h4, .aside2 .aside2__container .aside2__article2 .aside2__article1__section .aside2__article1__section__div1 h4, .aside2 .aside2__container .aside2__article3 .aside2__article1__section .aside2__article1__section__div1 h4, .aside2__article2 .aside2 .aside2__container .aside2__article1 .aside2__article2__section .aside2__article1__section__div1 h4, .aside2 .aside2__container .aside2__article2 .aside2__article2__section .aside2__article1__section__div1 h4, .aside2__article2 .aside2 .aside2__container .aside2__article3 .aside2__article2__section .aside2__article1__section__div1 h4, .aside2__article3 .aside2 .aside2__container .aside2__article1 .aside2__article3__section .aside2__article1__section__div1 h4, .aside2__article3 .aside2 .aside2__container .aside2__article2 .aside2__article3__section .aside2__article1__section__div1 h4, .aside2 .aside2__container .aside2__article3 .aside2__article3__section .aside2__article1__section__div1 h4, .aside2__article2 .aside2__article2__section .aside2 .aside2__container .aside2__article1 .aside2__article1__section .aside2__article2__section__div1 h4, .aside2__article2 .aside2__article2__section .aside2 .aside2__container .aside2__article3 .aside2__article1__section .aside2__article2__section__div1 h4, .aside2__article2 .aside2 .aside2__container .aside2__article1 .aside2__article2__section .aside2__article2__section__div1 h4, .aside2 .aside2__container .aside2__article2 .aside2__article2__section .aside2__article2__section__div1 h4, .aside2__article2 .aside2 .aside2__container .aside2__article3 .aside2__article2__section .aside2__article2__section__div1 h4, .aside2__article2 .aside2__article2__section .aside2__article3 .aside2 .aside2__container .aside2__article1 .aside2__article3__section .aside2__article2__section__div1 h4, .aside2__article2 .aside2__article2__section .aside2 .aside2__container .aside2__article3 .aside2__article3__section .aside2__article2__section__div1 h4, .aside2__article3 .aside2__article3__section .aside2 .aside2__container .aside2__article1 .aside2__article1__section .aside2__article3__section__div1 h4, .aside2__article3 .aside2__article3__section .aside2 .aside2__container .aside2__article2 .aside2__article1__section .aside2__article3__section__div1 h4, .aside2__article3 .aside2__article3__section .aside2__article2 .aside2 .aside2__container .aside2__article1 .aside2__article2__section .aside2__article3__section__div1 h4, .aside2__article3 .aside2__article3__section .aside2 .aside2__container .aside2__article2 .aside2__article2__section .aside2__article3__section__div1 h4, .aside2__article3 .aside2 .aside2__container .aside2__article1 .aside2__article3__section .aside2__article3__section__div1 h4, .aside2__article3 .aside2 .aside2__container .aside2__article2 .aside2__article3__section .aside2__article3__section__div1 h4, .aside2 .aside2__container .aside2__article3 .aside2__article3__section .aside2__article3__section__div1 h4 {
-    margin-top: 34px;
+  .pricing .pricing-container .pricing-article .pricing-section .pricing-text h4, .pricing .pricing-container .pricing-article2 .pricing-section .pricing-text h4, .pricing .pricing-container .pricing-article3 .pricing-section .pricing-text h4, .pricing-article2 .pricing .pricing-container .pricing-article .pricing-section2 .pricing-text h4, .pricing .pricing-container .pricing-article2 .pricing-section2 .pricing-text h4, .pricing-article2 .pricing .pricing-container .pricing-article3 .pricing-section2 .pricing-text h4, .pricing-article3 .pricing .pricing-container .pricing-article .pricing-section3 .pricing-text h4, .pricing-article3 .pricing .pricing-container .pricing-article2 .pricing-section3 .pricing-text h4, .pricing .pricing-container .pricing-article3 .pricing-section3 .pricing-text h4, .pricing-article2 .pricing-section2 .pricing .pricing-container .pricing-article .pricing-section .pricing-text2 h4, .pricing-article2 .pricing-section2 .pricing .pricing-container .pricing-article3 .pricing-section .pricing-text2 h4, .pricing-article2 .pricing .pricing-container .pricing-article .pricing-section2 .pricing-text2 h4, .pricing .pricing-container .pricing-article2 .pricing-section2 .pricing-text2 h4, .pricing-article2 .pricing .pricing-container .pricing-article3 .pricing-section2 .pricing-text2 h4, .pricing-article2 .pricing-section2 .pricing-article3 .pricing .pricing-container .pricing-article .pricing-section3 .pricing-text2 h4, .pricing-article2 .pricing-section2 .pricing .pricing-container .pricing-article3 .pricing-section3 .pricing-text2 h4, .pricing-article3 .pricing-section3 .pricing .pricing-container .pricing-article .pricing-section .pricing-text3 h4, .pricing-article3 .pricing-section3 .pricing .pricing-container .pricing-article2 .pricing-section .pricing-text3 h4, .pricing-article3 .pricing-section3 .pricing-article2 .pricing .pricing-container .pricing-article .pricing-section2 .pricing-text3 h4, .pricing-article3 .pricing-section3 .pricing .pricing-container .pricing-article2 .pricing-section2 .pricing-text3 h4, .pricing-article3 .pricing .pricing-container .pricing-article .pricing-section3 .pricing-text3 h4, .pricing-article3 .pricing .pricing-container .pricing-article2 .pricing-section3 .pricing-text3 h4, .pricing .pricing-container .pricing-article3 .pricing-section3 .pricing-text3 h4 {
+    margin-top: 2.0625rem;
   }
-  .aside2 .aside2__container .aside2__article1 .aside2__article1__section .aside2__article1__section__div1 h5, .aside2 .aside2__container .aside2__article2 .aside2__article1__section .aside2__article1__section__div1 h5, .aside2 .aside2__container .aside2__article3 .aside2__article1__section .aside2__article1__section__div1 h5, .aside2__article2 .aside2 .aside2__container .aside2__article1 .aside2__article2__section .aside2__article1__section__div1 h5, .aside2 .aside2__container .aside2__article2 .aside2__article2__section .aside2__article1__section__div1 h5, .aside2__article2 .aside2 .aside2__container .aside2__article3 .aside2__article2__section .aside2__article1__section__div1 h5, .aside2__article3 .aside2 .aside2__container .aside2__article1 .aside2__article3__section .aside2__article1__section__div1 h5, .aside2__article3 .aside2 .aside2__container .aside2__article2 .aside2__article3__section .aside2__article1__section__div1 h5, .aside2 .aside2__container .aside2__article3 .aside2__article3__section .aside2__article1__section__div1 h5, .aside2__article2 .aside2__article2__section .aside2 .aside2__container .aside2__article1 .aside2__article1__section .aside2__article2__section__div1 h5, .aside2__article2 .aside2__article2__section .aside2 .aside2__container .aside2__article3 .aside2__article1__section .aside2__article2__section__div1 h5, .aside2__article2 .aside2 .aside2__container .aside2__article1 .aside2__article2__section .aside2__article2__section__div1 h5, .aside2 .aside2__container .aside2__article2 .aside2__article2__section .aside2__article2__section__div1 h5, .aside2__article2 .aside2 .aside2__container .aside2__article3 .aside2__article2__section .aside2__article2__section__div1 h5, .aside2__article2 .aside2__article2__section .aside2__article3 .aside2 .aside2__container .aside2__article1 .aside2__article3__section .aside2__article2__section__div1 h5, .aside2__article2 .aside2__article2__section .aside2 .aside2__container .aside2__article3 .aside2__article3__section .aside2__article2__section__div1 h5, .aside2__article3 .aside2__article3__section .aside2 .aside2__container .aside2__article1 .aside2__article1__section .aside2__article3__section__div1 h5, .aside2__article3 .aside2__article3__section .aside2 .aside2__container .aside2__article2 .aside2__article1__section .aside2__article3__section__div1 h5, .aside2__article3 .aside2__article3__section .aside2__article2 .aside2 .aside2__container .aside2__article1 .aside2__article2__section .aside2__article3__section__div1 h5, .aside2__article3 .aside2__article3__section .aside2 .aside2__container .aside2__article2 .aside2__article2__section .aside2__article3__section__div1 h5, .aside2__article3 .aside2 .aside2__container .aside2__article1 .aside2__article3__section .aside2__article3__section__div1 h5, .aside2__article3 .aside2 .aside2__container .aside2__article2 .aside2__article3__section .aside2__article3__section__div1 h5, .aside2 .aside2__container .aside2__article3 .aside2__article3__section .aside2__article3__section__div1 h5 {
-    margin-top: 14px;
+  .pricing .pricing-container .pricing-article .pricing-section .pricing-text h5, .pricing .pricing-container .pricing-article2 .pricing-section .pricing-text h5, .pricing .pricing-container .pricing-article3 .pricing-section .pricing-text h5, .pricing-article2 .pricing .pricing-container .pricing-article .pricing-section2 .pricing-text h5, .pricing .pricing-container .pricing-article2 .pricing-section2 .pricing-text h5, .pricing-article2 .pricing .pricing-container .pricing-article3 .pricing-section2 .pricing-text h5, .pricing-article3 .pricing .pricing-container .pricing-article .pricing-section3 .pricing-text h5, .pricing-article3 .pricing .pricing-container .pricing-article2 .pricing-section3 .pricing-text h5, .pricing .pricing-container .pricing-article3 .pricing-section3 .pricing-text h5, .pricing-article2 .pricing-section2 .pricing .pricing-container .pricing-article .pricing-section .pricing-text2 h5, .pricing-article2 .pricing-section2 .pricing .pricing-container .pricing-article3 .pricing-section .pricing-text2 h5, .pricing-article2 .pricing .pricing-container .pricing-article .pricing-section2 .pricing-text2 h5, .pricing .pricing-container .pricing-article2 .pricing-section2 .pricing-text2 h5, .pricing-article2 .pricing .pricing-container .pricing-article3 .pricing-section2 .pricing-text2 h5, .pricing-article2 .pricing-section2 .pricing-article3 .pricing .pricing-container .pricing-article .pricing-section3 .pricing-text2 h5, .pricing-article2 .pricing-section2 .pricing .pricing-container .pricing-article3 .pricing-section3 .pricing-text2 h5, .pricing-article3 .pricing-section3 .pricing .pricing-container .pricing-article .pricing-section .pricing-text3 h5, .pricing-article3 .pricing-section3 .pricing .pricing-container .pricing-article2 .pricing-section .pricing-text3 h5, .pricing-article3 .pricing-section3 .pricing-article2 .pricing .pricing-container .pricing-article .pricing-section2 .pricing-text3 h5, .pricing-article3 .pricing-section3 .pricing .pricing-container .pricing-article2 .pricing-section2 .pricing-text3 h5, .pricing-article3 .pricing .pricing-container .pricing-article .pricing-section3 .pricing-text3 h5, .pricing-article3 .pricing .pricing-container .pricing-article2 .pricing-section3 .pricing-text3 h5, .pricing .pricing-container .pricing-article3 .pricing-section3 .pricing-text3 h5 {
+    margin-top: 0.875rem;
   }
-  .aside2 .aside2__container .aside2__article1 .aside2__article1__section ul, .aside2 .aside2__container .aside2__article2 .aside2__article1__section ul, .aside2 .aside2__container .aside2__article3 .aside2__article1__section ul, .aside2__article2 .aside2 .aside2__container .aside2__article1 .aside2__article2__section ul, .aside2 .aside2__container .aside2__article2 .aside2__article2__section ul, .aside2__article2 .aside2 .aside2__container .aside2__article3 .aside2__article2__section ul, .aside2__article3 .aside2 .aside2__container .aside2__article1 .aside2__article3__section ul, .aside2__article3 .aside2 .aside2__container .aside2__article2 .aside2__article3__section ul, .aside2 .aside2__container .aside2__article3 .aside2__article3__section ul {
+  .pricing .pricing-container .pricing-article .pricing-section ul, .pricing .pricing-container .pricing-article2 .pricing-section ul, .pricing .pricing-container .pricing-article3 .pricing-section ul, .pricing-article2 .pricing .pricing-container .pricing-article .pricing-section2 ul, .pricing .pricing-container .pricing-article2 .pricing-section2 ul, .pricing-article2 .pricing .pricing-container .pricing-article3 .pricing-section2 ul, .pricing-article3 .pricing .pricing-container .pricing-article .pricing-section3 ul, .pricing-article3 .pricing .pricing-container .pricing-article2 .pricing-section3 ul, .pricing .pricing-container .pricing-article3 .pricing-section3 ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 3.125rem;
   }
-  .aside2 .aside2__container .aside2__article1 .aside2__article1__div2, .aside2 .aside2__container .aside2__article2 .aside2__article1__div2, .aside2 .aside2__container .aside2__article3 .aside2__article1__div2, .aside2__article2 .aside2 .aside2__container .aside2__article1 .aside2__article2__div2, .aside2 .aside2__container .aside2__article2 .aside2__article2__div2, .aside2__article2 .aside2 .aside2__container .aside2__article3 .aside2__article2__div2, .aside2__article3 .aside2 .aside2__container .aside2__article1 .aside2__article3__div2, .aside2__article3 .aside2 .aside2__container .aside2__article2 .aside2__article3__div2, .aside2 .aside2__container .aside2__article3 .aside2__article3__div2 {
+  .pricing .pricing-container .pricing-article .pricing-button, .pricing .pricing-container .pricing-article2 .pricing-button, .pricing .pricing-container .pricing-article3 .pricing-button, .pricing-article2 .pricing .pricing-container .pricing-article .pricing-button2, .pricing .pricing-container .pricing-article2 .pricing-button2, .pricing-article2 .pricing .pricing-container .pricing-article3 .pricing-button2, .pricing-article3 .pricing .pricing-container .pricing-article .pricing-button3, .pricing-article3 .pricing .pricing-container .pricing-article2 .pricing-button3, .pricing .pricing-container .pricing-article3 .pricing-button3 {
     display: flex;
     justify-content: center;
     width: 100%;
   }
-  .aside2 .aside2__container .aside2__article1 .aside2__article1__div2 button, .aside2 .aside2__container .aside2__article2 .aside2__article1__div2 button, .aside2 .aside2__container .aside2__article3 .aside2__article1__div2 button, .aside2__article2 .aside2 .aside2__container .aside2__article1 .aside2__article2__div2 button, .aside2 .aside2__container .aside2__article2 .aside2__article2__div2 button, .aside2__article2 .aside2 .aside2__container .aside2__article3 .aside2__article2__div2 button, .aside2__article3 .aside2 .aside2__container .aside2__article1 .aside2__article3__div2 button, .aside2__article3 .aside2 .aside2__container .aside2__article2 .aside2__article3__div2 button, .aside2 .aside2__container .aside2__article3 .aside2__article3__div2 button {
-    width: 165px;
-    height: 50px;
+  .pricing .pricing-container .pricing-article .pricing-button button, .pricing .pricing-container .pricing-article2 .pricing-button button, .pricing .pricing-container .pricing-article3 .pricing-button button, .pricing-article2 .pricing .pricing-container .pricing-article .pricing-button2 button, .pricing .pricing-container .pricing-article2 .pricing-button2 button, .pricing-article2 .pricing .pricing-container .pricing-article3 .pricing-button2 button, .pricing-article3 .pricing .pricing-container .pricing-article .pricing-button3 button, .pricing-article3 .pricing .pricing-container .pricing-article2 .pricing-button3 button, .pricing .pricing-container .pricing-article3 .pricing-button3 button {
+    width: 10.3125rem;
+    height: 3.125rem;
   }
 }
 .slider__section {
@@ -953,146 +1026,143 @@ header .header__div2 button img {
   background-color: transparent;
 }
 
-.aside3 {
-  padding-top: 53px;
+.contact {
+  padding-top: 3.3125rem;
   width: 100%;
   background: #fff;
 }
-.aside3 .aside3__article1 {
-  width: 90%;
+.contact .contact-article {
+  width: 80%;
   margin: 0 auto;
 }
-.aside3 .aside3__article1 .aside3__article1__section1 h4 {
+.contact .contact-article .contact-section h4 {
   color: #000;
   font-family: "Raleway";
-  font-size: 40px;
+  font-size: 2.5rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
-.aside3 .aside3__article1 .aside3__article1__section1 h5 {
+.contact .contact-article .contact-section h5 {
   color: #000;
   font-family: Open Sans;
-  font-size: 16px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 22px; /* 137.5% */
+  line-height: 1.375rem;
 }
-.aside3 .aside3__article1 .aside3__article1__section1 .aside3__article1__section1__div1, .aside3 .aside3__article1 .aside3__article1__section1 .aside3__article1__section1__div2 {
-  margin-top: 38px;
+.contact .contact-article .contact-section .contact-email, .contact .contact-article .contact-section .contact-phone {
+  margin-top: 2.375rem;
   display: flex;
   align-items: center;
 }
-.aside3 .aside3__article1 .aside3__article1__section1 .aside3__article1__section1__div1 img, .aside3 .aside3__article1 .aside3__article1__section1 .aside3__article1__section1__div2 img {
+.contact .contact-article .contact-section .contact-email img, .contact .contact-article .contact-section .contact-phone img {
   display: inline-block;
-  width: 27px;
-  height: 27px;
+  width: 1.6875rem;
+  height: 1.6875rem;
 }
-.aside3 .aside3__article1 .aside3__article1__section1 .aside3__article1__section1__div1 p, .aside3 .aside3__article1 .aside3__article1__section1 .aside3__article1__section1__div2 p {
+.contact .contact-article .contact-section .contact-email p, .contact .contact-article .contact-section .contact-phone p {
   display: inline-block;
   color: #a5a5a5;
   font-family: Open Sans;
-  font-size: 16px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 22px; /* 137.5% */
+  line-height: 1.375rem;
 }
-.aside3 .aside3__article1 .aside3__article1__section1 .aside3__article1__section1__div2 {
-  margin: 17px 0 50px 0;
+.contact .contact-article .contact-section .contact-phone {
+  margin: 1.0625rem 0 3.125rem 0;
 }
-.aside3 .aside3__article1 .aside3__article1__section2 {
-  margin-bottom: 2rem;
-}
-.aside3 .aside3__article1 .aside3__article1__section2 .aside3__article1__section2__div1 label {
+.contact .contact-article .form-section .form label {
   color: #08a6e4;
   font-family: Open Sans;
-  font-size: 11px;
+  font-size: 0.6875rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  letter-spacing: 3.28px;
+  letter-spacing: 0.205rem;
 }
-.aside3 .aside3__article1 .aside3__article1__section2 .aside3__article1__section2__div1 input {
+.contact .contact-article .form-section .form input {
   display: block;
-  margin-top: 32px;
-  margin-bottom: 42px;
+  margin-top: 2rem;
+  margin-bottom: 2.625rem;
   width: 100%;
   border: 0;
   border-bottom: 1px solid #95989a;
 }
-.aside3 .aside3__article1 .aside3__article1__section2 .aside3__article1__section2__div2 {
+.contact .contact-article .form-section .form-check {
   display: flex;
 }
-.aside3 .aside3__article1 .aside3__article1__section2 .aside3__article1__section2__div2 input {
+.contact .contact-article .form-section .form-check input {
   display: inline-block;
-  margin-right: 10px;
-  width: 24px;
-  height: 24px;
+  margin-right: 0.625rem;
+  width: 1.5rem;
+  height: 1.5rem;
   flex-shrink: 0;
   color: #08a6e4;
   background-color: #fff;
   cursor: pointer;
 }
-.aside3 .aside3__article1 .aside3__article1__section2 .aside3__article1__section2__div2 p {
+.contact .contact-article .form-section .form-check p {
   display: inline-block;
-  width: auto;
+  width: 79%;
   color: #707070;
   font-family: Open Sans;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
-.aside3 .aside3__article1 .aside3__article1__section2 .aside3__article1__section2__div3 {
+.contact .contact-article .form-section .form-send {
   text-align: end;
 }
-.aside3 .aside3__article1 .aside3__article1__section2 .aside3__article1__section2__div3 button {
-  margin-top: 33px;
-  width: 226px;
-  height: 57px;
+.contact .contact-article .form-section .form-send button {
+  margin-top: 2.0625rem;
+  width: 14.125rem;
+  height: 3.5625rem;
   flex-shrink: 0;
   border: 0;
-  border-radius: 35px;
+  border-radius: 2.1875rem;
   background: #08a6e4;
   box-shadow: 5px 10px 14px 0px rgba(7, 172, 230, 0.29);
   color: #fff;
   font-family: Open Sans;
-  font-size: 13px;
+  font-size: 0.8125rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   cursor: pointer;
 }
 
-@media screen and (min-width: 1024px) {
-  .aside3 .aside3__article1 {
+@media screen and (min-width: 1000px) {
+  .contact .contact-article {
     display: flex;
-    width: 70%;
-    max-width: 896px;
+    width: 90%;
+    max-width: 56rem;
   }
-  .aside3 .aside3__article1 .aside3__article1__section1 {
+  .contact .contact-article .contact-section {
     width: 50%;
   }
-  .aside3 .aside3__article1 .aside3__article1__section1 h4 {
-    font-size: 49px;
+  .contact .contact-article .contact-section h4 {
+    font-size: 3.0625rem;
   }
-  .aside3 .aside3__article1 .aside3__article1__section1 h5 {
-    margin-top: 22px;
-    margin-bottom: 42px;
+  .contact .contact-article .contact-section h5 {
+    margin-top: 1.375rem;
+    margin-bottom: 2.625rem;
   }
-  .aside3 .aside3__article1 .aside3__article1__section1 div {
+  .contact .contact-article .contact-section div {
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
   }
-  .aside3 .aside3__article1 .aside3__article1__section1 div .aside3__article1__section1__div1, .aside3 .aside3__article1 .aside3__article1__section1 div .aside3__article1__section1__div2 {
+  .contact .contact-article .contact-section div .contact-email, .contact .contact-article .contact-section div .contact-phone {
     display: flex;
     margin: 0px;
-    gap: 10px;
+    gap: 0.625rem;
   }
-  .aside3 .aside3__article1 .aside3__article1__section1 div .aside3__article1__section1__div2 {
+  .contact .contact-article .contact-section div .contact-phone {
     display: flex;
   }
-  .aside3 .aside3__article1 .aside3__article1__section2 {
+  .contact .contact-article .form-section {
     width: 50%;
   }
 }
@@ -1112,7 +1182,7 @@ header .header__div2 button img {
 }
 
 footer {
-  margin-top: 44px;
+  margin-top: 2.75rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1130,16 +1200,19 @@ footer .footer__section {
 footer .footer__section .footer__div1 {
   width: 60%;
   display: inline-block;
+  margin-top: 1.375rem;
   margin-left: 5%;
   text-align: start;
 }
-footer .footer__section .footer__div1 h2 {
+footer .footer__div1 h2 {
+  margin-top: 1.28rem;
+  margin-bottom: 0.391rem;
   color: #08a6e4;
   font-family: Raleway;
   font-size: 1.2rem;
   font-style: normal;
   font-weight: 300;
-  line-height: 30px; /* 115.385% */
+  line-height: 1.1538rem;
 }
 footer .footer__section .footer__div1 p {
   color: #a5a5a5;
@@ -1148,16 +1221,26 @@ footer .footer__section .footer__div1 p {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-bottom: 17px;
+  margin-bottom: 1.0625rem;
 }
 footer .footer__section .footer__div2 {
   text-align: center;
   width: 30%;
+  margin-top: 2.0625rem;
   display: inline-block;
 }
-footer .footer__section .footer__div2 .footer__div2__img1 {
-  width: 24px;
-  height: 24px;
+footer .footer__div2 .footer__div2__img1 {
+  width: 1.5rem;
+  height: 1.5rem;
   flex-shrink: 0;
-  margin-right: 20px;
+  margin-right: 1.25rem;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    margin-top: 3.688rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }/*# sourceMappingURL=styles.css.map */

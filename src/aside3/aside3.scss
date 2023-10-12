@@ -1,15 +1,15 @@
-.aside3 {
-  padding-top: 53px;
+.contact {
+  padding-top: 3.3125rem;
   width: 100%;
   background: #fff;
-  .aside3__article1 {
-    width: 90%;
+  .contact-article {
+    width: 80%;
     margin: 0 auto;
-    .aside3__article1__section1 {
+    .contact-section {
       h4 {
         color: #000;
         font-family: "Raleway";
-        font-size: 40px;
+        font-size: 2.5rem;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -17,64 +17,63 @@
       h5 {
         color: #000;
         font-family: Open Sans;
-        font-size: 16px;
+        font-size: 1rem;
         font-style: normal;
         font-weight: 400;
-        line-height: 22px; /* 137.5% */
+        line-height: 1.375rem;
       }
 
-      .aside3__article1__section1__div1 {
-        margin-top: 38px;
+      .contact-email {
+        margin-top: 2.375rem;
         display: flex;
         align-items: center;
         img {
           display: inline-block;
-          width: 27px;
-          height: 27px;
+          width: 1.6875rem;
+          height: 1.6875rem;
         }
         p {
           display: inline-block;
           color: #a5a5a5;
           font-family: Open Sans;
-          font-size: 16px;
+          font-size: 1rem;
           font-style: normal;
           font-weight: 600;
-          line-height: 22px; /* 137.5% */
+          line-height: 1.375rem;
         }
       }
-      .aside3__article1__section1__div2 {
-        margin: 17px 0 50px 0;
-        @extend .aside3__article1__section1__div1;
+      .contact-phone {
+        margin: 1.0625rem 0 3.125rem 0;
+        @extend .contact-email;
       }
     }
-    .aside3__article1__section2 {
-      margin-bottom: 2rem;
-      .aside3__article1__section2__div1 {
+    .form-section {
+      .form {
         label {
           color: #08a6e4;
           font-family: Open Sans;
-          font-size: 11px;
+          font-size: 0.6875rem;
           font-style: normal;
           font-weight: 600;
           line-height: normal;
-          letter-spacing: 3.28px;
+          letter-spacing: 0.205rem;
         }
         input {
           display: block;
-          margin-top: 32px;
-          margin-bottom: 42px;
+          margin-top: 2rem;
+          margin-bottom: 2.625rem;
           width: 100%;
           border: 0;
           border-bottom: 1px solid #95989a;
         }
       }
-      .aside3__article1__section2__div2 {
+      .form-check {
         display: flex;
         input {
           display: inline-block;
-          margin-right: 10px;
-          width: 24px;
-          height: 24px;
+          margin-right: 0.625rem;
+          width: 1.5rem;
+          height: 1.5rem;
           flex-shrink: 0;
           color: #08a6e4;
           background-color: #fff;
@@ -82,29 +81,29 @@
         }
         p {
           display: inline-block;
-          width: auto;
+          width: 79%;
           color: #707070;
           font-family: Open Sans;
-          font-size: 12px;
+          font-size: 0.75rem;
           font-style: normal;
           font-weight: 400;
           line-height: normal;
         }
       }
-      .aside3__article1__section2__div3 {
+      .form-send {
         text-align: end;
         button {
-          margin-top: 33px;
-          width: 226px;
-          height: 57px;
+          margin-top: 2.0625rem;
+          width: 14.125rem;
+          height: 3.5625rem;
           flex-shrink: 0;
           border: 0;
-          border-radius: 35px;
+          border-radius: 2.1875rem;
           background: #08a6e4;
           box-shadow: 5px 10px 14px 0px rgba(7, 172, 230, 0.29);
           color: #fff;
           font-family: Open Sans;
-          font-size: 13px;
+          font-size: 0.8125rem;
           font-style: normal;
           font-weight: 700;
           line-height: normal;
@@ -117,35 +116,35 @@
 
 // MEDIA ***********************************************************
 
-@media screen and (min-width: 1024px) {
-  .aside3 {
-    .aside3__article1 {
+@media screen and (min-width: 1000px) {
+  .contact {
+    .contact-article {
       display: flex;
-      width: 70%;
-      max-width: 896px;
-      .aside3__article1__section1 {
+      width: 90%;
+      max-width: 56rem;
+      .contact-section {
         width: 50%;
         h4 {
-          font-size: 49px;
+          font-size: 3.0625rem;
         }
         h5 {
-          margin-top: 22px;
-          margin-bottom: 42px;
+          margin-top: 1.375rem;
+          margin-bottom: 2.625rem;
         }
         div {
           display: flex;
-          gap: 20px;
-          .aside3__article1__section1__div1 {
+          gap: 1.25rem;
+          .contact-email {
             display: flex;
             margin: 0px;
-            gap: 10px;
+            gap: 0.625rem;
           }
-          .aside3__article1__section1__div2 {
+          .contact-phone {
             display: flex;
           }
         }
       }
-      .aside3__article1__section2 {
+      .form-section {
         width: 50%;
       }
     }

@@ -1,230 +1,236 @@
-.aside2 {
+.pricing {
   width: 100%;
   background: #fff;
+  background-color: transparent;
 }
-.aside2 h3 {
-  margin: 130px 0 70px 0;
+.pricing h3 {
+  margin: 3.313rem 0 0 0;
   color: #000;
   text-align: center;
   font-family: Raleway;
-  font-size: 36px;
+  font-size: 2.25rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 42px; /* 116.667% */
+  line-height: 2.625rem;
 }
 
-.aside2__article1, .aside2__article3, .aside2__article2 {
+.pricing-article, .pricing-article3, .pricing-article2 {
   margin: 0 auto;
   width: 80%;
-  height: 275px;
-  max-height: 485px;
+  height: 17.1875rem;
+  max-height: 30.3125rem;
   transition: transform 0.3s ease;
 }
-.aside2__article1 .aside2__article1__section, .aside2__article3 .aside2__article1__section, .aside2__article3 .aside2__article3__section, .aside2__article2 .aside2__article1__section, .aside2__article2 .aside2__article2__section {
+.pricing-article .pricing-section, .pricing-article3 .pricing-section, .pricing-article3 .pricing-section3, .pricing-article2 .pricing-section, .pricing-article2 .pricing-section2 {
   display: flex;
   align-items: center;
-  margin-bottom: -24px;
-  margin-top: 34px;
+  margin-bottom: -1.5rem;
+  margin-top: 0.875rem;
   width: 100%;
-  max-width: 405px;
-  height: 251px;
+  max-width: 25.3125rem;
+  height: 15.6875rem;
   flex-shrink: 0;
-  border-radius: 18px;
+  border-radius: 1.125rem;
   border: 1px solid #fb3b64;
   background: #fff;
 }
-.aside2__article1 .aside2__article1__section .aside2__article1__section__div1, .aside2__article3 .aside2__article1__section .aside2__article1__section__div1, .aside2__article3 .aside2__article3__section .aside2__article1__section__div1, .aside2__article3 .aside2__article3__section .aside2__article3__section__div1, .aside2__article2 .aside2__article1__section .aside2__article1__section__div1, .aside2__article2 .aside2__article2__section .aside2__article1__section__div1, .aside2__article2 .aside2__article2__section .aside2__article2__section__div1 {
-  margin-top: 0px;
+.pricing-article .pricing-section .pricing-text, .pricing-article3 .pricing-section .pricing-text, .pricing-article3 .pricing-section3 .pricing-text, .pricing-article3 .pricing-section3 .pricing-text3, .pricing-article2 .pricing-section .pricing-text, .pricing-article2 .pricing-section2 .pricing-text, .pricing-article2 .pricing-section2 .pricing-text2 {
+  margin-top: 0;
   width: 50%;
 }
-.aside2__article1 .aside2__article1__section .aside2__article1__section__div1 h4, .aside2__article3 .aside2__article1__section .aside2__article1__section__div1 h4, .aside2__article3 .aside2__article3__section .aside2__article1__section__div1 h4, .aside2__article3 .aside2__article3__section .aside2__article3__section__div1 h4, .aside2__article2 .aside2__article1__section .aside2__article1__section__div1 h4, .aside2__article2 .aside2__article2__section .aside2__article1__section__div1 h4, .aside2__article2 .aside2__article2__section .aside2__article2__section__div1 h4 {
+.pricing-article .pricing-section .pricing-text h4, .pricing-article3 .pricing-section .pricing-text h4, .pricing-article3 .pricing-section3 .pricing-text h4, .pricing-article3 .pricing-section3 .pricing-text3 h4, .pricing-article2 .pricing-section .pricing-text h4, .pricing-article2 .pricing-section2 .pricing-text h4, .pricing-article2 .pricing-section2 .pricing-text2 h4 {
   width: 100%;
   text-align: center;
   color: #13253b;
   font-family: Raleway;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 24px; /* 120% */
+  line-height: 1.5rem;
 }
-.aside2__article1 .aside2__article1__section .aside2__article1__section__div1 h5, .aside2__article3 .aside2__article1__section .aside2__article1__section__div1 h5, .aside2__article3 .aside2__article3__section .aside2__article1__section__div1 h5, .aside2__article3 .aside2__article3__section .aside2__article3__section__div1 h5, .aside2__article2 .aside2__article1__section .aside2__article1__section__div1 h5, .aside2__article2 .aside2__article2__section .aside2__article1__section__div1 h5, .aside2__article2 .aside2__article2__section .aside2__article2__section__div1 h5 {
+.pricing-article .pricing-section .pricing-text h5, .pricing-article3 .pricing-section .pricing-text h5, .pricing-article3 .pricing-section3 .pricing-text h5, .pricing-article3 .pricing-section3 .pricing-text3 h5, .pricing-article2 .pricing-section .pricing-text h5, .pricing-article2 .pricing-section2 .pricing-text h5, .pricing-article2 .pricing-section2 .pricing-text2 h5 {
   width: 100%;
   text-align: center;
   font-family: Open Sans;
-  font-size: 46px;
+  font-size: 2.875rem;
   font-style: normal;
   font-weight: 300;
-  line-height: 64px; /* 139.13% */
+  line-height: 3.6875rem;
   color: #fb3b64;
 }
-.aside2__article1 .aside2__article1__section ul, .aside2__article3 .aside2__article1__section ul, .aside2__article3 .aside2__article3__section ul, .aside2__article2 .aside2__article1__section ul, .aside2__article2 .aside2__article2__section ul {
+.pricing-article .pricing-section ul, .pricing-article3 .pricing-section ul, .pricing-article3 .pricing-section3 ul, .pricing-article2 .pricing-section ul, .pricing-article2 .pricing-section2 ul {
   display: inline-block;
   list-style: none;
 }
-.aside2__article1 .aside2__article1__section ul li, .aside2__article3 .aside2__article1__section ul li, .aside2__article3 .aside2__article3__section ul li, .aside2__article2 .aside2__article1__section ul li, .aside2__article2 .aside2__article2__section ul li {
+.pricing-article .pricing-section ul li, .pricing-article3 .pricing-section ul li, .pricing-article3 .pricing-section3 ul li, .pricing-article2 .pricing-section ul li, .pricing-article2 .pricing-section2 ul li {
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
-.aside2__article1 .aside2__article1__section ul li p, .aside2__article3 .aside2__article1__section ul li p, .aside2__article3 .aside2__article3__section ul li p, .aside2__article2 .aside2__article1__section ul li p, .aside2__article2 .aside2__article2__section ul li p {
+.pricing-article .pricing-section ul li p, .pricing-article3 .pricing-section ul li p, .pricing-article3 .pricing-section3 ul li p, .pricing-article2 .pricing-section ul li p, .pricing-article2 .pricing-section2 ul li p {
   display: inline-block;
   color: #000;
   text-align: center;
   font-family: Open Sans;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
-.aside2__article1 .aside2__article1__section ul li img, .aside2__article3 .aside2__article1__section ul li img, .aside2__article3 .aside2__article3__section ul li img, .aside2__article2 .aside2__article1__section ul li img, .aside2__article2 .aside2__article2__section ul li img {
-  margin-right: 5px;
-  width: 11px;
-  height: 11px;
+.pricing-article .pricing-section ul li img, .pricing-article3 .pricing-section ul li img, .pricing-article3 .pricing-section3 ul li img, .pricing-article2 .pricing-section ul li img, .pricing-article2 .pricing-section2 ul li img {
+  margin-right: 0.3125rem;
+  width: 0.6875rem;
+  height: 0.6875rem;
 }
-.aside2__article1 .aside2__article1__section ul li span, .aside2__article3 .aside2__article1__section ul li span, .aside2__article3 .aside2__article3__section ul li span, .aside2__article2 .aside2__article1__section ul li span, .aside2__article2 .aside2__article2__section ul li span {
-  margin-right: 5px;
+.pricing-article .pricing-section ul li span, .pricing-article3 .pricing-section ul li span, .pricing-article3 .pricing-section3 ul li span, .pricing-article2 .pricing-section ul li span, .pricing-article2 .pricing-section2 ul li span {
+  margin-right: 0.3125rem;
   flex-shrink: 0;
-  padding: 0px 2px;
-  border: 0.5px solid #eb476e;
+  padding: 0px 0.125rem;
+  border: 1px solid #eb476e;
   color: #eb476e;
   text-align: center;
   font-family: Raleway;
-  font-size: 9px;
+  font-size: 0.5625rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 10px; /* 111.111% */
+  line-height: 0.625rem;
 }
-.aside2__article1 .aside2__article1__div2, .aside2__article3 .aside2__article1__div2, .aside2__article3 .aside2__article3__div2, .aside2__article2 .aside2__article1__div2, .aside2__article2 .aside2__article2__div2 {
+.pricing-article .pricing-button, .pricing-article3 .pricing-button, .pricing-article3 .pricing-button3, .pricing-article2 .pricing-button, .pricing-article2 .pricing-button2 {
   width: 100%;
   text-align: center;
 }
-.aside2__article1 .aside2__article1__div2 button, .aside2__article3 .aside2__article1__div2 button, .aside2__article3 .aside2__article3__div2 button, .aside2__article2 .aside2__article1__div2 button, .aside2__article2 .aside2__article2__div2 button {
-  text-align: center;
-  width: 150px;
-  height: 50px;
+.pricing-article .pricing-button button, .pricing-article3 .pricing-button button, .pricing-article3 .pricing-button3 button, .pricing-article2 .pricing-button button, .pricing-article2 .pricing-button2 button {
+  width: 9.375rem;
+  height: 3.125rem;
   flex-shrink: 0;
   color: #fff;
   font-family: Open Sans;
-  font-size: 13px;
+  font-size: 0.8125rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   border: none;
-  border-radius: 23px;
+  border-radius: 1.4375rem;
   background: #eb476e;
 }
 
-.aside2__article1:hover, .aside2__article3:hover, .aside2__article2:hover {
+.pricing-article:hover, .pricing-article3:hover, .pricing-article2:hover {
   transform: scale(1.2);
 }
-.aside2__article1:hover .aside2__article1__section, .aside2__article1:hover .aside2__article3 .aside2__article3__section, .aside2__article3 .aside2__article1:hover .aside2__article3__section, .aside2__article3:hover .aside2__article1__section, .aside2__article3:hover .aside2__article3__section, .aside2__article1:hover .aside2__article2 .aside2__article2__section, .aside2__article3:hover .aside2__article2 .aside2__article2__section, .aside2__article2 .aside2__article1:hover .aside2__article2__section, .aside2__article2 .aside2__article3:hover .aside2__article2__section, .aside2__article2:hover .aside2__article1__section, .aside2__article2:hover .aside2__article3 .aside2__article3__section, .aside2__article3 .aside2__article2:hover .aside2__article3__section, .aside2__article2:hover .aside2__article2__section {
+.pricing-article:hover .pricing-section, .pricing-article:hover .pricing-article3 .pricing-section3, .pricing-article3 .pricing-article:hover .pricing-section3, .pricing-article3:hover .pricing-section, .pricing-article3:hover .pricing-section3, .pricing-article:hover .pricing-article2 .pricing-section2, .pricing-article3:hover .pricing-article2 .pricing-section2, .pricing-article2 .pricing-article:hover .pricing-section2, .pricing-article2 .pricing-article3:hover .pricing-section2, .pricing-article2:hover .pricing-section, .pricing-article2:hover .pricing-article3 .pricing-section3, .pricing-article3 .pricing-article2:hover .pricing-section3, .pricing-article2:hover .pricing-section2 {
   box-shadow: 5px 10px 27px 0px rgba(235, 71, 109, 0.2745098039);
 }
 
-.aside2__article2 .aside2__article2__section {
+.pricing-article2 {
+  margin-top: 1.875rem;
+}
+.pricing-article2 .pricing-section2 {
   border: 1px solid #07ace6;
 }
-.aside2__article2 .aside2__article2__section .aside2__article2__section__div1 h5 {
+.pricing-article2 .pricing-section2 .pricing-text2 h5 {
   color: #07ace6;
 }
-.aside2__article2 .aside2__article2__section .aside2__article2__section__div1 h6 {
+.pricing-article2 .pricing-section2 .pricing-text2 h6 {
   width: 100%;
   text-align: center;
   color: #13253b;
   font-family: Raleway;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
-.aside2__article2 .aside2__article2__div2 button {
+.pricing-article2 .pricing-button2 button {
   background: #07ace6;
 }
 
-.aside2__article2:hover .aside2__article2__section {
+.pricing-article2:hover .pricing-section2 {
   box-shadow: 5px 10px 27px 0px rgba(7, 171, 230, 0.3019607843);
 }
 
-.aside2__article3 .aside2__article3__section {
+.pricing-article3 {
+  margin-top: 1.875rem;
+}
+.pricing-article3 .pricing-section3 {
   border: 1px solid #55dfb4;
 }
-.aside2__article3 .aside2__article3__section .aside2__article3__section__div1 h5 {
+.pricing-article3 .pricing-section3 .pricing-text3 h5 {
   color: #55dfb4;
 }
-.aside2__article3 .aside2__article3__section .aside2__article3__section__div1 h6 {
+.pricing-article3 .pricing-section3 .pricing-text3 h6 {
   width: 100%;
   text-align: center;
   color: #13253b;
   font-family: Raleway;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
-.aside2__article3 .aside2__article3__div2 button {
+.pricing-article3 .pricing-button3 button {
   background: #55dfb4;
 }
 
-.aside2__article3:hover .aside2__article3__section {
+.pricing-article3:hover .pricing-section3 {
   box-shadow: 5px 10px 27px 0px rgba(85, 223, 179, 0.3019607843);
 }
 
 @media screen and (min-width: 520px) {
-  .aside2 {
+  .pricing {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 90%;
   }
-  .aside2 .aside2__container {
+  .pricing .pricing-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 60px;
+    gap: 3.75rem;
     width: 100%;
-    margin-bottom: 130px;
+    margin-bottom: 8.125rem;
   }
-  .aside2 .aside2__container .aside2__article1, .aside2 .aside2__container .aside2__article2, .aside2 .aside2__container .aside2__article3 {
+  .pricing .pricing-container .pricing-article, .pricing .pricing-container .pricing-article2, .pricing .pricing-container .pricing-article3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: auto;
-    width: 372px;
+    width: 23.25rem;
     margin: 0px;
     padding: 0px;
   }
-  .aside2 .aside2__container .aside2__article1 .aside2__article1__section, .aside2 .aside2__container .aside2__article2 .aside2__article1__section, .aside2 .aside2__container .aside2__article3 .aside2__article1__section, .aside2__article2 .aside2 .aside2__container .aside2__article1 .aside2__article2__section, .aside2 .aside2__container .aside2__article2 .aside2__article2__section, .aside2__article2 .aside2 .aside2__container .aside2__article3 .aside2__article2__section, .aside2__article3 .aside2 .aside2__container .aside2__article1 .aside2__article3__section, .aside2__article3 .aside2 .aside2__container .aside2__article2 .aside2__article3__section, .aside2 .aside2__container .aside2__article3 .aside2__article3__section {
+  .pricing .pricing-container .pricing-article .pricing-section, .pricing .pricing-container .pricing-article2 .pricing-section, .pricing .pricing-container .pricing-article3 .pricing-section, .pricing-article2 .pricing .pricing-container .pricing-article .pricing-section2, .pricing .pricing-container .pricing-article2 .pricing-section2, .pricing-article2 .pricing .pricing-container .pricing-article3 .pricing-section2, .pricing-article3 .pricing .pricing-container .pricing-article .pricing-section3, .pricing-article3 .pricing .pricing-container .pricing-article2 .pricing-section3, .pricing .pricing-container .pricing-article3 .pricing-section3 {
     display: flex;
     flex-direction: column;
-    height: 461px;
-    margin-top: 50px;
-    padding-bottom: 55px;
+    height: 28.8125rem;
+    margin-top: 3.125rem;
+    padding-bottom: 3.4375rem;
   }
-  .aside2 .aside2__container .aside2__article1 .aside2__article1__section .aside2__article1__section__div1, .aside2 .aside2__container .aside2__article2 .aside2__article1__section .aside2__article1__section__div1, .aside2 .aside2__container .aside2__article3 .aside2__article1__section .aside2__article1__section__div1, .aside2__article2 .aside2 .aside2__container .aside2__article1 .aside2__article2__section .aside2__article1__section__div1, .aside2 .aside2__container .aside2__article2 .aside2__article2__section .aside2__article1__section__div1, .aside2__article2 .aside2 .aside2__container .aside2__article3 .aside2__article2__section .aside2__article1__section__div1, .aside2__article3 .aside2 .aside2__container .aside2__article1 .aside2__article3__section .aside2__article1__section__div1, .aside2__article3 .aside2 .aside2__container .aside2__article2 .aside2__article3__section .aside2__article1__section__div1, .aside2 .aside2__container .aside2__article3 .aside2__article3__section .aside2__article1__section__div1, .aside2__article2 .aside2__article2__section .aside2 .aside2__container .aside2__article1 .aside2__article1__section .aside2__article2__section__div1, .aside2__article2 .aside2__article2__section .aside2 .aside2__container .aside2__article3 .aside2__article1__section .aside2__article2__section__div1, .aside2__article2 .aside2 .aside2__container .aside2__article1 .aside2__article2__section .aside2__article2__section__div1, .aside2 .aside2__container .aside2__article2 .aside2__article2__section .aside2__article2__section__div1, .aside2__article2 .aside2 .aside2__container .aside2__article3 .aside2__article2__section .aside2__article2__section__div1, .aside2__article2 .aside2__article2__section .aside2__article3 .aside2 .aside2__container .aside2__article1 .aside2__article3__section .aside2__article2__section__div1, .aside2__article2 .aside2__article2__section .aside2 .aside2__container .aside2__article3 .aside2__article3__section .aside2__article2__section__div1, .aside2__article3 .aside2__article3__section .aside2 .aside2__container .aside2__article1 .aside2__article1__section .aside2__article3__section__div1, .aside2__article3 .aside2__article3__section .aside2 .aside2__container .aside2__article2 .aside2__article1__section .aside2__article3__section__div1, .aside2__article3 .aside2__article3__section .aside2__article2 .aside2 .aside2__container .aside2__article1 .aside2__article2__section .aside2__article3__section__div1, .aside2__article3 .aside2__article3__section .aside2 .aside2__container .aside2__article2 .aside2__article2__section .aside2__article3__section__div1, .aside2__article3 .aside2 .aside2__container .aside2__article1 .aside2__article3__section .aside2__article3__section__div1, .aside2__article3 .aside2 .aside2__container .aside2__article2 .aside2__article3__section .aside2__article3__section__div1, .aside2 .aside2__container .aside2__article3 .aside2__article3__section .aside2__article3__section__div1 {
+  .pricing .pricing-container .pricing-article .pricing-section .pricing-text, .pricing .pricing-container .pricing-article2 .pricing-section .pricing-text, .pricing .pricing-container .pricing-article3 .pricing-section .pricing-text, .pricing-article2 .pricing .pricing-container .pricing-article .pricing-section2 .pricing-text, .pricing .pricing-container .pricing-article2 .pricing-section2 .pricing-text, .pricing-article2 .pricing .pricing-container .pricing-article3 .pricing-section2 .pricing-text, .pricing-article3 .pricing .pricing-container .pricing-article .pricing-section3 .pricing-text, .pricing-article3 .pricing .pricing-container .pricing-article2 .pricing-section3 .pricing-text, .pricing .pricing-container .pricing-article3 .pricing-section3 .pricing-text, .pricing-article2 .pricing-section2 .pricing .pricing-container .pricing-article .pricing-section .pricing-text2, .pricing-article2 .pricing-section2 .pricing .pricing-container .pricing-article3 .pricing-section .pricing-text2, .pricing-article2 .pricing .pricing-container .pricing-article .pricing-section2 .pricing-text2, .pricing .pricing-container .pricing-article2 .pricing-section2 .pricing-text2, .pricing-article2 .pricing .pricing-container .pricing-article3 .pricing-section2 .pricing-text2, .pricing-article2 .pricing-section2 .pricing-article3 .pricing .pricing-container .pricing-article .pricing-section3 .pricing-text2, .pricing-article2 .pricing-section2 .pricing .pricing-container .pricing-article3 .pricing-section3 .pricing-text2, .pricing-article3 .pricing-section3 .pricing .pricing-container .pricing-article .pricing-section .pricing-text3, .pricing-article3 .pricing-section3 .pricing .pricing-container .pricing-article2 .pricing-section .pricing-text3, .pricing-article3 .pricing-section3 .pricing-article2 .pricing .pricing-container .pricing-article .pricing-section2 .pricing-text3, .pricing-article3 .pricing-section3 .pricing .pricing-container .pricing-article2 .pricing-section2 .pricing-text3, .pricing-article3 .pricing .pricing-container .pricing-article .pricing-section3 .pricing-text3, .pricing-article3 .pricing .pricing-container .pricing-article2 .pricing-section3 .pricing-text3, .pricing .pricing-container .pricing-article3 .pricing-section3 .pricing-text3 {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
   }
-  .aside2 .aside2__container .aside2__article1 .aside2__article1__section .aside2__article1__section__div1 h4, .aside2 .aside2__container .aside2__article2 .aside2__article1__section .aside2__article1__section__div1 h4, .aside2 .aside2__container .aside2__article3 .aside2__article1__section .aside2__article1__section__div1 h4, .aside2__article2 .aside2 .aside2__container .aside2__article1 .aside2__article2__section .aside2__article1__section__div1 h4, .aside2 .aside2__container .aside2__article2 .aside2__article2__section .aside2__article1__section__div1 h4, .aside2__article2 .aside2 .aside2__container .aside2__article3 .aside2__article2__section .aside2__article1__section__div1 h4, .aside2__article3 .aside2 .aside2__container .aside2__article1 .aside2__article3__section .aside2__article1__section__div1 h4, .aside2__article3 .aside2 .aside2__container .aside2__article2 .aside2__article3__section .aside2__article1__section__div1 h4, .aside2 .aside2__container .aside2__article3 .aside2__article3__section .aside2__article1__section__div1 h4, .aside2__article2 .aside2__article2__section .aside2 .aside2__container .aside2__article1 .aside2__article1__section .aside2__article2__section__div1 h4, .aside2__article2 .aside2__article2__section .aside2 .aside2__container .aside2__article3 .aside2__article1__section .aside2__article2__section__div1 h4, .aside2__article2 .aside2 .aside2__container .aside2__article1 .aside2__article2__section .aside2__article2__section__div1 h4, .aside2 .aside2__container .aside2__article2 .aside2__article2__section .aside2__article2__section__div1 h4, .aside2__article2 .aside2 .aside2__container .aside2__article3 .aside2__article2__section .aside2__article2__section__div1 h4, .aside2__article2 .aside2__article2__section .aside2__article3 .aside2 .aside2__container .aside2__article1 .aside2__article3__section .aside2__article2__section__div1 h4, .aside2__article2 .aside2__article2__section .aside2 .aside2__container .aside2__article3 .aside2__article3__section .aside2__article2__section__div1 h4, .aside2__article3 .aside2__article3__section .aside2 .aside2__container .aside2__article1 .aside2__article1__section .aside2__article3__section__div1 h4, .aside2__article3 .aside2__article3__section .aside2 .aside2__container .aside2__article2 .aside2__article1__section .aside2__article3__section__div1 h4, .aside2__article3 .aside2__article3__section .aside2__article2 .aside2 .aside2__container .aside2__article1 .aside2__article2__section .aside2__article3__section__div1 h4, .aside2__article3 .aside2__article3__section .aside2 .aside2__container .aside2__article2 .aside2__article2__section .aside2__article3__section__div1 h4, .aside2__article3 .aside2 .aside2__container .aside2__article1 .aside2__article3__section .aside2__article3__section__div1 h4, .aside2__article3 .aside2 .aside2__container .aside2__article2 .aside2__article3__section .aside2__article3__section__div1 h4, .aside2 .aside2__container .aside2__article3 .aside2__article3__section .aside2__article3__section__div1 h4 {
-    margin-top: 34px;
+  .pricing .pricing-container .pricing-article .pricing-section .pricing-text h4, .pricing .pricing-container .pricing-article2 .pricing-section .pricing-text h4, .pricing .pricing-container .pricing-article3 .pricing-section .pricing-text h4, .pricing-article2 .pricing .pricing-container .pricing-article .pricing-section2 .pricing-text h4, .pricing .pricing-container .pricing-article2 .pricing-section2 .pricing-text h4, .pricing-article2 .pricing .pricing-container .pricing-article3 .pricing-section2 .pricing-text h4, .pricing-article3 .pricing .pricing-container .pricing-article .pricing-section3 .pricing-text h4, .pricing-article3 .pricing .pricing-container .pricing-article2 .pricing-section3 .pricing-text h4, .pricing .pricing-container .pricing-article3 .pricing-section3 .pricing-text h4, .pricing-article2 .pricing-section2 .pricing .pricing-container .pricing-article .pricing-section .pricing-text2 h4, .pricing-article2 .pricing-section2 .pricing .pricing-container .pricing-article3 .pricing-section .pricing-text2 h4, .pricing-article2 .pricing .pricing-container .pricing-article .pricing-section2 .pricing-text2 h4, .pricing .pricing-container .pricing-article2 .pricing-section2 .pricing-text2 h4, .pricing-article2 .pricing .pricing-container .pricing-article3 .pricing-section2 .pricing-text2 h4, .pricing-article2 .pricing-section2 .pricing-article3 .pricing .pricing-container .pricing-article .pricing-section3 .pricing-text2 h4, .pricing-article2 .pricing-section2 .pricing .pricing-container .pricing-article3 .pricing-section3 .pricing-text2 h4, .pricing-article3 .pricing-section3 .pricing .pricing-container .pricing-article .pricing-section .pricing-text3 h4, .pricing-article3 .pricing-section3 .pricing .pricing-container .pricing-article2 .pricing-section .pricing-text3 h4, .pricing-article3 .pricing-section3 .pricing-article2 .pricing .pricing-container .pricing-article .pricing-section2 .pricing-text3 h4, .pricing-article3 .pricing-section3 .pricing .pricing-container .pricing-article2 .pricing-section2 .pricing-text3 h4, .pricing-article3 .pricing .pricing-container .pricing-article .pricing-section3 .pricing-text3 h4, .pricing-article3 .pricing .pricing-container .pricing-article2 .pricing-section3 .pricing-text3 h4, .pricing .pricing-container .pricing-article3 .pricing-section3 .pricing-text3 h4 {
+    margin-top: 2.0625rem;
   }
-  .aside2 .aside2__container .aside2__article1 .aside2__article1__section .aside2__article1__section__div1 h5, .aside2 .aside2__container .aside2__article2 .aside2__article1__section .aside2__article1__section__div1 h5, .aside2 .aside2__container .aside2__article3 .aside2__article1__section .aside2__article1__section__div1 h5, .aside2__article2 .aside2 .aside2__container .aside2__article1 .aside2__article2__section .aside2__article1__section__div1 h5, .aside2 .aside2__container .aside2__article2 .aside2__article2__section .aside2__article1__section__div1 h5, .aside2__article2 .aside2 .aside2__container .aside2__article3 .aside2__article2__section .aside2__article1__section__div1 h5, .aside2__article3 .aside2 .aside2__container .aside2__article1 .aside2__article3__section .aside2__article1__section__div1 h5, .aside2__article3 .aside2 .aside2__container .aside2__article2 .aside2__article3__section .aside2__article1__section__div1 h5, .aside2 .aside2__container .aside2__article3 .aside2__article3__section .aside2__article1__section__div1 h5, .aside2__article2 .aside2__article2__section .aside2 .aside2__container .aside2__article1 .aside2__article1__section .aside2__article2__section__div1 h5, .aside2__article2 .aside2__article2__section .aside2 .aside2__container .aside2__article3 .aside2__article1__section .aside2__article2__section__div1 h5, .aside2__article2 .aside2 .aside2__container .aside2__article1 .aside2__article2__section .aside2__article2__section__div1 h5, .aside2 .aside2__container .aside2__article2 .aside2__article2__section .aside2__article2__section__div1 h5, .aside2__article2 .aside2 .aside2__container .aside2__article3 .aside2__article2__section .aside2__article2__section__div1 h5, .aside2__article2 .aside2__article2__section .aside2__article3 .aside2 .aside2__container .aside2__article1 .aside2__article3__section .aside2__article2__section__div1 h5, .aside2__article2 .aside2__article2__section .aside2 .aside2__container .aside2__article3 .aside2__article3__section .aside2__article2__section__div1 h5, .aside2__article3 .aside2__article3__section .aside2 .aside2__container .aside2__article1 .aside2__article1__section .aside2__article3__section__div1 h5, .aside2__article3 .aside2__article3__section .aside2 .aside2__container .aside2__article2 .aside2__article1__section .aside2__article3__section__div1 h5, .aside2__article3 .aside2__article3__section .aside2__article2 .aside2 .aside2__container .aside2__article1 .aside2__article2__section .aside2__article3__section__div1 h5, .aside2__article3 .aside2__article3__section .aside2 .aside2__container .aside2__article2 .aside2__article2__section .aside2__article3__section__div1 h5, .aside2__article3 .aside2 .aside2__container .aside2__article1 .aside2__article3__section .aside2__article3__section__div1 h5, .aside2__article3 .aside2 .aside2__container .aside2__article2 .aside2__article3__section .aside2__article3__section__div1 h5, .aside2 .aside2__container .aside2__article3 .aside2__article3__section .aside2__article3__section__div1 h5 {
-    margin-top: 14px;
+  .pricing .pricing-container .pricing-article .pricing-section .pricing-text h5, .pricing .pricing-container .pricing-article2 .pricing-section .pricing-text h5, .pricing .pricing-container .pricing-article3 .pricing-section .pricing-text h5, .pricing-article2 .pricing .pricing-container .pricing-article .pricing-section2 .pricing-text h5, .pricing .pricing-container .pricing-article2 .pricing-section2 .pricing-text h5, .pricing-article2 .pricing .pricing-container .pricing-article3 .pricing-section2 .pricing-text h5, .pricing-article3 .pricing .pricing-container .pricing-article .pricing-section3 .pricing-text h5, .pricing-article3 .pricing .pricing-container .pricing-article2 .pricing-section3 .pricing-text h5, .pricing .pricing-container .pricing-article3 .pricing-section3 .pricing-text h5, .pricing-article2 .pricing-section2 .pricing .pricing-container .pricing-article .pricing-section .pricing-text2 h5, .pricing-article2 .pricing-section2 .pricing .pricing-container .pricing-article3 .pricing-section .pricing-text2 h5, .pricing-article2 .pricing .pricing-container .pricing-article .pricing-section2 .pricing-text2 h5, .pricing .pricing-container .pricing-article2 .pricing-section2 .pricing-text2 h5, .pricing-article2 .pricing .pricing-container .pricing-article3 .pricing-section2 .pricing-text2 h5, .pricing-article2 .pricing-section2 .pricing-article3 .pricing .pricing-container .pricing-article .pricing-section3 .pricing-text2 h5, .pricing-article2 .pricing-section2 .pricing .pricing-container .pricing-article3 .pricing-section3 .pricing-text2 h5, .pricing-article3 .pricing-section3 .pricing .pricing-container .pricing-article .pricing-section .pricing-text3 h5, .pricing-article3 .pricing-section3 .pricing .pricing-container .pricing-article2 .pricing-section .pricing-text3 h5, .pricing-article3 .pricing-section3 .pricing-article2 .pricing .pricing-container .pricing-article .pricing-section2 .pricing-text3 h5, .pricing-article3 .pricing-section3 .pricing .pricing-container .pricing-article2 .pricing-section2 .pricing-text3 h5, .pricing-article3 .pricing .pricing-container .pricing-article .pricing-section3 .pricing-text3 h5, .pricing-article3 .pricing .pricing-container .pricing-article2 .pricing-section3 .pricing-text3 h5, .pricing .pricing-container .pricing-article3 .pricing-section3 .pricing-text3 h5 {
+    margin-top: 0.875rem;
   }
-  .aside2 .aside2__container .aside2__article1 .aside2__article1__section ul, .aside2 .aside2__container .aside2__article2 .aside2__article1__section ul, .aside2 .aside2__container .aside2__article3 .aside2__article1__section ul, .aside2__article2 .aside2 .aside2__container .aside2__article1 .aside2__article2__section ul, .aside2 .aside2__container .aside2__article2 .aside2__article2__section ul, .aside2__article2 .aside2 .aside2__container .aside2__article3 .aside2__article2__section ul, .aside2__article3 .aside2 .aside2__container .aside2__article1 .aside2__article3__section ul, .aside2__article3 .aside2 .aside2__container .aside2__article2 .aside2__article3__section ul, .aside2 .aside2__container .aside2__article3 .aside2__article3__section ul {
+  .pricing .pricing-container .pricing-article .pricing-section ul, .pricing .pricing-container .pricing-article2 .pricing-section ul, .pricing .pricing-container .pricing-article3 .pricing-section ul, .pricing-article2 .pricing .pricing-container .pricing-article .pricing-section2 ul, .pricing .pricing-container .pricing-article2 .pricing-section2 ul, .pricing-article2 .pricing .pricing-container .pricing-article3 .pricing-section2 ul, .pricing-article3 .pricing .pricing-container .pricing-article .pricing-section3 ul, .pricing-article3 .pricing .pricing-container .pricing-article2 .pricing-section3 ul, .pricing .pricing-container .pricing-article3 .pricing-section3 ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 3.125rem;
   }
-  .aside2 .aside2__container .aside2__article1 .aside2__article1__div2, .aside2 .aside2__container .aside2__article2 .aside2__article1__div2, .aside2 .aside2__container .aside2__article3 .aside2__article1__div2, .aside2__article2 .aside2 .aside2__container .aside2__article1 .aside2__article2__div2, .aside2 .aside2__container .aside2__article2 .aside2__article2__div2, .aside2__article2 .aside2 .aside2__container .aside2__article3 .aside2__article2__div2, .aside2__article3 .aside2 .aside2__container .aside2__article1 .aside2__article3__div2, .aside2__article3 .aside2 .aside2__container .aside2__article2 .aside2__article3__div2, .aside2 .aside2__container .aside2__article3 .aside2__article3__div2 {
+  .pricing .pricing-container .pricing-article .pricing-button, .pricing .pricing-container .pricing-article2 .pricing-button, .pricing .pricing-container .pricing-article3 .pricing-button, .pricing-article2 .pricing .pricing-container .pricing-article .pricing-button2, .pricing .pricing-container .pricing-article2 .pricing-button2, .pricing-article2 .pricing .pricing-container .pricing-article3 .pricing-button2, .pricing-article3 .pricing .pricing-container .pricing-article .pricing-button3, .pricing-article3 .pricing .pricing-container .pricing-article2 .pricing-button3, .pricing .pricing-container .pricing-article3 .pricing-button3 {
     display: flex;
     justify-content: center;
     width: 100%;
   }
-  .aside2 .aside2__container .aside2__article1 .aside2__article1__div2 button, .aside2 .aside2__container .aside2__article2 .aside2__article1__div2 button, .aside2 .aside2__container .aside2__article3 .aside2__article1__div2 button, .aside2__article2 .aside2 .aside2__container .aside2__article1 .aside2__article2__div2 button, .aside2 .aside2__container .aside2__article2 .aside2__article2__div2 button, .aside2__article2 .aside2 .aside2__container .aside2__article3 .aside2__article2__div2 button, .aside2__article3 .aside2 .aside2__container .aside2__article1 .aside2__article3__div2 button, .aside2__article3 .aside2 .aside2__container .aside2__article2 .aside2__article3__div2 button, .aside2 .aside2__container .aside2__article3 .aside2__article3__div2 button {
-    width: 165px;
-    height: 50px;
+  .pricing .pricing-container .pricing-article .pricing-button button, .pricing .pricing-container .pricing-article2 .pricing-button button, .pricing .pricing-container .pricing-article3 .pricing-button button, .pricing-article2 .pricing .pricing-container .pricing-article .pricing-button2 button, .pricing .pricing-container .pricing-article2 .pricing-button2 button, .pricing-article2 .pricing .pricing-container .pricing-article3 .pricing-button2 button, .pricing-article3 .pricing .pricing-container .pricing-article .pricing-button3 button, .pricing-article3 .pricing .pricing-container .pricing-article2 .pricing-button3 button, .pricing .pricing-container .pricing-article3 .pricing-button3 button {
+    width: 10.3125rem;
+    height: 3.125rem;
   }
 }/*# sourceMappingURL=aside2.css.map */

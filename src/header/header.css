@@ -1,50 +1,71 @@
 header {
   width: 100%;
-  height: 70px;
+  text-align: center;
+  height: 4.4rem;
   background: #fff;
-  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.29);
   z-index: 1;
 }
+<<<<<<< HEAD
 header .header__div1, header .header__div2 {
   width: 100%;
+=======
+header .header-menu, header .header-logo {
+  display: none;
+>>>>>>> 96e767eb928ee7c7aa35c6bb6be7d29cc56520e5
 }
-header .header__div1 h1, header .header__div2 h1 {
-  margin: 17px 50px 0px 25px;
+header .header-menu h1, header .header-logo h1 {
+  margin: 1rem 0rem 1rem 1.5rem;
   display: inline-block;
-  height: 37px;
-  width: 60%;
+  width: 70%;
+  height: auto;
   color: #08a6e4;
   font-family: Raleway;
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 300;
-  line-height: 37px; /* 115.625% */
+  line-height: 2.3rem;
+  text-align: start;
 }
-header .header__div1 ul, header .header__div2 ul {
+header .header-menu button, header .header-logo button {
+  width: 10%;
+  margin: 1.68rem 1.68rem 2rem 0rem;
+  margin-right: 1.7rem;
+  border: 0;
+  background-color: transparent;
+  text-align: end;
+  cursor: pointer;
+}
+header .header-menu button img, header .header-logo button img {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+}
+header .header-menu .header-nav, header .header-logo .header-nav {
+  margin-top: -1.5rem;
   display: flex;
   flex-direction: column;
-  padding-top: 40px;
+  padding-top: 2.5rem;
   width: 100%;
-  height: 175.65px;
+  height: 10.98rem;
   flex-shrink: 0;
   background: #fff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.29);
 }
-header .header__div1 ul a, header .header__div2 ul a {
-  margin-left: 25px;
-  margin-bottom: 14px;
+header .header-menu .header-nav a, header .header-logo .header-nav a {
+  margin-left: 1.56rem;
+  margin-bottom: 0.875rem;
   text-align: start;
   color: #a5a5a5;
   font-family: Open Sans;
-  font-size: 11px;
+  font-size: 0.68rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 15px; /* 136.364% */
-  letter-spacing: 3.28px;
+  line-height: 1rem;
+  letter-spacing: 0.205rem;
   text-transform: uppercase;
   text-decoration: none;
-  z-index: 2;
 }
+<<<<<<< HEAD
 header .header__div1 button, header .header__div2 button {
   display: inline-block;
   border: 0;
@@ -57,13 +78,20 @@ header .header__div1 button img, header .header__div2 button img {
   flex-shrink: 0;
 }
 header .header__div2 button img {
+=======
+header .header-logo {
+  display: block;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.29);
+}
+header .header-logo button img {
+>>>>>>> 96e767eb928ee7c7aa35c6bb6be7d29cc56520e5
   display: inline-block;
   width: 15px;
   height: 15px;
   flex-shrink: 0;
 }
 
-.header__div1 ul a:hover, header .header__div2 ul a:hover {
+.header-menu nav a:hover, header .header-logo nav a:hover {
   color: #000;
 }
 
@@ -71,17 +99,18 @@ header .header__div2 button img {
   header {
     display: flex;
     justify-content: space-between;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.29);
   }
-  header .header__div1, header .header__div2 {
+  header .header-menu, header .header-logo {
     display: flex;
     align-items: center;
     width: 100%;
     height: 100%;
   }
-  header .header__div1 h1, header .header__div2 h1 {
+  header .header-menu h1, header .header-logo h1 {
     margin: 0px 0px 0px 10%;
   }
-  header .header__div1 ul, header .header__div2 ul {
+  header .header-menu .header-nav, header .header-logo .header-nav {
     display: flex;
     flex-direction: row;
     margin: 0px;
@@ -97,20 +126,20 @@ header .header__div2 button img {
     box-shadow: none;
     background-color: transparent;
   }
-  header .header__div1 ul a, header .header__div2 ul a {
+  header .header-menu .header-nav a, header .header-logo .header-nav a {
     margin: 0px;
     display: flex;
     align-items: center;
-    height: 74px;
+    height: 4.625rem;
     border-bottom: 4px solid transparent;
   }
-  header .header__div1 button, header .header__div2 button {
+  header .header-menu button, header .header-logo button {
     display: none;
   }
-  header .header__div2 {
+  header .header-logo {
     display: none;
   }
-  .header__div1 ul a:hover, header .header__div2 ul a:hover {
+  .header-menu nav a:hover, header .header-logo nav a:hover {
     border-bottom: 4px solid #08a6e4;
   }
 }/*# sourceMappingURL=header.css.map */
