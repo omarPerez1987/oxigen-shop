@@ -1,5 +1,5 @@
-.footer__div .clickTop {
-  margin: -100px 0px 0px 0px;
+.footer-clickTop .clickTop {
+  margin: -30px 0px 0px 0px;
   background-color: #f7f7f7;
   border: none;
   border-top-left-radius: 50%;
@@ -9,6 +9,12 @@
   z-index: 10;
   transition: transform 0.3s ease;
 }
-.footer__div .clickTop:hover {
+.footer-clickTop .clickTop:hover {
   transform: scale(1.2);
+}
+
+@media screen and (min-width: 768px) {
+  .footer-clickTop {
+    text-align: center;
+  }
 }/*# sourceMappingURL=footerTop.css.map */

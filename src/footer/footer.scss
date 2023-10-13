@@ -48,7 +48,9 @@ footer {
   footer {
     margin-top: 3.688rem;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+  }
+  .footer__section {
     justify-content: space-between;
   }
 }

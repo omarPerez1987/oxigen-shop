@@ -1,8 +1,11 @@
 import { updateProgressBar } from "../scroller/scroller.js";
+import { isValidEmail } from "../form/form.js";
+import { sendForm } from "../form/sendForm.js";
 
 const modal = document.getElementById("modal-container");
 const cross = document.getElementById("cross");
-const subscribe = document.getElementById("subscribe");
+const inputSub = document.getElementById("inputSub");
+const formModal = document.getElementById("formModal");
 
 // LOCALSTORAGE************************************************
 
@@ -19,25 +22,26 @@ function hasModalBeenShown() {
 // Función para mostrar el modal si no se ha mostrado anteriormente
 export function openModalIfNeeded() {
   hasModalBeenShown();
-
   if (!hasModalBeenShown()) {
     showModal();
-    showModalByScroll();
   }
 }
 
-
 // SHOW MODAL******************************************************
+
 function showModal() {
   showModalByScroll();
   showModalByTime();
 }
 
+let timeoutModal;
+
 function showModalByScroll() {
   window.addEventListener("scroll", () => {
-    const scrolledValue = updateProgressBar();
+    const scrolledValue = updateProgressBar(); // aprovecho la lectura updateProgressBar
     if (!hasModalBeenShown() && scrolledValue > 25) {
       modal.style.display = "flex";
+      clearTimeout(timeoutModal); // remuevo el setTimeout de showmodalByTime
     } else {
       window.removeEventListener("scroll", showModalByScroll); //remueve el evento de escucha
     }
@@ -45,7 +49,7 @@ function showModalByScroll() {
 }
 
 function showModalByTime() {
-  setTimeout(() => {
+  timeoutModal = setTimeout(() => {
     modal.style.display = "flex";
   }, 5000);
 }
@@ -90,3 +94,21 @@ function closeModal() {
   closeModalByKeydowm();
 }
 closeModal();
+
+// Validación y envío del formulario en el modal
+formModal.addEventListener("submit", function (e) {
+  e.preventDefault();
+  validateEmailModal();
+});
+
+function validateEmailModal() {
+  if (isValidEmail(inputSub.value)) {
+    const dataEmail = { email: inputSub.value };
+    sendForm(dataEmail);
+    noneModal();
+    markModalAsShown();
+  } else {
+    alert("Por favor, escriba un correo electrónico válido.");
+    formModal.reset();
+  }
+}

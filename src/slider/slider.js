@@ -32,7 +32,7 @@ export class Slider {
     this.resumeAutoSlide();
   }
 
-  // Método para muestra el slide del indice pasado a través del parametro
+  // Método para mostrar el slide del indice pasado a través del parametro
   showSlide(targetIndex) {
     this.images.forEach((image) => {
       image.style.display = "none";

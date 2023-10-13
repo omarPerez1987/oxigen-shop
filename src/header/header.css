@@ -5,13 +5,8 @@ header {
   background: #fff;
   z-index: 1;
 }
-<<<<<<< HEAD
-header .header__div1, header .header__div2 {
-  width: 100%;
-=======
 header .header-menu, header .header-logo {
   display: none;
->>>>>>> 96e767eb928ee7c7aa35c6bb6be7d29cc56520e5
 }
 header .header-menu h1, header .header-logo h1 {
   margin: 1rem 0rem 1rem 1.5rem;
@@ -65,26 +60,11 @@ header .header-menu .header-nav a, header .header-logo .header-nav a {
   text-transform: uppercase;
   text-decoration: none;
 }
-<<<<<<< HEAD
-header .header__div1 button, header .header__div2 button {
-  display: inline-block;
-  border: 0;
-  background-color: transparent;
-  cursor: pointer;
-}
-header .header__div1 button img, header .header__div2 button img {
-  width: 20px;
-  height: 15px;
-  flex-shrink: 0;
-}
-header .header__div2 button img {
-=======
 header .header-logo {
   display: block;
   box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.29);
 }
 header .header-logo button img {
->>>>>>> 96e767eb928ee7c7aa35c6bb6be7d29cc56520e5
   display: inline-block;
   width: 15px;
   height: 15px;
