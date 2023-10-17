@@ -66,8 +66,8 @@ header .header-logo {
 }
 header .header-logo button img {
   display: inline-block;
-  width: 20px;
-  height: 12px;
+  width: 15px;
+  height: 15px;
   flex-shrink: 0;
 }
 

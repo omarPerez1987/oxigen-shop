@@ -12,8 +12,14 @@ body {
   font-family: Raleway,'Open Sans', system-ui, sans-serif;
 }
 
+//SCROLLER****************************
+@import "./scroller/scroller.css";
+
 // HEADER*****************************
 @import "./header/header.scss";
+
+// MODAL*****************************
+@import "./modal/modal.scss";
 
 // BANNER*****************************
 @import "./banner/banner.scss";
@@ -24,10 +30,14 @@ body {
 // ASIDE 2 ***************************
 @import "./aside2/aside2.scss";
 
+// SLIDER ****************************
+@import "./slider/slider.scss";
+
 // ASIDE 3 ***************************
 @import "./aside3/aside3.scss";
 
 // FOOTER ****************************
+@import "./footer/buttonFooter/footerTop.scss";
 @import "./footer/footer.scss"
 
 

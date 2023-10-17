@@ -47,7 +47,9 @@ footer .footer__div2 .footer__div2__img1 {
   footer {
     margin-top: 3.688rem;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+  }
+  .footer__section {
     justify-content: space-between;
   }
 }/*# sourceMappingURL=footer.css.map */

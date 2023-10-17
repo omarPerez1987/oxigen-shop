@@ -13,11 +13,23 @@
     <title>OXIGENShop</title>
   </head>
   <body>
-    <!-- header******************************************************** -->
     <header>
-      <div class="header-menu">
+      <!-- scroller******************************************************** -->
+      <div class="progress-container">
+        <div class="progress-bar"></div>
+      </div>
+
+      <!-- header******************************************************** -->
+      <div id="noList" class="header-logo">
         <h1>OXYGENShop</h1>
-        <button>
+        <button id="showBtn">
+          <img src="./public/image/header/Menu.png" alt="menu" />
+        </button>
+      </div>
+
+      <div id="dropdownList" class="header-menu" style="display: none">
+        <h1>OXYGENShop</h1>
+        <button id="hideBtn">
           <img src="./public/image/header/Frame 14.png" alt="" />
         </button>
         <nav class="header-nav">
@@ -27,14 +39,28 @@
           <a href="#">Contact</a>
         </nav>
       </div>
-
-      <div class="header-logo">
-        <h1>OXYGENShop</h1>
-        <button>
-          <img src="./public/image/header/Menu.png" alt="menu" />
-        </button>
-      </div>
     </header>
+
+    <!-- modal************************************************************** -->
+    <article class="modal__article">
+      <section id="modal-container" class="modal__article__section">
+        <div id="cross" class="modal__article__section__div1">
+          <img src="./public/image/header/Frame 14.png" alt="" />
+        </div>
+        <form id="formModal" class="modal__article__section__div2">
+          <img src="./public/image/modal/bell.png" alt="" />
+          <h1>Subscribe to our newsletter</h1>
+          <h3>and get a 10% discount in your store!</h3>
+          <input
+            id="inputSub"
+            type="text"
+            placeholder="Enter your email..."
+            value=""
+          />
+          <button type="submit">SUBSCRIBE</button>
+        </form>
+      </section>
+    </article>
 
     <!-- banner ********************************************************* -->
 
@@ -189,13 +215,20 @@
 
     <!-- ASIDE2 ****************************************************************** -->
     <section class="pricing">
+      <div class="currency">
+        <select id="select-currency">
+          <option value="eur" selected>EUR</option>
+          <option value="usd">USD</option>
+          <option value="gbp">GBP</option>
+        </select>
+      </div>
       <h3>Pricing</h3>
       <div class="pricing-container">
         <article class="pricing-article">
           <div class="pricing-section">
             <div class="pricing-text">
               <h4>Basic</h4>
-              <h5>$0</h5>
+              <h5 class="price" data-value="0">€0</h5>
             </div>
             <ul>
               <li>
@@ -238,7 +271,7 @@
           <div class="pricing-section2">
             <div class="pricing-text2">
               <h4>Profesional</h4>
-              <h5>$25</h5>
+              <h5 class="price" data-value="25">€25</h5>
               <h6>Limited offer</h6>
             </div>
             <ul>
@@ -285,7 +318,7 @@
           <div class="pricing-section3">
             <div class="pricing-text3">
               <h4>Premium</h4>
-              <h5>$60</h5>
+              <h5 class="price" data-value="60">€60</h5>
               <h6>Limited offer</h6>
             </div>
             <ul>
@@ -333,6 +366,58 @@
       </div>
     </section>
 
+    <!-- SLIDER*********************************************************************** -->
+
+    <section id="slider" class="slider__section">
+      <h2>Support throughout the entire process, with Oxigen Shop</h2>
+      <div class="slider__div">
+        <ul class="slider__div__images">
+          <li id="slide1">
+            <img
+              src="./public/image/slider/shop1.jpg"
+              alt="personas mirando pantalla en oficina"
+            />
+          </li>
+          <li id="slide2">
+            <img
+              src="./public/image/slider/oficine1.jpg"
+              alt="persona tecleando portatil"
+            />
+          </li>
+          <li id="slide3">
+            <img
+              src="./public/image/slider/coworking.jpg"
+              alt="reunion personal"
+            />
+          </li>
+          <li id="slide4">
+            <img
+              src="./public/image/slider/despacho.jpg"
+              alt="zona con planta y portatil"
+            />
+          </li>
+        </ul>
+      </div>
+      <ul class="slider__section__menu">
+        <button id="prevBtn">
+          <img
+            src="./public/image/slider/arrow-left.png"
+            alt="flecha izquierda"
+          />
+        </button>
+        <li><a id="slide1"></a></li>
+        <li><a id="slide2"></a></li>
+        <li><a id="slide3"></a></li>
+        <li><a id="slide4"></a></li>
+        <button id="nextBtn">
+          <img
+            src="./public/image/slider/arrow-right.png"
+            alt="flecha derecha"
+          />
+        </button>
+      </ul>
+    </section>
+
     <!-- ASIDE3 ******************************************************************* -->
     <section class="contact">
       <article class="contact-article">
@@ -357,16 +442,16 @@
           </div>
         </div>
 
-        <form class="form-section">
+        <form id="myForm" class="form-section">
           <div class="form">
-            <label for="Name">NAME</label>
-            <input type="text" id="Name" name="Name" />
+            <label for="name">NAME</label>
+            <input id="name" type="text" />
             <label for="email">EMAIL</label>
-            <input type="email" id="email" name="email" />
+            <input id="email" type="email" />
           </div>
           <div class="form-check">
             <input type="checkbox" name="check" id="check" />
-            <p>
+            <p id="paragraph">
               I hereby give consent for my personal data included in my
               application to be processed for the purposes of the recruitment
               process under the European Parliament's and Council of the
@@ -377,29 +462,42 @@
             </p>
           </div>
           <div class="form-send">
-            <button>Send</button>
+            <button id="submit" type="submit">Send</button>
           </div>
         </form>
       </article>
     </section>
     <!-- FOOTER ***************************************************************** -->
     <footer>
-      <div class="footer__div1">
-        <h2>OXYGENShop</h2>
-        <p>© 2022 OXYGEN, All Rights Reserved</p>
+      <div class="footer-clickTop">
+        <button id="clickTop" class="clickTop">
+          <img
+            src="./public/image/footer/chevron-up-regular-60.png"
+            alt="flecha arriba"
+          />
+        </button>
       </div>
-      <div class="footer__div2">
-        <img
-          class="footer__div2__img1"
-          src="./public/image/footer/Twitter (2) 2.png"
-          alt="icono Twitter"
-        />
-        <img
-          class="footer__div2__img2"
-          src="./public/image/footer/Facebook (3) 2.png"
-          alt="icono facebook"
-        />
-      </div>
+      <section class="footer__section">
+        <div class="footer__div1">
+          <h2>OXYGENShop</h2>
+          <p>© 2022 OXYGEN, All Rights Reserved</p>
+        </div>
+        <div class="footer__div2">
+          <img
+            class="footer__div2__img1"
+            src="./public/image/footer/Twitter (2) 2.png"
+            alt="icono Twitter"
+          />
+          <img
+            class="footer__div2__img2"
+            src="./public/image/footer/Facebook (3) 2.png"
+            alt="icono facebook"
+          />
+        </div>
+      </section>
     </footer>
+
+    <!-- ARCHIVO JS*********************************** -->
+    <script type="module" src="./app.js"></script>
   </body>
 </html>
