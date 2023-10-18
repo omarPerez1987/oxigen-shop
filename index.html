@@ -10,44 +10,45 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./src/styles.css" />
-    <title>OXIGENShop</title>
+    <title>OXYGENShop</title>
   </head>
   <body>
     <header>
-      <!-- scroller******************************************************** -->
-      <div class="progress-container">
-        <div class="progress-bar"></div>
+      <div class="progress">
+        <div class="progress__bar"></div>
       </div>
 
-      <!-- header******************************************************** -->
-      <div id="noList" class="header-logo">
-        <h1>OXYGENShop</h1>
-        <button id="showBtn">
-          <img src="./public/image/header/Menu.png" alt="menu" />
-        </button>
-      </div>
 
-      <div id="dropdownList" class="header-menu" style="display: none">
-        <h1>OXYGENShop</h1>
-        <button id="hideBtn">
+
+      <div id="dropdownList" class="header__menu" style="display: none">
+        <h1 class="header__menu__title">OXYGENShop</h1>
+        <button class="header__menu__button" id="hideBtn">
           <img src="./public/image/header/Frame 14.png" alt="" />
         </button>
-        <nav class="header-nav">
+        <nav class="header__menu__nav">
           <a href="#">Why Us</a>
           <a href="#">Benefits</a>
           <a href="#">Prices</a>
           <a href="#">Contact</a>
         </nav>
       </div>
+      <div id="noList" class="header__logo">
+        <h1 class="header__menu__title">OXYGENShop</h1>
+        <button class="header__menu__button" id="showBtn">
+          <img src="./public/image/header/Menu.png" alt="menu" />
+        </button>
+      </div>
     </header>
 
-    <!-- modal************************************************************** -->
-    <article class="modal__article">
-      <section id="modal-container" class="modal__article__section">
-        <div id="cross" class="modal__article__section__div1">
+
+
+
+    <article class="modal">
+      <section id="modal-container" class="modal__section">
+        <div id="cross" class="modal__section__frame">
           <img src="./public/image/header/Frame 14.png" alt="" />
         </div>
-        <form id="formModal" class="modal__article__section__div2">
+        <form id="formModal" class="modal__form">
           <img src="./public/image/modal/bell.png" alt="" />
           <h1>Subscribe to our newsletter</h1>
           <h3>and get a 10% discount in your store!</h3>
@@ -62,10 +63,11 @@
       </section>
     </article>
 
-    <!-- banner ********************************************************* -->
+
+
 
     <main class="banner">
-      <section class="banner-title">
+      <section class="banner__title">
         <h2>Sell More!</h2>
         <h3>Open shop on our platform and increase your sales</h3>
         <button>Open your shop</button>
@@ -75,146 +77,158 @@
         <img src="./public/image/banner/Background.png" alt="setup mesa pc" />
       </section>
 
-      <section class="banner-footer">
-        <h3>The most popular sales platform in country</h3>
-        <div class="container-section">
-          <article class="banner-footer__container">
-            <div class="banner-footer__images">
+      <section class="banner__footer">
+        <h3 class="banner__footer__title">
+          The most popular sales platform in country
+        </h3>
+        <div class="banner__footer__container">
+          <article class="banner__footer__article">
+            <div class="banner__footer__images">
               <img
-                class="banner-footer__ellipse"
+                class="banner__footer__ellipse"
                 src="./public/image/banner/banner-footer/Ellipse 1.png"
                 alt="esfera roja"
               />
               <img
-                class="banner-footer__img"
+                class="banner__footer__img"
                 width="44px"
                 height="52px"
                 src="./public/image/banner/banner-footer/Person 2.png"
                 alt="icono persona"
               />
             </div>
-            <p>100000+</p>
-            <span>daily entries</span>
+            <p class="banner__footer__article__subtitle">100000+</p>
+            <span class="banner__footer__article__text">daily entries</span>
           </article>
 
-          <article class="banner-footer__container">
-            <div class="banner-footer__images">
+          <article class="banner__footer__article">
+            <div class="banner__footer__images">
               <img
-                class="banner-footer__ellipse"
+                class="banner__footer__ellipse"
                 src="./public/image/banner/banner-footer/Ellipse 2.png"
                 alt="esfera azul"
               />
               <img
-                class="banner-footer__img"
+                class="banner__footer__img"
                 width="66px"
                 height="36.5px"
                 src="./public/image/banner/banner-footer/Eye 2.png"
                 alt="icono ojo"
               />
             </div>
-            <p>2000000+</p>
-            <span>seen products every day</span>
+            <p class="banner__footer__article__subtitle">2000000+</p>
+            <span class="banner__footer__article__text"
+              >seen products every day</span
+            >
           </article>
 
-          <article class="banner-footer__container">
-            <div class="banner-footer__images">
+          <article class="banner__footer__article">
+            <div class="banner__footer__images">
               <img
-                class="banner-footer__ellipse"
+                class="banner__footer__ellipse"
                 src="./public/image/banner/banner-footer/Ellipse 3.png"
                 alt="esfera verde"
               />
               <img
-                class="banner-footer__img"
+                class="banner__footer__img"
                 width="52px"
                 height="48px"
                 src="./public/image/banner/banner-footer/Catalog 2.png"
                 alt="icono catalogo"
               />
             </div>
-            <p>10000+</p>
-            <span>added posts daily</span>
+            <p class="banner__footer__article__subtitle">10000+</p>
+            <span class="banner__footer__article__text">added posts daily</span>
           </article>
         </div>
       </section>
     </main>
 
-    <!-- section1**************************************************** -->
 
-    <section class="section1">
-      <article class="card1">
-        <div class="div-images">
+
+
+
+    <section class="news">
+      <article class="news__card1">
+        <div class="news__card1__images">
           <img
-            class="div-images__mac"
-            src="./public/image/aside1/Macbook2 1.png"
+            class="news__card1__images__mac"
+            src="./public/image/news/Macbook2 1.png"
             alt="macbook 2"
           />
           <img
-            class="div-images__rombo"
-            src="./public/image/aside1/Rectange 30.png"
+            class="news__card1__images__rombo"
+            src="./public/image/news/Rectange 30.png"
             alt="rombo rojo"
           />
           <img
-            class="div-images__elipse"
-            src="./public/image/aside1/Frame 11.png"
+            class="news__card1__images__elipse"
+            src="./public/image/news/Frame 11.png"
             alt="circulo rojo"
           />
         </div>
-        <div class="div-text">
-          <h3>Be always first</h3>
-          <p>
+        <div class="news__card1__text">
+          <h3 class="news__card1__text__title">Be always first</h3>
+          <p class="news__card1__text__content">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam.
           </p>
-          <span></span>
+          <span class="news__card1__text__span"></span>
         </div>
       </article>
-      <!-- ------------- -->
-      <article class="card2">
-        <div class="div2-images">
+
+      <article class="news__card2">
+        <div class="news__card2__images">
           <img
-            class="div2-images__iphone2"
-            src="./public/image/aside1/iPhone2 1.png"
+            class="news__card2__images__iphone2"
+            src="./public/image/news/iPhone2 1.png"
             alt="iphone 2"
           />
           <img
-            class="div2-images__elipse-azul"
-            src="./public/image/aside1/Ellipse 3 (1).png"
+            class="news__card2__images__elipse-azul"
+            src="./public/image/news/Ellipse 3 (1).png"
             alt="elipse azul"
           />
         </div>
-        <div class="div2-text">
-          <h3>Your shop is where you are!</h3>
-          <p>
+        <div class="news__card2__text">
+          <h3 class="news__card2__text__title">Your shop is where you are!</h3>
+          <p class="news__card2__text__content">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam.
           </p>
-          <span></span>
+          <span class="news__card2__text__span"></span>
         </div>
       </article>
-      <!-- -------------- -->
-      <article class="card3">
-        <div class="div3-text">
-          <h3>Increase recognition your brand!</h3>
-          <p>
+
+      <article class="news__card3">
+        <div class="news__card3__text">
+          <h3 class="news__card3__text__title">
+            Increase recognition your brand!
+          </h3>
+          <p class="news__card3__text__content">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam.
           </p>
-          <span></span>
+          <span class="news__card3__text__span"></span>
         </div>
-        <div class="div3-images">
+        <div class="news__card3__images">
           <img
-            src="./public/image/aside1/Trumpet 1.png"
+            src="./public/image/news/Trumpet 1.png"
             alt="trompeta de fiesta"
           />
         </div>
       </article>
     </section>
 
-    <!-- ASIDE2 ****************************************************************** -->
+
+
+
+
     <section class="pricing">
+
       <div class="currency">
         <select id="select-currency">
           <option value="eur" selected>EUR</option>
@@ -222,33 +236,39 @@
           <option value="gbp">GBP</option>
         </select>
       </div>
-      <h3>Pricing</h3>
-      <div class="pricing-container">
-        <article class="pricing-article">
-          <div class="pricing-section">
-            <div class="pricing-text">
+
+      <h3 class="pricing__title">Pricing</h3>
+      <div class="pricing__container">
+        <article class="pricing__container__article">
+          <div class="pricing__container__article__card card-border-shadow-red">
+            <div class="pricing__container__article__card__text">
               <h4>Basic</h4>
-              <h5 class="price" data-value="0">€0</h5>
+              <h5
+                class="priceJs pricing__container__article__card__text__h5 card-price-red"
+                data-value="0"
+              >
+                €0
+              </h5>
             </div>
-            <ul>
+            <ul class="pricing__container__article__card__list">
               <li>
                 <img
-                  src="./public/image/aside2/Checkbox-green.png"
-                  alt="checbox verde"
+                  src="./public/image/pricing/Checkbox-green.png"
+                  alt="checkbox verde"
                 />
                 <p>100 MB HDD</p>
               </li>
               <li>
                 <img
-                  src="./public/image/aside2/Checkbox-green.png"
-                  alt="checbox verde"
+                  src="./public/image/pricing/Checkbox-green.png"
+                  alt="checkbox verde"
                 />
                 <p>1 Subdomain</p>
               </li>
               <li>
                 <img
-                  src="./public/image/aside2/Checkbox-green.png"
-                  alt="checbox verde"
+                  src="./public/image/pricing/Checkbox-green.png"
+                  alt="checkbox verde"
                 />
                 <p>2 E-mails</p>
               </li>
@@ -262,44 +282,53 @@
               </li>
             </ul>
           </div>
-          <div class="pricing-button">
-            <button>Begin</button>
+          <div class="pricing__container__article__button">
+            <button class="pricing__container__article__general_button card-button-red">
+              Begin
+            </button>
           </div>
         </article>
 
-        <article class="pricing-article2">
-          <div class="pricing-section2">
-            <div class="pricing-text2">
+        <article class="pricing__container__article">
+          <div
+            class="pricing__container__article__card card-border-shadow-blue"
+          >
+            <div class="pricing__container__article__card__text">
               <h4>Profesional</h4>
-              <h5 class="price" data-value="25">€25</h5>
-              <h6>Limited offer</h6>
+              <h5
+                class="priceJs pricing__container__article__card__text__h5 card-price-blue"
+                data-value="25"
+              >
+                €25
+              </h5>
+              <h6 class="pricing__container__article__card__text__h6">Limited offer</h6>
             </div>
-            <ul>
+            <ul class="pricing__container__article__card__list">
               <li>
                 <img
-                  src="./public/image/aside2/Checkbox-green.png"
-                  alt="checbox verde"
+                  src="./public/image/pricing/Checkbox-green.png"
+                  alt="checkbox verde"
                 />
                 <p>500 MB HDD</p>
               </li>
               <li>
                 <img
-                  src="./public/image/aside2/Checkbox-green.png"
-                  alt="checbox verde"
+                  src="./public/image/pricing/Checkbox-green.png"
+                  alt="checkbox verde"
                 />
                 <p>2 Subdomains</p>
               </li>
               <li>
                 <img
-                  src="./public/image/aside2/Checkbox-green.png"
-                  alt="checbox verde"
+                  src="./public/image/pricing/Checkbox-green.png"
+                  alt="checkbox verde"
                 />
                 <p>5 E-mails</p>
               </li>
               <li>
                 <img
-                  src="./public/image/aside2/Checkbox-green.png"
-                  alt="checbox verde"
+                  src="./public/image/pricing/Checkbox-green.png"
+                  alt="checkbox verde"
                 />
                 <p>One year license</p>
               </li>
@@ -309,67 +338,71 @@
               </li>
             </ul>
           </div>
-          <div class="pricing-button2">
-            <button>Begin</button>
+          <div class="pricing__container__article__button">
+            <button class="pricing__container__article__general_button card-button-blue">
+              Begin
+            </button>
           </div>
         </article>
 
-        <article class="pricing-article3">
-          <div class="pricing-section3">
-            <div class="pricing-text3">
+        <article class="pricing__container__article">
+          <div class="pricing__container__article__card card-border-shadow-green">
+            <div class="pricing__container__article__card__text">
               <h4>Premium</h4>
-              <h5 class="price" data-value="60">€60</h5>
-              <h6>Limited offer</h6>
+              <h5 class="priceJs pricing__container__article__card__text__h5 card-price-green" data-value="60">€60</h5>
+              <h6 class="pricing__container__article__card__text__h6">Limited offer</h6>
             </div>
-            <ul>
+            <ul class="pricing__container__article__card__list">
               <li>
                 <img
-                  src="./public/image/aside2/Checkbox-green.png"
-                  alt="checbox verde"
+                  src="./public/image/pricing/Checkbox-green.png"
+                  alt="checkbox verde"
                 />
                 <p>2 GB HDD</p>
               </li>
               <li>
                 <img
-                  src="./public/image/aside2/Checkbox-green.png"
-                  alt="checbox verde"
+                  src="./public/image/pricing/Checkbox-green.png"
+                  alt="checkbox verde"
                 />
                 <p>5 Subdomains</p>
               </li>
               <li>
                 <img
-                  src="./public/image/aside2/Checkbox-green.png"
-                  alt="checbox verde"
+                  src="./public/image/pricing/Checkbox-green.png"
+                  alt="checkbox verde"
                 />
                 <p>20 E-mails</p>
               </li>
               <li>
                 <img
-                  src="./public/image/aside2/Checkbox-green.png"
-                  alt="checbox verde"
+                  src="./public/image/pricing/Checkbox-green.png"
+                  alt="checkbox verde"
                 />
                 <p>Two years license</p>
               </li>
               <li>
                 <img
-                  src="./public/image/aside2/Checkbox-green.png"
-                  alt="checbox verde"
+                  src="./public/image/pricing/Checkbox-green.png"
+                  alt="checkbox verde"
                 />
                 <p>Full support</p>
               </li>
             </ul>
           </div>
-          <div class="pricing-button3">
-            <button>Begin</button>
+          <div class="pricing__container__article__button">
+            <button class="pricing__container__article__general_button card-button-green">Begin</button>
           </div>
         </article>
       </div>
     </section>
 
-    <!-- SLIDER*********************************************************************** -->
+
+
+
 
     <section id="slider" class="slider__section">
-      <h2>Support throughout the entire process, with Oxigen Shop</h2>
+      <h2 class="slider__title">Support throughout the entire process, with Oxigen Shop</h2>
       <div class="slider__div">
         <ul class="slider__div__images">
           <li id="slide1">
@@ -399,7 +432,7 @@
         </ul>
       </div>
       <ul class="slider__section__menu">
-        <button id="prevBtn">
+        <button id="prevBtn" class="slider__section__menu__button">
           <img
             src="./public/image/slider/arrow-left.png"
             alt="flecha izquierda"
@@ -409,7 +442,7 @@
         <li><a id="slide2"></a></li>
         <li><a id="slide3"></a></li>
         <li><a id="slide4"></a></li>
-        <button id="nextBtn">
+        <button id="nextBtn" class="slider__section__menu__button">
           <img
             src="./public/image/slider/arrow-right.png"
             alt="flecha derecha"
@@ -418,38 +451,40 @@
       </ul>
     </section>
 
-    <!-- ASIDE3 ******************************************************************* -->
+
+
+
+
     <section class="contact">
-      <article class="contact-article">
-        <div class="contact-section">
+        <article class="contact__article">
           <h4>Any questions?</h4>
           <h5>Leave your email address or call us!</h5>
-          <div>
-            <div class="contact-email">
+          <div class="contact__article__container">
+            <div class="contact__article__container__info">
               <img
-                src="./public/image/aside3/Mail Icon 2.png"
+                src="./public/image/contact/Mail Icon 2.png"
                 alt="icono mail"
               />
               <p>info@bestshop.xyz</p>
             </div>
-            <div class="contact-phone">
+            <div class="contact__article__container__info">
               <img
-                src="./public/image/aside3/Phone Icon 2.png"
+                src="./public/image/contact/Phone Icon 2.png"
                 alt="icono phone"
               />
               <p>123 456 789</p>
             </div>
           </div>
-        </div>
+        </article>
 
-        <form id="myForm" class="form-section">
-          <div class="form">
+        <form id="myForm" class="contact__form">
+          <div class="contact__form__data">
             <label for="name">NAME</label>
             <input id="name" type="text" />
             <label for="email">EMAIL</label>
             <input id="email" type="email" />
           </div>
-          <div class="form-check">
+          <div class="contact__form__check">
             <input type="checkbox" name="check" id="check" />
             <p id="paragraph">
               I hereby give consent for my personal data included in my
@@ -461,14 +496,18 @@
               95/46/EC (Data Protection Directive)
             </p>
           </div>
-          <div class="form-send">
+          <div class="contact__form__send">
             <button id="submit" type="submit">Send</button>
           </div>
         </form>
-      </article>
     </section>
-    <!-- FOOTER ***************************************************************** -->
-    <footer>
+
+
+
+
+
+
+    <footer class="footer">
       <div class="footer-clickTop">
         <button id="clickTop" class="clickTop">
           <img
@@ -478,18 +517,18 @@
         </button>
       </div>
       <section class="footer__section">
-        <div class="footer__div1">
+        <div class="footer__text">
           <h2>OXYGENShop</h2>
           <p>© 2022 OXYGEN, All Rights Reserved</p>
         </div>
-        <div class="footer__div2">
+        <div class="footer__social">
           <img
-            class="footer__div2__img1"
+            class="footer__social__icons"
             src="./public/image/footer/Twitter (2) 2.png"
             alt="icono Twitter"
           />
           <img
-            class="footer__div2__img2"
+            class="footer__social__icons"
             src="./public/image/footer/Facebook (3) 2.png"
             alt="icono facebook"
           />
@@ -497,7 +536,8 @@
       </section>
     </footer>
 
-    <!-- ARCHIVO JS*********************************** -->
+
+
     <script type="module" src="./app.js"></script>
   </body>
 </html>

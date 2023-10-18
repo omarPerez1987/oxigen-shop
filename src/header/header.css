@@ -1,15 +1,32 @@
 header {
   width: 100%;
   text-align: center;
-  height: 4.4rem;
+  height: 4.4em;
   background: #fff;
   z-index: 1;
 }
-header .header-menu, header .header-logo {
+
+.header__menu {
   display: none;
 }
-header .header-menu h1, header .header-logo h1 {
-  margin: 1rem 0rem 1rem 1.5rem;
+
+.header__menu__button {
+  width: 10%;
+  margin: 1.68em 1.68em 2em 0em;
+  margin-right: 1.7em;
+  border: 0;
+  background-color: transparent;
+  text-align: end;
+  cursor: pointer;
+}
+.header__menu__button img {
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+}
+
+.header__menu__title {
+  margin: 0.5em 0em 0.5em 1em;
   display: inline-block;
   width: 70%;
   height: auto;
@@ -21,34 +38,21 @@ header .header-menu h1, header .header-logo h1 {
   line-height: 2.3rem;
   text-align: start;
 }
-header .header-menu button, header .header-logo button {
-  width: 10%;
-  margin: 1.68rem 1.68rem 2rem 0rem;
-  margin-right: 1.7rem;
-  border: 0;
-  background-color: transparent;
-  text-align: end;
-  cursor: pointer;
-}
-header .header-menu button img, header .header-logo button img {
-  width: 1rem;
-  height: 1rem;
-  flex-shrink: 0;
-}
-header .header-menu .header-nav, header .header-logo .header-nav {
-  margin-top: -1.5rem;
+
+.header__menu__nav {
+  margin-top: -1.5em;
   display: flex;
   flex-direction: column;
-  padding-top: 2.5rem;
+  padding-top: 2.5em;
   width: 100%;
-  height: 10.98rem;
+  height: 10.98em;
   flex-shrink: 0;
   background: #fff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.29);
 }
-header .header-menu .header-nav a, header .header-logo .header-nav a {
-  margin-left: 1.56rem;
-  margin-bottom: 0.875rem;
+.header__menu__nav a {
+  margin-left: 1.56em;
+  margin-bottom: 0.875em;
   text-align: start;
   color: #a5a5a5;
   font-family: Open Sans;
@@ -60,18 +64,21 @@ header .header-menu .header-nav a, header .header-logo .header-nav a {
   text-transform: uppercase;
   text-decoration: none;
 }
-header .header-logo {
+
+.header__logo {
   display: block;
+  width: 100%;
+  background: #fff;
   box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.29);
 }
-header .header-logo button img {
+.header__logo img {
   display: inline-block;
   width: 15px;
   height: 15px;
   flex-shrink: 0;
 }
 
-.header-menu nav a:hover, header .header-logo nav a:hover {
+.header-menu nav a:hover {
   color: #000;
 }
 
@@ -81,16 +88,16 @@ header .header-logo button img {
     justify-content: space-between;
     box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.29);
   }
-  header .header-menu, header .header-logo {
+  .header__menu {
     display: flex;
     align-items: center;
     width: 100%;
     height: 100%;
   }
-  header .header-menu h1, header .header-logo h1 {
+  .header__menu__title {
     margin: 0px 0px 0px 10%;
   }
-  header .header-menu .header-nav, header .header-logo .header-nav {
+  .header__menu__nav {
     display: flex;
     flex-direction: row;
     margin: 0px;
@@ -106,20 +113,20 @@ header .header-logo button img {
     box-shadow: none;
     background-color: transparent;
   }
-  header .header-menu .header-nav a, header .header-logo .header-nav a {
+  .header__menu__nav a {
     margin: 0px;
     display: flex;
     align-items: center;
     height: 4.625rem;
     border-bottom: 4px solid transparent;
   }
-  header .header-menu button, header .header-logo button {
+  .header__menu__button {
     display: none;
   }
-  header .header-logo {
+  .header__logo {
     display: none;
   }
-  .header-menu nav a:hover, header .header-logo nav a:hover {
+  .header__menu__nav a:hover {
     border-bottom: 4px solid #08a6e4;
   }
 }/*# sourceMappingURL=header.css.map */

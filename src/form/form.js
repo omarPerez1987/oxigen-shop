@@ -33,6 +33,7 @@ function printForm() {
 
 // Función para validar el formulario
 export function validateForm() {
+  // console.log(isValidName(), isValidEmail(), isValidCheck())
   return isValidName() && isValidEmail(emailInput.value) && isValidCheck();
 }
 
@@ -44,7 +45,7 @@ myForm.addEventListener("submit", function (e) {
     name: nameInput.value,
     email: emailInput.value,
   };
-
+  
   if (validateForm()) {
     sendForm(dataForm);
   } else {

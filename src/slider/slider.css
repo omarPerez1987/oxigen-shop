@@ -1,54 +1,59 @@
 .slider__section {
-  margin: 5rem 0rem;
+  margin: 5em 0em;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   height: auto;
 }
-.slider__section h2 {
+
+.slider__title {
+  width: 70%;
   text-align: center;
   font-family: Raleway;
-  font-size: 30px;
+  font-size: 1.9rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
-.slider__section .slider__div {
-  margin-top: 2rem;
+
+.slider__div {
+  margin-top: 2em;
   display: flex;
   justify-content: center;
   align-items: center;
   width: auto;
 }
-.slider__section .slider__div .slider__div__images {
+
+.slider__div__images {
   display: flex;
   justify-content: center;
   width: 100%;
   height: auto;
   overflow: hidden;
 }
-.slider__section .slider__div .slider__div__images li {
+.slider__div__images li {
   list-style: none;
   display: flex;
   justify-content: center;
 }
-.slider__section .slider__div .slider__div__images img {
+.slider__div__images img {
   border-radius: 1rem;
   width: 100%;
   height: auto;
 }
-.slider__section .slider__section__menu {
-  margin-top: 2rem;
+
+.slider__section__menu {
+  margin-top: 2em;
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 2em;
   height: auto;
 }
-.slider__section .slider__section__menu li {
+.slider__section__menu li {
   list-style: none;
 }
-.slider__section .slider__section__menu li a {
+.slider__section__menu li a {
   text-decoration: none;
   background-color: #08a6e4;
   padding: 5px 10px;
@@ -56,12 +61,13 @@
   height: auto;
   border-radius: 100%;
   color: white;
-  font-size: 10px;
+  font-size: 0.6rem;
 }
-.slider__section .slider__section__menu button {
+
+.slider__section__menu__button {
   border: none;
   background-color: transparent;
 }
-.slider__section .slider__section__menu button img {
+.slider__section__menu__button img {
   background-color: transparent;
 }/*# sourceMappingURL=slider.css.map */

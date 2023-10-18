@@ -1,5 +1,5 @@
 const selectCurrency = document.getElementById("select-currency");
-const elements = document.querySelectorAll(".price");
+const elements = document.querySelectorAll(".priceJs");
 
 export function getExchangeRates(selectedCurrency) {
   const apiUrl = `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/eur.json`;

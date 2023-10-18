@@ -1,10 +1,6 @@
-.percentage-scroller {
-  position: fixed;
-  width: 100vh;
-  text-align: center;
-}
 
-.progress-container {
+// barra transparente para que no se mueva 
+.progress {
     position: fixed;
     top: 0;
     left: 0;
@@ -13,7 +9,7 @@
     background-color: transparent;
 }
 
-.progress-bar {
+.progress__bar {
     height: 100%;
     width: 0;
     background-color: #3498db;

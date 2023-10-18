@@ -1,4 +1,4 @@
-const progressBar = document.querySelector(".progress-bar");
+const progressBar = document.querySelector(".progress__bar");
 
 export function updateProgressBar() {
   const scrollTop = window.scrollY; //posición actual de desplazamiento vertical
