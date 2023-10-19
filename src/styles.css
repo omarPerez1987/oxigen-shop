@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -1196,15 +1197,12 @@ header {
   cursor: pointer;
 }
 
-.contact__form__check__checkbox:checked {
-  background-image: url("../../public/image/contact/Checkmark.png");
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.contact__form__check__checkbox:disabled {
-  background-color: rgb(198, 198, 198);
-  background-image: none;
+.contact__form__check__checkbox:checked::before {
+  content: "✔";
+  background-color: #fff;
+  color: #08a6e4;
+  text-align: center;
+  margin-left: 0.2em;
 }
 
 .contact__form__send {
