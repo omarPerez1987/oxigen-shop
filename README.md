@@ -1,7 +1,7 @@
 # Oxigen Shop
 
 
-## https://omarperez1987.github.io/oxigen-shop/
+## https://omarperez1987.github.io/oxygen-shop/
 
 Oxigen Shop es una plataforma de comercio electrónico diseñada para ayudarte a crear y administrar tu propia tienda en línea de manera fácil y eficiente.
 
