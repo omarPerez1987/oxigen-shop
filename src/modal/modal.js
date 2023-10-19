@@ -102,6 +102,7 @@ formModal.addEventListener("submit", function (e) {
 });
 
 function validateEmailModal() {
+
   if (isValidEmail(inputSub.value)) {
     const dataEmail = { email: inputSub.value };
     sendForm(dataEmail);

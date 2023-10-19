@@ -759,6 +759,11 @@ header {
   text-align: end;
 }
 
+#select-currency {
+  border-radius: 1rem;
+  padding: 0.5em;
+}
+
 .pricing__title {
   color: #000;
   text-align: center;
@@ -1150,16 +1155,6 @@ header {
   width: 90%;
   margin: 0 auto;
 }
-.contact__form__check input {
-  display: inline-block;
-  margin-right: 0.62em;
-  width: 1.5em;
-  height: 1.5em;
-  flex-shrink: 0;
-  color: #08a6e4;
-  background-color: #fff;
-  cursor: pointer;
-}
 .contact__form__check p {
   display: inline-block;
   width: 79%;
@@ -1171,8 +1166,35 @@ header {
   line-height: normal;
 }
 
+.contact__form__check__checkbox {
+  display: inline-block;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  margin-right: 0.62em;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 0.25rem;
+  border: 1px solid rgb(129, 129, 129);
+  color: #08a6e4;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.contact__form__check__checkbox:checked {
+  background-image: url(../../public/image/contact/Checkmark.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contact__form__check__checkbox:disabled {
+  background-color: rgb(198, 198, 198);
+  background-image: none;
+}
+
 .contact__form__send {
   text-align: end;
+  width: 90%;
 }
 .contact__form__send button {
   margin-top: 2em;
@@ -1223,12 +1245,12 @@ header {
   }
 }
 .footer-clickTop .clickTop {
-  margin: -30px 0px 0px 0px;
+  margin-top: -1.9em;
   background-color: #f7f7f7;
   border: none;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
-  width: 100px;
+  width: 6.25em;
   height: auto;
   z-index: 10;
   transition: transform 0.3s ease;
@@ -1252,7 +1274,6 @@ header {
 .footer__text {
   width: 60%;
   display: inline-block;
-  margin-top: 1.4em;
   margin-left: 5%;
   text-align: start;
 }
@@ -1292,13 +1313,17 @@ header {
 @media screen and (min-width: 768px) {
   .footer {
     margin-top: 3.7em;
+    padding-bottom: 1em;
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
   .footer__section {
     justify-content: space-between;
+    align-items: center;
   }
   .footer__social {
+    margin-top: 1em;
     text-align: end;
   }
 }/*# sourceMappingURL=styles.css.map */

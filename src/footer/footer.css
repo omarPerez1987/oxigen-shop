@@ -8,7 +8,6 @@
 .footer__text {
   width: 60%;
   display: inline-block;
-  margin-top: 1.4em;
   margin-left: 5%;
   text-align: start;
 }
@@ -48,13 +47,17 @@
 @media screen and (min-width: 768px) {
   .footer {
     margin-top: 3.7em;
+    padding-bottom: 1em;
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
   .footer__section {
     justify-content: space-between;
+    align-items: center;
   }
   .footer__social {
+    margin-top: 1em;
     text-align: end;
   }
 }/*# sourceMappingURL=footer.css.map */

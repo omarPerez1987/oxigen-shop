@@ -4,7 +4,6 @@ const myForm = document.getElementById("myForm");
 const nameInput = document.getElementById("name");
 const checkBox = document.getElementById("check");
 const emailInput = document.getElementById("email");
-const paragraph = document.getElementById("paragraph");
 
 function isValidName() {
   return nameInput.value.length >= 2 && nameInput.value.length <= 100;
@@ -12,7 +11,10 @@ function isValidName() {
 
 export function isValidEmail(email) {
   const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-  return emailRegex.test(email);
+
+  if (emailRegex.test(email) || emailRegex.test(emailInput.value)) {
+    return true;
+  }
 }
 
 function isValidCheck() {
@@ -27,27 +29,26 @@ function printForm() {
     ? (emailInput.style.border = "")
     : (emailInput.style.border = "1px solid red");
   isValidCheck()
-    ? (paragraph.style.color = "")
-    : (paragraph.style.color = "red");
+    ? (checkBox.style.border= "")
+    : (checkBox.style.border= "1px solid red");
 }
 
 // Función para validar el formulario
 export function validateForm() {
-  // console.log(isValidName(), isValidEmail(), isValidCheck())
-  return isValidName() && isValidEmail(emailInput.value) && isValidCheck();
+  return isValidName() && isValidEmail() && isValidCheck();
 }
-
 
 myForm.addEventListener("submit", function (e) {
   e.preventDefault();
-  
+
   const dataForm = {
     name: nameInput.value,
     email: emailInput.value,
   };
-  
+
   if (validateForm()) {
     sendForm(dataForm);
+    myForm.reset();
   } else {
     printForm();
     alert("Por favor, complete el formulario correctamente.");

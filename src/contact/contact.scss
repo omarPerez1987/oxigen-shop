@@ -72,16 +72,6 @@
   display: flex;
   width: 90%;
   margin: 0 auto;
-  input {
-    display: inline-block;
-    margin-right: 0.62em;
-    width: 1.5em;
-    height: 1.5em;
-    flex-shrink: 0;
-    color: #08a6e4;
-    background-color: #fff;
-    cursor: pointer;
-  }
   p {
     display: inline-block;
     width: 79%;
@@ -93,10 +83,34 @@
     line-height: normal;
   }
 }
+.contact__form__check__checkbox {
+  display: inline-block;
+  appearance: none;
+  margin-right: 0.62em;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 0.25rem;
+  border: 1px solid rgb(129, 129, 129);
+  color: #08a6e4;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.contact__form__check__checkbox:checked {
+  background-image: url(../../public/image/contact/Checkmark.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.contact__form__check__checkbox:disabled {
+  background-color: rgb(198, 198, 198);
+  background-image: none;
+}
+
 .contact__form__send {
   text-align: end;
+  width: 90%;
   button {
-    margin-top: 2.0em;
+    margin-top: 2em;
     width: 14.1em;
     height: 3.5em;
     flex-shrink: 0;

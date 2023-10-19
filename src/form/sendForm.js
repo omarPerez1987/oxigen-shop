@@ -8,7 +8,9 @@ export function sendForm(data) {
   })
     .then((response) => {
       if (!response.ok) {
-        throw new Error("❌ La solicitud no se pudo completar correctamente.");
+        throw new Error(
+          alert("❌ La solicitud no se pudo completar correctamente.")
+        );
       }
       return response.json();
     })
