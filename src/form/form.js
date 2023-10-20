@@ -33,7 +33,6 @@ function printForm() {
     : (checkBox.style.border= "1px solid red");
 }
 
-// Función para validar el formulario
 export function validateForm() {
   return isValidName() && isValidEmail() && isValidCheck();
 }

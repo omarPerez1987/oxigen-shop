@@ -4,7 +4,6 @@ const dropdownList = document.getElementById("dropdownList");
 const noList = document.getElementById("noList");
 
 
-// dropdown
 export function initializeDropdown() {
   
   hideBtn.addEventListener("click", function () {
@@ -19,7 +18,6 @@ export function initializeDropdown() {
 }
 
 // solucion al bug al cambiar de pantalla con devtools
-
 export function handleResize() {
   if (window.innerWidth >= 670) {
     dropdownList.style.display = "flex";

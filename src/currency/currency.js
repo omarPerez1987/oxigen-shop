@@ -11,9 +11,9 @@ export function getExchangeRates(selectedCurrency) {
       const selectedRate = exchangeRates[selectedCurrency];
 
       elements.forEach(function (item) {
-        const dataValue = parseFloat(item.dataset.value); //convertir de string a flotante
+        const dataValue = parseFloat(item.dataset.value);
 
-        if (selectedRate !== undefined) { //al cargar el dom selectedRate es undefined
+        if (selectedRate !== undefined) {
           const converted = dataValue * selectedRate;
           const fixed = converted.toFixed(0);
           if (selectedCurrency === "eur") {
@@ -33,7 +33,6 @@ export function getExchangeRates(selectedCurrency) {
     });
 }
 
-//escucha el cambio del selector y llamara nuevamente la función
 selectCurrency.addEventListener("change", () => {
   const selectedCurrency = selectCurrency.value;
   getExchangeRates(selectedCurrency);

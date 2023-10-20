@@ -1,18 +1,23 @@
-.footer-clickTop {
-  .clickTop {
-    margin-top: -1.9em;
-    background-color: #f7f7f7;
-    border: none;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    width: 6.25em;
-    height: auto;
-    z-index: 10;
-    transition: transform 0.3s ease;
-  }
+.clickTop {
+  margin-top: -2em;
+  background-color: #f7f7f7;
+  border: none;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  width: 6.25em;
+  height: auto;
+  z-index: 10;
+}
+.clickTop img {
+  animation: pushToTop 0.6s infinite linear;
+}
 
-  .clickTop:hover {
-    transform: scale(1.2);
+@keyframes pushToTop {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
   }
 }
 

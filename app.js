@@ -7,17 +7,17 @@ import { validateForm } from "./src/form/form.js";
 import { getExchangeRates } from "./src/currency/currency.js";
 
 document.addEventListener("DOMContentLoaded", function () {
-  initializeDropdown(); // function dropdown en ./src/header
+  initializeDropdown();
 
-  updateProgressBar(); // function progreso barra horizontal en ./src/scroll
+  updateProgressBar();
 
-  scrollToTop(); //funcion scrollTop en ./src/footer/buttonFooter
+  scrollToTop();
 
-  const slider = new Slider("slider"); // instancia para la clase Slider
+  const slider = new Slider("slider");
 
-  openModalIfNeeded(); //funcion muestra/oculta modal en ./src/modal
+  openModalIfNeeded();
 
-  validateForm(); //funcion de validación formulario ./src/form
+  validateForm();
 
   getExchangeRates();
 });

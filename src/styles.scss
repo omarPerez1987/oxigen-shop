@@ -12,31 +12,22 @@ body {
   font-family: Raleway,'Open Sans', system-ui, sans-serif;
 }
 
-//SCROLLER****************************
 @import "./scroller/scroller.scss";
 
-// HEADER*****************************
 @import "./header/header.scss";
 
-// MODAL*****************************
 @import "./modal/modal.scss";
 
-// BANNER*****************************
 @import "./banner/banner.scss";
 
-// NEWS ***************************
 @import "./news/news.scss";
 
-// PRICING ***************************
 @import "./pricing/pricing.scss";
 
-// SLIDER ****************************
 @import "./slider/slider.scss";
 
-// CONTACT 3 ***************************
 @import "./contact/contact.scss";
 
-// FOOTER ****************************
 @import "./footer/buttonFooter/footerTop.scss";
 @import "./footer/footer.scss"
 

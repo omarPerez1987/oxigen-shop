@@ -4,17 +4,26 @@
   background-color: transparent;
 }
 .currency {
-  margin-top: 2em;
-  width: 90%;
-  text-align: end;
+  width: 100%;
+  text-align: center;
 }
+
 #select-currency {
+  border: 1px solid #07ace6;
+  color: #07ace6;
   border-radius: 1rem;
   padding: 0.5em;
+  font-family: Raleway;
+}
+
+#select-currency::selection {
+  border: 1px solid #07ace6;
+  color: #07ace6;
 }
 
 
 .pricing__title {
+  margin-top: 2em;
   color: #000;
   text-align: center;
   font-family: Raleway;
@@ -22,7 +31,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 2.6rem;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 
 .pricing__container {

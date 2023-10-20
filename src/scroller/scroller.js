@@ -1,9 +1,9 @@
 const progressBar = document.querySelector(".progress__bar");
 
 export function updateProgressBar() {
-  const scrollTop = window.scrollY; //posición actual de desplazamiento vertical
-  const docHeight = document.documentElement.scrollHeight; //altura total del documento HTML
-  const winHeight = window.innerHeight; //altura de la ventana del navegador
+  const scrollTop = window.scrollY; 
+  const docHeight = document.documentElement.scrollHeight; 
+  const winHeight = window.innerHeight;
   const scrolled = (scrollTop / (docHeight - winHeight)) * 100;
   progressBar.style.width = scrolled + "%";
   return scrolled
