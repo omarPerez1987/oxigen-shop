@@ -1,6 +1,6 @@
-export function scrollToTop() {
-  const clickTop = document.getElementById("clickTop");
+const clickTop = document.getElementById("clickTop");
 
+export function scrollToTop() {
   clickTop.addEventListener("click", function () {
     setTimeout(() => {
       window.scrollTo({
@@ -10,3 +10,13 @@ export function scrollToTop() {
     }, 200);
   });
 }
+
+export const showScrollToTop = () => {
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 800) {
+      clickTop.style.display = "block";
+    } else {
+      clickTop.style.display = "none";
+    }
+  });
+};

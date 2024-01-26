@@ -1,6 +1,9 @@
 import { initializeDropdown } from "./src/header/dropDown.js";
 import { updateProgressBar } from "./src/scroller/scroller.js";
-import { scrollToTop } from "./src/footer/buttonFooter/scrollToTop.js";
+import {
+  scrollToTop,
+  showScrollToTop,
+} from "./src/footer/buttonFooter/scrollToTop.js";
 import { Slider } from "./src/slider/slider.js";
 import { openModalIfNeeded } from "./src/modal/modal.js";
 import { validateForm } from "./src/form/form.js";
@@ -12,6 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
   updateProgressBar();
 
   scrollToTop();
+
+  showScrollToTop();
 
   const slider = new Slider("slider");
 
