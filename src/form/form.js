@@ -1,4 +1,4 @@
-import { sendForm } from "./sendForm.js";
+import { messageError, sendForm } from "./sendForm.js";
 
 const myForm = document.getElementById("myForm");
 const nameInput = document.getElementById("name");
@@ -50,6 +50,6 @@ myForm.addEventListener("submit", function (e) {
     myForm.reset();
   } else {
     printForm();
-    alert("Por favor, complete el formulario correctamente.");
+    messageError("Por favor, complete el formulario correctamente.");
   }
 });

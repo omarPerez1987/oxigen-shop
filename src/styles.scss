@@ -12,22 +12,24 @@ body {
   font-family: Raleway, "Open Sans", system-ui, sans-serif;
 }
 
-@import "./scroller/scroller.scss";
+@import "./scroller/scroller";
 
-@import "./header/header.scss";
+@import "./header/header";
 
-@import "./modal/modal.scss";
+@import "./modal/modal";
 
-@import "./banner/banner.scss";
+@import "./banner/banner";
 
-@import "./news/news.scss";
+@import "./news/news";
 
-@import "./pricing/pricing.scss";
+@import "./pricing/pricing";
 
-@import "./slider/slider.scss";
+@import "./slider/slider";
 
-@import "./contact/contact.scss";
+@import "./contact/contact";
 
-@import "./footer/buttonFooter/footerTop.scss";
+@import "./footer/buttonFooter/footerTop";
 
-@import "./footer/footer.scss";
+@import "./footer/footer";
+
+@import "./components/message";
