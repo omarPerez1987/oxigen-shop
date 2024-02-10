@@ -1,6 +1,6 @@
 import { updateProgressBar } from "../scroller/scroller.js";
 import { isValidEmail } from "../form/form.js";
-import { sendForm } from "../form/sendForm.js";
+import { messageError, sendForm } from "../form/sendForm.js";
 
 const modal = document.getElementById("modal-container");
 const cross = document.getElementById("cross");
@@ -95,7 +95,7 @@ function validateEmailModal() {
     noneModal();
     markModalAsShown();
   } else {
-    alert("Por favor, escriba un correo electrónico válido.");
+    messageError("Por favor, escriba un correo electrónico válido.");
     formModal.reset();
   }
 }
